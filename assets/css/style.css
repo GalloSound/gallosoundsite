@@ -9,13 +9,13 @@ body {
     overflow-x:hidden;
 }
 header {
-    height:100px;
-    background-color:#000;
+    height:80px;
+    background-color:#FFF;
     color:#FFF;
 }
 .header {
     max-width:1140px;
-    height:100px;
+    height:80px;
     margin:auto;
     display:flex;
     align-items:center;
@@ -24,10 +24,11 @@ header {
     width:100px;
 }
 .logoimg {
-    width:80px;
-    height:80px;
-    background-color:#B28756;
-    border-radius:40px;
+    width:200px;
+    height:48px;
+}
+.logoimg img {
+    margin-left:16px;
 }
 .menu-opener {
     display:none;
@@ -45,21 +46,20 @@ header {
     display:flex;
 }
 .menu li a {
-    color:#FFF;
+    color:#000;
     text-transform: uppercase;
     font-weight: 600;
     text-decoration: none;
     padding-left:10px;
     padding-right:10px;
-    height:100px;
+    height:80px;
     display:flex;
     align-items:center;
-    border-bottom:5px solid #000;
+    /*border-bottom:5px solid #000;*/
 }
-.menu li a:hover,
-.menu .active a {
-    border-bottom:5px solid #B28756;
-    color:#CCC;
+
+.menu li a:hover {
+    background-color:#dfcdb9;
 }
 
 .button {
@@ -72,7 +72,6 @@ header {
     text-decoration: none;
     padding:10px 30px;
     margin-top:30px;
-    border-radius:20px;
 }
 .button--dark {
     background-color:#000;
@@ -105,8 +104,11 @@ header {
     height:100%;
     justify-content: center;
     align-items:center;
+    text-align: right;
     color:#FFF;
+    margin-right: 17px;
 }
+
 .banner h1 {
     text-transform: uppercase;
     font-weight: bold;
@@ -116,8 +118,9 @@ header {
     color:#B28756;
 }
 .banner h2 {
-    text-transform: uppercase;
+    margin-left:20px;
     margin-top:20px;
+    font-weight:normal;
 }
 .banner .sliders-pointers {
     width:100vw;
@@ -153,7 +156,7 @@ header {
     font-weight: 600;
 }
 .default .section-title {
-    font-size:20px;
+    font-size:27px;
 }
 .default .section-desc {
     font-size:12px;
@@ -237,9 +240,6 @@ footer {
 }
 
 
-
-
-
 /*
 CSS DE ÁREAS ESPECÍFICAS
 */
@@ -261,7 +261,6 @@ CSS DE ÁREAS ESPECÍFICAS
     width:480px;
     box-shadow:0px 5px 10px #333;
 }
-
 
 
 .section-services {
@@ -286,9 +285,6 @@ CSS DE ÁREAS ESPECÍFICAS
     font-size:13px;
     color:#999;
 }
-
-
-
 
 
 .section-projects {
@@ -759,11 +755,6 @@ CSS DE ÁREAS ESPECÍFICAS
 .section-contact--split input:first-child {
     margin-right:20px;
 }
-
-
-
-
-
 .section-map {
     background-image:url('../images/mapa.jpg');
     background-size:cover;
@@ -803,18 +794,9 @@ CSS DE ÁREAS ESPECÍFICAS
     width:15px;
     height:auto;
 }
-
-
-
-
-
-
-
-
-
-
-
-
+.sticky {
+    margin-left:90%;
+}
 
 
 @media (min-width:450px) and (max-width:800px) {
@@ -827,14 +809,19 @@ CSS DE ÁREAS ESPECÍFICAS
         margin-right:30px;
     }
     nav {
-        display:none;
+        overflow:hidden;
         position: absolute;
         z-index: 99;
         background-color: rgba(0, 0, 0, 0.9);
-        width: 70vw;
-        height: calc(100vh - 100px);
-        top: 100px;
-        right: 0;
+        top: 80px;
+        right: -540px;
+    }
+    .navHide {
+        right: -540px;
+    }
+
+    .navShow {
+        right: 0px;
     }
     .menu ul {
         flex-direction:column;
@@ -846,10 +833,12 @@ CSS DE ÁREAS ESPECÍFICAS
         font-size:27px;
         margin-left:50px;
         border:0;
+        color:#B28756;
     }
+
     .menu li.active a {
         border:0;
-        color:#B28756;
+        color:#FFF;
     }
 
 
@@ -917,27 +906,43 @@ CSS DE ÁREAS ESPECÍFICAS
     .section-map--info-item:last-child {
         margin-bottom:0;
     }
+    .sticky {
+        margin-left:90%;
+    }
 }
-
 
 @media (max-width:450px) {
     .logo {
         margin-left:30px;
     }
+
+    .logoimg img {
+        margin-left:0px;
+    }
+
     .menu-opener {
         display:block;
         width:45px;
         margin-right:30px;
     }
     nav {
-        display:none;
+        overflow:hidden;
         position: absolute;
+        max-width: 0;
         z-index: 99;
         background-color: rgba(0, 0, 0, 0.9);
-        width: 80vw;
         height: calc(100vh - 100px);
-        top: 100px;
-        right: 0;
+        top: 80px;
+        right: 0px;
+        transition: max-height 1s linear;
+    }
+
+    .navHide {
+        max-width: 0;
+    }
+
+    .navShow {
+        max-width: 100%;
     }
     .menu ul {
         flex-direction:column;
@@ -949,17 +954,29 @@ CSS DE ÁREAS ESPECÍFICAS
         font-size:20px;
         margin-left:30px;
         border:0;
+        color:#B28756;
     }
     .menu li.active a {
         border:0;
-        color:#B28756;
+        color:#FFF;
     }
 
     .banner h1 {
-        font-size:30px;
+        font-size:35px;
     }
     .banner h2 {
-        font-size:17px;
+        font-size:13px;
+    }
+
+    .banner .slidearea {
+        display:flex;
+        flex-direction:column;
+        height:100%;
+        justify-content: center;
+        align-items:flex-end;
+        text-align: right;
+        color:#FFF;
+        margin-right: 17px;
     }
 
 
@@ -1064,7 +1081,6 @@ CSS DE ÁREAS ESPECÍFICAS
         justify-content: center;
         flex-direction: column;
         margin-bottom: 20px;
-        
     }
 
     .section-contact {
@@ -1102,4 +1118,32 @@ CSS DE ÁREAS ESPECÍFICAS
     .footer-social {
         justify-content: center;
     }
+    .sticky {
+        margin-left:80%;
+    }
+}
+
+.sticky {
+  position: fixed;
+  bottom: 50px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#btnScrollTop {
+    color:#FFF;
+    border:0px;
+    overflow:hidden;
+    opacity: 0.9;
+    transition: all 0.8s linear;
+}
+
+.btnScrollTopShow {
+    bottom: 0px;
+}
+
+.btnScrollTopHide {
+    bottom: -50px;
 }
