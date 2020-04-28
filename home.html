@@ -10,46 +10,8 @@
     <link href="assets/font/fonts.css" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
     <link rel="shortcut icon" href="assets/images/favicon.ico">
-    <script type="text/javascript">
-    window.onload = function(){
-        document.querySelector("nav").style.transition = "all 0.3s linear";
-        document.querySelector(".menu-opener").addEventListener("click", function(){
-            if(document.querySelector("nav").classList == 'navHide') {
-                document.querySelector("nav").classList.remove('navHide');
-                document.querySelector("nav").classList.add('navShow');
-            } else {
-                document.querySelector("nav").classList.remove('navShow');
-                document.querySelector("nav").classList.add('navHide');
-            }
-        });
-        document.querySelector("main").addEventListener("click", function(){
-            document.querySelector("nav").classList.add('navHide');
-            document.querySelector("nav").classList.remove('navShow');
-        });
-        document.querySelectorAll("nav a").forEach((item)=>{
-            item.addEventListener("click", function(){
-                document.querySelector("nav").classList.add('navHide');
-                document.querySelector("nav").classList.remove('navShow');
-            });
-        });
-
-        let btnScrollTop = document.querySelector('#btnScrollTop');
-        function scrollFunction() {
-          if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-            btnScrollTop.classList.remove('btnScrollTopHide');
-            btnScrollTop.classList.add('btnScrollTopShow');
-          } else {
-            btnScrollTop.classList.remove('btnScrollTopShow');
-            btnScrollTop.classList.add('btnScrollTopHide');
-          }
-        }
-
-        window.onscroll = function() {scrollFunction()};
-
-    };
-    </script>
 </head>
-<body>
+<body id="toBody">
 <header>
     <div class="header">
         <div class="logo">
@@ -59,11 +21,11 @@
             <img class="menu-opener" src="assets/images/menu.png" alt="menu-opener" />
             <nav class="navHide">
                 <ul>
-                    <li class="active"><a href="#">Home</a></li>
-                    <li><a href="#servicos">Serviços</a></li>
-                    <li><a href="">Trabalhos</a></li>
-                    <li><a href="#contato">Contato</a></li>
-                    <li><a href="">Trabalhos</a></li>
+                    <li class="scroll" data-action="home"><a href="#">Home</a></li>
+                    <li data-action="servicos" class="scroll"><a href="">Serviços</a></li>
+                    <li><a data-action="trabalhos" class="scroll" href="">Trabalhos</a></li>
+                    <li data-action="contato" class="scroll" ><a href="">Contato</a></li>
+                    <li data-action="sobre" class="scroll" ><a href="">Sobre</a></li>
                     <li><a href="">Teste</a></li>
                     <li><a href="">Contato</a></li>
                 </ul>
@@ -144,7 +106,7 @@
         </div>
     </section>
 
-    <section class="default light">
+    <section id="sobre" class="default light">
         <div class="section-title">Sobre Nós</div>
         <div class="section-desc">Gallo Sound</div>
         <div class="section-body">
@@ -665,6 +627,8 @@
     </div>
 </footer>
 <a href="#"><img class="sticky" src="assets/images/whatsapp.png" alt="Fale Conosco pelo WhatsApp"></a>
-<a href="#"><button id="btnScrollTop" class="button sticky btnScrollTopHide">TOP</button></a>
+<button id="btnScrollTop" data-action="toBody" class="button sticky btnScrollTopHide scroll">TOP</button>
 </body>
 </html>
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/script.js"></script>
