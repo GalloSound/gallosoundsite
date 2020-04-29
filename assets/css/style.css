@@ -55,10 +55,12 @@ header {
     height:80px;
     display:flex;
     align-items:center;
+
     /*border-bottom:5px solid #000;*/
 }
 
 .menu li a:hover {
+    cursor:pointer;
     background-color:#dfcdb9;
 }
 
@@ -72,6 +74,9 @@ header {
     text-decoration: none;
     padding:10px 30px;
     margin-top:30px;
+}
+.button:hover {
+    cursor: pointer;
 }
 .button--dark {
     background-color:#000;
@@ -218,7 +223,7 @@ footer {
 }
 .footer--item.area2 {
     color:#999;
-    line-height:20px;
+    line-height:15px;
     font-size:13px;
     padding:0 10px 10px 10px;
 }
@@ -457,7 +462,7 @@ CSS DE ÁREAS ESPECÍFICAS
     overflow:hidden;
 }
 .section-testimonials .sliders {
-    width:1000vw;
+    /*width:1000vw;*/
     height:100%;
 }
 .section-testimonials .slide {
@@ -794,6 +799,22 @@ CSS DE ÁREAS ESPECÍFICAS
     width:15px;
     height:auto;
 }
+
+.section-map--info-title,
+.section-map--info-desc {
+    text-align:center;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.section-map--info-title {
+    font-size:27px;
+}
+.section-map--info-desc {
+    font-size: 12px;
+    color: #CCC;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
 .sticky {
     margin-left:90%;
 }
@@ -1108,6 +1129,21 @@ CSS DE ÁREAS ESPECÍFICAS
     .section-map--info-item:last-child {
         margin-bottom:0;
     }
+    .section-map--info-title,
+    .section-map--info-desc {
+        text-align:center;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+    .section-map--info-title {
+        font-size:27px;
+    }
+    .section-map--info-desc {
+        font-size: 12px;
+        color: #CCC;
+        margin-top: 10px;
+        margin-bottom: 40px;
+    }
 
     .footer--area {
         flex-direction:column;
@@ -1146,4 +1182,12 @@ html {
 
 .btnScrollTopHide {
     bottom: -50px;
+}
+
+.number {
+    opacity: 0;
+}
+.numberShow {
+    opacity: 1;
+    transition: all 0.8s linear;
 }

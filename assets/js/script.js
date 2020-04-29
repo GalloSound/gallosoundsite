@@ -18,7 +18,7 @@ document.querySelectorAll("nav a").forEach((item)=>{
         document.querySelector("nav").classList.remove('navShow');
     });
 });
-
+let serv = 0;
 let btnScrollTop = document.querySelector('#btnScrollTop');
 function scrollFunction() {
   if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
@@ -28,6 +28,22 @@ function scrollFunction() {
     btnScrollTop.classList.remove('btnScrollTopShow');
     btnScrollTop.classList.add('btnScrollTopHide');
   }
+    let numberServ = document.querySelector('#startNumber').offsetTop;
+    if( numberServ < document.body.scrollTop ||  numberServ < document.documentElement.scrollTop && serv == 0) {
+        if(serv == 0) {
+            console.log('here');
+           document.querySelectorAll('.number').forEach((item)=>{
+                item.classList.add('numberShow');
+                item.classList.remove('number');
+                setInterval(numberSoma, 10);
+
+                function numberSoma(item) {
+                     
+                }
+           });        
+        }
+        serv++;
+    }
 }
 
 window.onscroll = function() {scrollFunction()};
