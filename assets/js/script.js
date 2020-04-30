@@ -30,24 +30,38 @@ function scrollFunction() {
   }
     let numberServ = document.querySelector('#startNumber').offsetTop;
     if( numberServ < document.body.scrollTop ||  numberServ < document.documentElement.scrollTop && serv == 0) {
-        if(serv == 0) {
-            console.log('here');
-           document.querySelectorAll('.number').forEach((item)=>{
-                item.classList.add('numberShow');
-                item.classList.remove('number');
-                setInterval(numberSoma, 10);
-
-                function numberSoma(item) {
-                     
-                }
-           });        
-        }
+        document.querySelectorAll('.number').forEach((item)=>{
+            item.classList.add('numberShow');
+            item.classList.remove('number');
+            let max = item.attributes.getNamedItem("max").value;
+            let n =0;
+            numberSoma(item, max, n);
+        });
         serv++;
     }
 }
 
 window.onscroll = function() {scrollFunction()};
+
+
+// function soma rapida
+function numberSoma(item, valor, n) {
+    console.log(n);
+    console.log(valor);
+    let int = setInterval(frame, 1);
+    function frame() {
+        if(n >= valor) {
+            clearInterval(int);
+        } else {
+            n = parseFloat(n+2656);
+            item.innerHTML = n.toLocaleString('pt-BR');
+        }
+    }
     
+}
+
+
+// adicionando função scroll
 document.querySelectorAll('.scroll').forEach((item)=>{
     item.addEventListener('click', topFunction);
 })
@@ -58,6 +72,7 @@ function topFunction(e) {
     let go = $(id).position().top;
     $('html, body').animate({scrollTop:go}, 'slow');
 }
+
 /*
 function goToByScroll(id) {
     let go = document.querySelector("#"+id).offsetTop;
