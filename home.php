@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <title>Gallo Sound</title>
-    <meta name="description" content="Gallo Sound, tradição e qualidade em som automotivo em Jundiaí e região. Trabalhamos com insulfilm, Som, Alarme, Trava Elétrica, Atualização de GPS e outros">
+    <meta name="description" content="Gallo Sound, tradição e qualidade em som automotivo em Jundiaí e região. Trabalhamos com insulfilm, Som, Alarme, Trava Elétrica, vidro elétrico, modulo de conforto, Atualização de GPS e outros. Venha nos conhecer">
     <meta name="keywords" content=""> <!-- car repair, auto service, car service, automotive, mechanic auto shop, automotive, mechanic workshop, insulfilm jundiai, pelicula de proteção solar -->
     <meta name="author" content="Alex Gallo">
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1, user-scalable=no" />
@@ -26,8 +26,6 @@
                     <li data-action="trabalhos" class="scroll"><a>Trabalhos</a></li>
                     <li data-action="contato" class="scroll" ><a>Contato</a></li>
                     <li data-action="sobre" class="scroll" ><a>Sobre</a></li>
-                    <li><a href="">Teste</a></li>
-                    <li><a href="">Contato</a></li>
                 </ul>
             </nav>
         </div>
@@ -70,7 +68,7 @@
                 <div class="section-service">
                     <img src="assets/images/alto-falante.png"  alt="alto-falante" />
                     <h4>Som automotivo</h4>
-                    <p>Venda e instalação de Central Multímidia, alto-falantes, caixas acústica, amplificadores de potência </p>
+                    <p>Venda e instalação de alto-falantes, caixas acústica, módulos de potência, processadores digitais, fontes automotivas.</p>
                 </div>
                 <div class="section-service">
                     <img src="assets/images/insulfilm.png"  alt="insulfilm" />
@@ -80,22 +78,22 @@
                 <div class="section-service">
                     <img src="assets/images/multimidia.png"  alt="central multimidia" />
                     <h4>Central Multimídia</h4>
-                    <p>Donec tincidunt cursus</p>
+                    <p>Instalação e Venda das melhores Centrais Multimídias do mercado, com diversas funcionalidades como, <strong>Espelhamento IOS e ANDROID, câmera de ré, Whaze, Google Maps, GPS off-line, YOUTUBE, NETFLIX </strong> e muito mais!!!</p>
                 </div>
                 <div class="section-service">
                     <img src="assets/images/alarme.png"  alt="alarme" />
                     <h4>Alarme</h4>
-                    <p>Morbi ex felis, tincidunt sed</p>
+                    <p>Mantenha seu veículo protegido com os melhores alarmes do mercado.</p>
                 </div>
                 <div class="section-service">
                     <img src="assets/images/vidro.png"  alt="vidro eletrico" />
                     <h4>Vidro Elétrico</h4>
-                    <p>Morbi ex felis, tincidunt sed</p>
+                    <p>Nunca mais esqueça o vidro do seu carro aberto, <strong>Automação</strong> ou <strong>Instalação</strong> de <strong>Vidros Elétricos</strong>, muito mais conforto para você.</p>
                 </div>
                 <div class="section-service">
                     <img src="assets/images/trava_eletrica.png"  alt="trava eletrica" />
                     <h4>Trava Elétrica</h4>
-                    <p>Morbi ex felis, tincidunt sed</p>
+                    <p>Está cansado de trancar a porta do seu veiculo?<br/> Esqueceu a porta do passageiro aberta? <br/>Instalamos trava elétrica para você.</p>
                 </div>
             </div>
         </div>
@@ -119,7 +117,7 @@
                     <div class="section-projects--photo">
                         <div class="section-projects--photoarea">
                             <div class="section-projects--photoinfo">
-                                <h5>Sensor de Estacionamento</h5>
+                                <h5>Sensor de ré</h5>
                                 <p>Estacione com facilidade e segurança</p>
                             </div>
                             <img src="media/sensor_estacionamento.jpg" alt="sensor estacionamento" />
@@ -155,7 +153,7 @@
 
     <section class="default testimonials">
         <div class="section-title">Depoimentos</div>
-        <div class="section-desc">avaliações publicas google</div>
+        <div class="section-desc">avaliações publicas no google</div>
         <div class="section-body">
             <div class="section-testimonials">
                 <div class="sliders" style="margin-left:0;">
@@ -187,21 +185,21 @@
     </section>
 
     <section class="default dark">
-        <div class="section-title">Some Facts</div>
-        <div class="section-desc">serviços e clientes</div>
+        <div class="section-title">Serviços e Clientes</div>
+        <div class="section-desc">deste 1957 trabalhando com profissionalismo e qualidade</div>
         <div class="section-body">
             <div class="section-facts">
                 <div class="section-fact">
                     <h3 max="1356561" class="number" >0</h3>
                     <div class="section-fact-line"></div>
                     <h4>Serviços Realizados</h4>
-                    <p>Donec tincidunt cursus</p>
+                    <p>com o avanço rápido da tecnologia já realizamos diversos tipos de serviços, contamos com uma vasta experiência adquiridas ao longo do tempo</p>
                 </div>
                 <div class="section-fact">
                     <h3 max="400000" class="number">0</h3>
                     <div class="section-fact-line"></div>
                     <h4>Clientes Atendidos</h4>
-                    <p>Morbi ex felis, tincidunt sed hendrerit</p>
+                    <p>pessoas e empresas atendidas durante nossa jornada</p>
                 </div>
             </div>
         </div>
@@ -210,38 +208,38 @@
     <section id="contato" class="section-map">
         <div class="section-map--area">
             <div class="section-map--info">
-                    <div class="section-map--info-title">Contato</div>
-                    <div class="section-map--info-desc">Our Agency Located in Melbourne, Australia</div>
-                    <div class="section-map--info-item">
-                        <div class="section-map--info-item-img">
-                            <img src="assets/images/localizacao.png" alt="localizacao" />
+                <div class="section-map--info-title">Contato</div>
+                <div class="section-map--info-desc">Our Agency Located in Melbourne, Australia</div>
+                <div class="section-map--info-item">
+                    <div class="section-map--info-item-img">
+                        <img src="assets/images/localizacao.png" alt="localizacao" />
+                    </div>
+                    Rua Barão do Rio Branco, 357, Vila Arens, Jundiaí-SP.
+                </div>
+                <div class="section-map--info-item">
+                    <div class="section-map--info-item-img">
+                        <img src="assets/images/telefone.png" alt="telefone" />
+                    </div>
+                    (11) 3379-2892 - (11) 94757-4606
+                </div>
+                
+                <div class="section-map--info-item">
+                    <div class="section-map--info-item-img">
+                        <img src="assets/images/clock.png" alt="horario" />
+                    </div>
+                    Horário de Atendimento <br/> Seg - Sexta: 8:30 as 18:00 <br/> Sábado 8:30 as 12:30 
+                </div>
+                <div class="section-contact">
+                    <form method="POST">
+                        <div class="section-contact--split">
+                            <input type="text" name="name" placeholder="NOME" />
+                            <input type="text" name="name" placeholder="EMAIL" />
                         </div>
-                        Rua Barão do Rio Branco, 357, Vila Arens, Jundiaí-SP.
-                    </div>
-                    <div class="section-map--info-item">
-                        <div class="section-map--info-item-img">
-                            <img src="assets/images/telefone.png" alt="telefone" />
-                        </div>
-                        (11) 3379-2892 - (11) 94757-4606
-                    </div>
-                    
-                    <div class="section-map--info-item">
-                        <div class="section-map--info-item-img">
-                            <img src="assets/images/clock.png" alt="horario" />
-                        </div>
-                        Horário de Atendimento <br/> Seg - Sexta: 8:30 as 18:00 <br/> Sábado 8:30 as 12:30 
-                    </div>
-                    <div class="section-contact">
-                        <form method="POST">
-                            <div class="section-contact--split">
-                                <input type="text" name="name" placeholder="NOME" />
-                                <input type="text" name="name" placeholder="EMAIL" />
-                            </div>
-                            <input type="text" name="name" placeholder="ASSUNTO" />
-                            <textarea name="message" placeholder="MENSAGEM"></textarea>
-                            <input type="submit" value="Enviar" class="button" />
-                        </form>
-                    </div>
+                        <input type="text" name="name" placeholder="ASSUNTO" />
+                        <textarea name="message" placeholder="MENSAGEM"></textarea>
+                        <input type="submit" value="Enviar" class="button" />
+                    </form>
+                </div>
             </div>
         </div>
     </section>
