@@ -32,9 +32,9 @@
     </div>
 </header>
 <main>
-    <section class="banner">
+    <section id="banner" class="banner">
         <div class="sliders" style="margin-left:0;">
-            <div class="slide">
+            <div class="slide action">
                 <div class="slidearea">
                     <h1>Mais de 50 Anos<br/><span>com Você</span></h1>
                     <h2>Central Multimídia | Insul-Film | Sonorização | Vidro e Trava Elétrica | Sensor Estacionamento | Alarme</h2>
@@ -42,11 +42,9 @@
                 </div>
             </div><div class="slide">
                 <div class="slidearea">
-                        <h1>Som Personalizado</h1>
-                        <h1>Som Personalizado</h1>
-                        <h1>Insul-Film<br/><span>Communication</span></h1>
-                        <h2>Call Us: +00 0 1234 5678</h2>
-                        <a class="button">Entre em Contato</a>
+                        <h1>Película<br/><span>controle Solar</span></h1>
+                        <h2>bloqueio de 99% dos raios UV, Mais proteção e conforto - automovel, residência e indústria</h2>
+                        <a data-action="contato"  class="scroll button">Entre em Contato</a>
                 </div>
             </div><div class="slide">
                 <div class="slidearea">

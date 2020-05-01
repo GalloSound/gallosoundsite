@@ -73,6 +73,26 @@ function topFunction(e) {
     $('html, body').animate({scrollTop:go}, 'slow');
 }
 
+let slide = 1;
+window.load = setInterval(slider, 5000);
+
+function slider() {
+    document.querySelectorAll('.banner .slide').forEach((item, index)=>{
+        if(index == slide) {
+            item.classList.add('action');
+            
+        } else {
+            item.classList.remove('action');
+        }
+        
+    });
+    if(slide == 2) {
+        slide = 0;
+    } else {
+        slide++;
+    }
+}
+
 /*
 function goToByScroll(id) {
     let go = document.querySelector("#"+id).offsetTop;

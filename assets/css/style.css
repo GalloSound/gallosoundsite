@@ -102,6 +102,12 @@ header {
     height:100%;
     display:inline-block;
     background-color:rgba(0, 0, 0, 0.8);
+    display: none;
+    transition:all 1s inline;
+}
+.banner .action {
+    transition:all 1s inline;
+    display:inline-block;
 }
 .banner .slidearea {
     display:flex;
@@ -118,6 +124,7 @@ header {
     text-transform: uppercase;
     font-weight: bold;
     font-size:50px;
+    transition:all 1s linear;
 }
 .banner h1 span {
     color:#B28756;
