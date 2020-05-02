@@ -73,9 +73,40 @@ function topFunction(e) {
     $('html, body').animate({scrollTop:go}, 'slow');
 }
 
-let slide = 1;
-window.load = setInterval(slider, 5000);
+var slide = setInterval(slideAction, 5000);
+window.load =  slide;
 
+function slideAction() {
+    if($(".slideAction").next().length){
+        $(".slideAction").fadeOut().removeClass("slideAction").next().fadeIn().addClass("slideAction");
+        $(".active").removeClass("active").next().addClass("active");
+    } else {
+        $(".slideAction").fadeOut().removeClass("slideAction");
+        $('#slidearea0').fadeIn().addClass("slideAction");
+        $(".active").removeClass("active");
+        $("#pointerBanner0").addClass("active");
+    }
+
+}
+
+let pointer = 0;
+document.querySelectorAll('.banner .pointer').forEach((item, index)=>{
+    item.addEventListener('click', function(e){
+        e.preventDefault();
+        clearInterval(slide);
+
+        pointer = index;
+
+        $(".slideAction").fadeOut().removeClass("slideAction");
+        $('#slidearea'+pointer).fadeIn().addClass("slideAction");
+
+        $(".active").removeClass("active");
+        $("#pointerBanner"+pointer).addClass("active");
+        
+    });
+});
+
+/*
 function slider() {
     document.querySelectorAll('.banner .slide').forEach((item, index)=>{
         if(index == slide) {
@@ -93,7 +124,7 @@ function slider() {
     }
 }
 
-/*
+
 function goToByScroll(id) {
     let go = document.querySelector("#"+id).offsetTop;
     let here = '';
@@ -117,4 +148,10 @@ function goToByScroll(id) {
         }
     }
 }
+
+
+
+$('#slidearea1').fadeOut();$('#slidearea2').fadeIn();
+$('#slidearea1').slideDown();$('#slidearea2').fadeIn();
+
 */

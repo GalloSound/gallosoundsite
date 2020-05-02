@@ -34,11 +34,21 @@
 <main>
     <section id="banner" class="banner">
         <div class="sliders" style="margin-left:0;">
-            <div class="slide action">
-                <div class="slidearea">
+            <div class="slide">
+                <div id="slidearea0" class="slidearea slideAction">
                     <h1>Mais de 50 Anos<br/><span>com Você</span></h1>
                     <h2>Central Multimídia | Insul-Film | Sonorização | Vidro e Trava Elétrica | Sensor Estacionamento | Alarme</h2>
                     <a data-action="contato"  class="scroll button">Entre em Contato</a>
+                </div>
+                <div id="slidearea1" class="slidearea">
+                        <h1>Película<br/><span>controle Solar</span></h1>
+                        <h2>bloqueio de 99% dos raios UV, Mais proteção e conforto - automovel, residência e indústria</h2>
+                        <a data-action="contato"  class="scroll button">Entre em Contato</a>
+                </div>
+                <div id="slidearea2" class="slidearea">
+                        <h1>Design is about<br/><span>Communication</span></h1>
+                        <h2>Call Us: +00 0 1234 5678</h2>
+                        <a href="" class="button">Get in touch!</a>
                 </div>
             </div><div class="slide">
                 <div class="slidearea">
@@ -55,6 +65,11 @@
                     <a href="" class="button">Get in touch!</a>
                 </div>
             </div>
+        </div>
+        <div class="sliders-pointers">
+            <div id="pointerBanner0" class="pointer active"></div>
+            <div id="pointerBanner1" class="pointer"></div>
+            <div id="pointerBanner2" class="pointer"></div>
         </div>
     </section>
 
@@ -249,9 +264,10 @@
         </div>
     </div>
 </footer>
-<a href="https://api.whatsapp.com/send?phone=5511947370975" target="blank"><img class="sticky" src="assets/images/whatsapp.png" alt="Fale Conosco pelo WhatsApp"></a>
+<a class="desk" href="https://api.whatsapp.com/send?phone=5511947370975"><img class="sticky" src="assets/images/whatsapp.png" alt="Fale Conosco pelo WhatsApp"></a>
 <button id="btnScrollTop" data-action="toBody" class="button sticky btnScrollTopHide scroll">TOP</button>
 </body>
 </html>
 <script src="assets/js/jquery.js"></script>
 <script src="assets/js/script.js"></script>
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css" />

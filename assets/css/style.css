@@ -102,13 +102,10 @@ header {
     height:100%;
     display:inline-block;
     background-color:rgba(0, 0, 0, 0.8);
-    display: none;
-    transition:all 1s inline;
-}
-.banner .action {
-    transition:all 1s inline;
     display:inline-block;
+    transition:all 1s inline;
 }
+
 .banner .slidearea {
     display:flex;
     flex-direction:column;
@@ -154,6 +151,7 @@ header {
 }
 .banner .pointer.active {
     background-color:#B28756;
+    transition:all 1s linear;
 }
 
 
@@ -1171,10 +1169,6 @@ CSS DE ÁREAS ESPECÍFICAS
 .sticky {
   position: fixed;
   bottom: 50px;
-}
-
-html {
-  scroll-behavior: smooth;
 }
 
 #btnScrollTop {
