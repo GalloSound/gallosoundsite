@@ -79,7 +79,6 @@ function scrollFunction() {
     
     clearInterval(slide); // parando o slide
     slide=false;
-    console.log('desativou via scrool');
 
     btnScrollTop.classList.remove('btnScrollTopHide');
     btnScrollTop.classList.add('btnScrollTopShow');
@@ -87,7 +86,6 @@ function scrollFunction() {
     btnScrollTop.classList.remove('btnScrollTopShow');
     btnScrollTop.classList.add('btnScrollTopHide');
     if(slide == false) {
-        console.log('tivou via scrool');
         slide = setInterval(slideAction, 5000);
     }
   }
@@ -109,8 +107,6 @@ window.onscroll = function() {scrollFunction()};
 
 // function soma rapida
 function numberSoma(item, valor, n) {
-    console.log(n);
-    console.log(valor);
     let int = setInterval(frame, 1);
     function frame() {
         if(n >= valor) {
@@ -122,6 +118,38 @@ function numberSoma(item, valor, n) {
     }
     
 }
+
+document.querySelector("#mensagem").addEventListener('click', function(e){
+    e.preventDefault();
+    let n = document.querySelector('#nome').value;
+    let em = document.querySelector('#email').value;
+    let a = document.querySelector('#assunto').value;
+    let m = document.querySelector('#msg').value;
+
+    console.log(n);
+     console.log(em);
+      console.log(a);
+       console.log(m);
+
+    let url = 'http://localhost/new_site_black/action_email.php';
+    const params = {
+        method:'POST',
+        body:JSON.stringify({
+            nome:n,
+            email:em,
+            ass:a,
+            mensagem:m
+        })
+    };
+    fetch(url, params)
+        .then((r)=>r.json())
+        .then((json)=>{
+            if(json.envio ==  true) {
+                console.log('enviado com sucesso');
+            }
+        });
+
+});
 
 /*
 function slider() {

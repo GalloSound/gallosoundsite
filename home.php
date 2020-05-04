@@ -238,12 +238,12 @@
                 <div class="section-contact">
                     <form method="POST">
                         <div class="section-contact--split">
-                            <input type="text" name="name" placeholder="NOME" />
-                            <input type="text" name="name" placeholder="EMAIL" />
+                            <input  id="nome" type="text" name="nome" placeholder="NOME" />
+                            <input id="email" type="text" name="email" placeholder="EMAIL" />
                         </div>
-                        <input type="text" name="name" placeholder="ASSUNTO" />
-                        <textarea name="message" placeholder="MENSAGEM"></textarea>
-                        <input type="submit" value="Enviar" class="button" />
+                        <input id="assunto" type="text" name="assunto" placeholder="ASSUNTO" />
+                        <textarea id="msg" name="mensagem" placeholder="MENSAGEM"></textarea>
+                        <input id="mensagem" type="submit" value="Enviar" class="button" />
                     </form>
                 </div>
             </div>        
