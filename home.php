@@ -21,7 +21,7 @@
             <img class="menu-opener" src="assets/images/menu.png" alt="menu-opener" />
             <nav class="navHide">
                 <ul>
-                    <li class="scroll" data-action="home"><a>Home</a></li>
+                    <li data-action="home" class="scroll"><a>Home</a></li>
                     <li data-action="servicos" class="scroll"><a>Serviços</a></li>
                     <li data-action="trabalhos" class="scroll"><a>Trabalhos</a></li>
                     <li data-action="contato" class="scroll" ><a>Contato</a></li>
@@ -40,29 +40,20 @@
                     <h2>Central Multimídia | Insul-Film | Sonorização | Vidro e Trava Elétrica | Sensor Estacionamento | Alarme</h2>
                     <a data-action="contato"  class="scroll button">Entre em Contato</a>
                 </div>
-                <div id="slidearea1" class="slidearea">
+                <div id="slidearea1" class="slidearea slideAction">
                         <h1>Película<br/><span>controle Solar</span></h1>
-                        <h2>bloqueio de 99% dos raios UV, Mais proteção e conforto - automovel, residência e indústria</h2>
+                        <h2>Bloqueio de 99% dos raios UV, Mais proteção e conforto - automóvel, residência e indústria</h2>
                         <a data-action="contato"  class="scroll button">Entre em Contato</a>
                 </div>
-                <div id="slidearea2" class="slidearea">
-                        <h1>Design is about<br/><span>Communication</span></h1>
-                        <h2>Call Us: +00 0 1234 5678</h2>
-                        <a href="" class="button">Get in touch!</a>
+                <div id="slidearea2" class="slidearea slideAction">
+                        <h1>Central<br/><span>Multimídia</span></h1>
+                        <h2>Espelhamento IOS e ANDROID, câmera de ré, Waze, Google Maps, GPS off-line, YOUTUBE, NETFLIX, e muito mais!</h2>
+                        <a href="" class="button">Entre em Contato</a>
                 </div>
-            </div><div class="slide">
-                <div class="slidearea">
-                        <h1>Película<br/><span>controle Solar</span></h1>
-                        <h2>bloqueio de 99% dos raios UV, Mais proteção e conforto - automovel, residência e indústria</h2>
-                        <a data-action="contato"  class="scroll button">Entre em Contato</a>
-                </div>
-            </div><div class="slide">
-                <div class="slidearea">
-                    <h1>Design is about</h1>
-                    <h1>Design is about</h1>
-                    <h1>Design is about<br/><span>Communication</span></h1>
-                    <h2>Call Us: +00 0 1234 5678</h2>
-                    <a href="" class="button">Get in touch!</a>
+                <div id="slidearea3" class="slidearea slideAction">
+                        <h1>Som<br/><span>Automotivo</span></h1>
+                        <h2>Do original ao hi-end, sempre os melhores para o que você deseja</h2>
+                        <a href="" class="button">Entre em Contato</a>
                 </div>
             </div>
         </div>
@@ -70,6 +61,7 @@
             <div id="pointerBanner0" class="pointer active"></div>
             <div id="pointerBanner1" class="pointer"></div>
             <div id="pointerBanner2" class="pointer"></div>
+            <div id="pointerBanner3" class="pointer"></div>
         </div>
     </section>
 
@@ -81,17 +73,17 @@
                 <div class="section-service">
                     <img src="assets/images/alto-falante.png"  alt="alto-falante" />
                     <h4>Som automotivo</h4>
-                    <p>Venda e instalação de alto-falantes, caixas acústica, módulos de potência, processadores digitais, fontes automotivas.</p>
+                    <p>Venda e instalação de alto-falantes, caixas acústicas, módulos de potência, processadores digitais, fontes automotivas e outros</p>
                 </div>
                 <div class="section-service">
                     <img src="assets/images/insulfilm.png"  alt="insulfilm" />
                     <h4>Insul-Film</h4>
-                    <p>Aplicação de Películas de controle solar para automovel, residência e indústria</p>
+                    <p>Aplicação de películas de controle solar para automóvel, residência e indústria</p>
                 </div>
                 <div class="section-service">
                     <img src="assets/images/multimidia.png"  alt="central multimidia" />
                     <h4>Central Multimídia</h4>
-                    <p>Instalação e Venda das melhores Centrais Multimídias do mercado, com diversas funcionalidades como, <strong>Espelhamento IOS e ANDROID, câmera de ré, Whaze, Google Maps, GPS off-line, YOUTUBE, NETFLIX </strong> e muito mais!!!</p>
+                    <p>Instalação e Venda das melhores Centrais Multimídias do mercado, com diversas funcionalidades como, <strong>Espelhamento IOS e ANDROID, câmera de ré, Waze, Google Maps, GPS off-line, YOUTUBE, NETFLIX </strong> e muito mais!!!</p>
                 </div>
                 <div class="section-service">
                     <img src="assets/images/alarme.png"  alt="alarme" />
@@ -101,7 +93,7 @@
                 <div class="section-service">
                     <img src="assets/images/vidro.png"  alt="vidro eletrico" />
                     <h4>Vidro Elétrico</h4>
-                    <p>Nunca mais esqueça o vidro do seu carro aberto, <strong>Automação</strong> ou <strong>Instalação</strong> de <strong>Vidros Elétricos</strong>, muito mais conforto para você.</p>
+                    <p>Nunca mais esqueça o vidro do seu carro aberto!<br/> <strong>Automação</strong> ou <strong>Instalação</strong> de <strong>Vidros Elétricos</strong>, muito mais conforto para você.</p>
                 </div>
                 <div class="section-service">
                     <img src="assets/images/trava_eletrica.png"  alt="trava eletrica" />
@@ -149,6 +141,7 @@
             </div>
         </div>
     </section>
+
     <section id="sobre" class="default light">
         <div class="section-title">Sobre Nós</div>
         <div class="section-desc">Gallo Sound</div>
@@ -164,7 +157,7 @@
         </div>
     </section>
 
-    <section class="default testimonials">
+    <section id="depoimentos" class="default testimonials">
         <div class="section-title">Depoimentos</div>
         <div class="section-desc">avaliações publicas no google</div>
         <div class="section-body">
@@ -172,10 +165,10 @@
                 <div class="sliders" style="margin-left:0;">
                     <div class="slide">
                         <div class="slidearea">
-                            <div class="section-testimonials--name">Luan henrique Donato</div>
+                            <div class="section-testimonials--name">Luan Henrique Donato</div>
                             <div class="section-testimonials--role"></div>
                             <img class="section-testimonials--quoteimg" src="assets/images/quote.png" alt="quote image"/>
-                            <div class="section-testimonials--quote">A Gallo sound é super especialista.. Conheço e super indico a amigos e familiares .. Atendimento top, feedback ao cliente, confiança no serviço executado . Quero deixa meu comentário todos funcionários estão de parabéns ,meu contato direto sempre foi com Allan ,Alex e Vitor .. que além de profissionais ,sabem do que estão falando e expõe o que desejamos de melhor ,tanto na parte de som , Insulfilm ,leds enfim . Sou um cliente fiel Gallo sound !.</div>
+                            <div class="section-testimonials--quote">A Gallo sound é super especialista.. Conheço e super indico a amigos e familiares .. Atendimento top, feedback ao cliente, confiança no serviço executado . Quero deixa meu comentário todos funcionários estão de parabéns ,meu contato direto sempre foi com Allan ,Alex e Vitor .. que além de profissionais ,sabem do que estão falando e expõe o que desejamos de melhor ,tanto na parte de som , Insulfilm ,leds enfim . Sou um cliente fiel Gallo Sound !.</div>
                         </div>
                     </div><div class="slide">
                         <div class="slidearea">
@@ -197,7 +190,7 @@
         </div>
     </section>
 
-    <section class="default dark">
+    <section id="servivos_clientes" class="default dark">
         <div class="section-title">Serviços e Clientes</div>
         <div class="section-desc">deste 1957 trabalhando com profissionalismo e qualidade</div>
         <div class="section-body">
@@ -222,7 +215,7 @@
         <div class="section-map--area">
             <div class="section-map--info">
                 <div class="section-map--info-title">Contato</div>
-                <div class="section-map--info-desc">Our Agency Located in Melbourne, Australia</div>
+                <div class="section-map--info-desc"></div>
                 <div class="section-map--info-item">
                     <div class="section-map--info-item-img">
                         <img src="assets/images/localizacao.png" alt="localizacao" />
@@ -253,8 +246,11 @@
                         <input type="submit" value="Enviar" class="button" />
                     </form>
                 </div>
-            </div>
-        </div>
+            </div>        
+        </div> 
+    </section>
+    <section>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2653.777817734832!2d-46.87721483882308!3d-23.196111551227375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cf26c39c4c3283%3A0x1ed5ff5b209f8e15!2sGallo%20Sound!5e0!3m2!1spt-BR!2sbr!4v1588518758047!5m2!1spt-BR!2sbr"  frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
     </section>
 </main>
 <footer>

@@ -1,3 +1,56 @@
+// adicionando função scroll
+document.querySelectorAll('.scroll').forEach((item)=>{
+    item.addEventListener('click', topFunction);
+})
+// When the user clicks on the button, scroll to the top of the document
+function topFunction(e) {
+    e.preventDefault();
+    let id = '#'+this.getAttribute("data-action");
+    let go = $(id).position().top;
+    $('html, body').animate({scrollTop:go}, 'slow');
+}
+
+var slide = setInterval(slideAction, 5000);
+window.load =  slide;
+
+// função SLIDE HOME
+function slideAction() {
+    if($(".slideAction").next().length){
+        $(".slideAction").fadeOut().removeClass("slideAction").next().fadeIn().addClass("slideAction");
+        $(".active").removeClass("active").next().addClass("active");
+    } else {
+        $(".slideAction").fadeOut().removeClass("slideAction");
+        $('#slidearea0').fadeIn().addClass("slideAction");
+        $(".active").removeClass("active");
+        $("#pointerBanner0").addClass("active");
+    }
+
+}
+// CLICK POINTER TROCA SLIDE
+let pointer = 0;
+document.querySelectorAll('.banner .pointer').forEach((item, index)=>{
+    item.addEventListener('click', function(e){
+        e.preventDefault();
+        clearInterval(slide);
+        slide = false;
+
+        pointer = index;
+
+        $(".slideAction").fadeOut().removeClass("slideAction");
+        $('#slidearea'+pointer).fadeIn().addClass("slideAction");
+
+        $(".active").removeClass("active");
+        $("#pointerBanner"+pointer).addClass("active");
+        
+        setTimeout(()=>{
+            clearInterval(slide);
+            slide = false;
+            slide = setInterval(slideAction, 5000);
+        }, 5000);
+    });
+});
+
+
 document.querySelector("nav").style.transition = "all 0.3s linear";
 document.querySelector(".menu-opener").addEventListener("click", function(){
     if(document.querySelector("nav").classList == 'navHide') {
@@ -18,15 +71,25 @@ document.querySelectorAll("nav a").forEach((item)=>{
         document.querySelector("nav").classList.remove('navShow');
     });
 });
+
 let serv = 0;
 let btnScrollTop = document.querySelector('#btnScrollTop');
 function scrollFunction() {
   if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+    
+    clearInterval(slide); // parando o slide
+    slide=false;
+    console.log('desativou via scrool');
+
     btnScrollTop.classList.remove('btnScrollTopHide');
     btnScrollTop.classList.add('btnScrollTopShow');
   } else {
     btnScrollTop.classList.remove('btnScrollTopShow');
     btnScrollTop.classList.add('btnScrollTopHide');
+    if(slide == false) {
+        console.log('tivou via scrool');
+        slide = setInterval(slideAction, 5000);
+    }
   }
     let numberServ = document.querySelector('#startNumber').offsetTop;
     if( numberServ < document.body.scrollTop ||  numberServ < document.documentElement.scrollTop && serv == 0) {
@@ -59,52 +122,6 @@ function numberSoma(item, valor, n) {
     }
     
 }
-
-
-// adicionando função scroll
-document.querySelectorAll('.scroll').forEach((item)=>{
-    item.addEventListener('click', topFunction);
-})
-// When the user clicks on the button, scroll to the top of the document
-function topFunction(e) {
-    e.preventDefault();
-    let id = '#'+this.getAttribute("data-action");
-    let go = $(id).position().top;
-    $('html, body').animate({scrollTop:go}, 'slow');
-}
-
-var slide = setInterval(slideAction, 5000);
-window.load =  slide;
-
-function slideAction() {
-    if($(".slideAction").next().length){
-        $(".slideAction").fadeOut().removeClass("slideAction").next().fadeIn().addClass("slideAction");
-        $(".active").removeClass("active").next().addClass("active");
-    } else {
-        $(".slideAction").fadeOut().removeClass("slideAction");
-        $('#slidearea0').fadeIn().addClass("slideAction");
-        $(".active").removeClass("active");
-        $("#pointerBanner0").addClass("active");
-    }
-
-}
-
-let pointer = 0;
-document.querySelectorAll('.banner .pointer').forEach((item, index)=>{
-    item.addEventListener('click', function(e){
-        e.preventDefault();
-        clearInterval(slide);
-
-        pointer = index;
-
-        $(".slideAction").fadeOut().removeClass("slideAction");
-        $('#slidearea'+pointer).fadeIn().addClass("slideAction");
-
-        $(".active").removeClass("active");
-        $("#pointerBanner"+pointer).addClass("active");
-        
-    });
-});
 
 /*
 function slider() {
