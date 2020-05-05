@@ -126,12 +126,32 @@ document.querySelector("#mensagem").addEventListener('click', function(e){
     let a = document.querySelector('#assunto').value;
     let m = document.querySelector('#msg').value;
 
-    console.log(n);
-     console.log(em);
-      console.log(a);
-       console.log(m);
+    if(n.length < 3) {
+        alert('preencha campo NOME corretamente');
+        document.querySelector("#nome").style.background = '#ffcccc';
+        document.querySelector("#nome").focus();
+        return;
+    }
+    if(em.length < 3) {
+        alert('preencha campo EMAIL corretamente');
+        document.querySelector("#email").style.background = '#ffcccc';
+        document.querySelector("#email").focus();
+        return;
+    }
+    if(a.length < 3) {
+        alert('preencha campo ASSUNTO corretamente');
+        document.querySelector("#assunto").style.background = '#ffcccc';
+        document.querySelector("#assunto").focus();
+        return;
+    }
+    if(m.length < 3) {
+        alert('preencha campo MENSAGEM');
+        document.querySelector("#msg").style.background = '#ffcccc';
+        document.querySelector("#msg").focus();
+        return;
+    }
 
-    let url = 'http://localhost/new_site_black/action_email.php';
+    const url = 'https://gallosound.websiteseguro.com/new_site_black/action_email.php';
     const params = {
         method:'POST',
         body:JSON.stringify({
@@ -144,8 +164,23 @@ document.querySelector("#mensagem").addEventListener('click', function(e){
     fetch(url, params)
         .then((r)=>r.json())
         .then((json)=>{
+            console.log(json);
+            if(json.email == false) {
+                alert('erro no campo email');
+                document.querySelector("#email").style.background = '#ffcccc';
+                document.querySelector("#email").focus();
+                return;
+            }
             if(json.envio ==  true) {
-                console.log('enviado com sucesso');
+                alert('EMAIL ENVIADO COM SUCESSO!')
+                document.querySelector('#nome').value = "";
+                document.querySelector('#email').value = "";
+                document.querySelector('#assunto').value = "";
+                document.querySelector('#msg').value = "";
+                document.querySelector("#nome").style.background = '';
+                document.querySelector("#email").style.background = '';
+                document.querySelector("#assunto").style.background = '';
+                document.querySelector("#msg").style.background = '';
             }
         });
 

@@ -1,4 +1,8 @@
+##### LOCAWEB - NAO REMOVER #####
+AddHandler php71-script .php
+suPHP_ConfigPath /home/gsfacil/
+##### LOCAWEB - NAO REMOVER #####
 RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(.*)$ /new_site_black/home.php?url=$1 [QSA,L]
+RewriteRule ^(.*)$ /index.php?url=$1 [QSA,L]

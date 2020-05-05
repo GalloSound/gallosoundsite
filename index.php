@@ -1,11 +1,18 @@
-<!DOCTYPE html>
-<html xmlns="http:www.w3.org/1999/xhtml" xml:lang="pt-BR" lang="pt-BR">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http:www.w3.org/1999/xhtml" lang="pt-br">
 <head>
-    <meta charset="UTF-8" />
-    <title>Gallo Sound</title>
-    <meta name="description" content="Gallo Sound, tradição e qualidade em som automotivo em Jundiaí e região. Trabalhamos com insulfilm, Som, Alarme, Trava Elétrica, vidro elétrico, modulo de conforto, Atualização de GPS e outros. Venha nos conhecer">
-    <meta name="keywords" content=""> <!-- car repair, auto service, car service, automotive, mechanic auto shop, automotive, mechanic workshop, insulfilm jundiai, pelicula de proteção solar -->
+    <title>GALLO SOUND - Som Automotivo Jundiaí, GPS, Alto-falantes, Central Multimidia, Atualização GPS Jundiaí</title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="content-language" content="pt-br" />
     <meta name="author" content="Alex Gallo">
+    <meta name="description" content="Gallo Sound, tradição e qualidade em som automotivo em Jundiaí e região. Trabalhamos com insulfilm, Som, Alarme, Trava Elétrica, vidro elétrico, modulo de conforto, Atualização de GPS e muito mais. Venha nos conhecer">
+    <meta name="keywords" content="som automotivo, central multimidia, insulfilm jundiai, alarme, vidro eletrico, modulo de conforto, trava eletrica, modulo de potencia, pelicula de proteção solar">
+    <meta name="robots" content="Follow" />
+    <meta name="googlebot" content="Follow" />
+    <meta name="rating" content="general" />
+    <meta name="DC.Identifier" content="https://gallosound.websiteseguro.com">
+    <meta name="url" content="https://gallosound.websiteseguro.com" />
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1, user-scalable=no" />
     <link href="assets/font/fonts.css" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
@@ -250,7 +257,7 @@
         </div> 
     </section>
     <section>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2653.777817734832!2d-46.87721483882308!3d-23.196111551227375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cf26c39c4c3283%3A0x1ed5ff5b209f8e15!2sGallo%20Sound!5e0!3m2!1spt-BR!2sbr!4v1588518758047!5m2!1spt-BR!2sbr"  frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2653.777817734832!2d-46.87721483882308!3d-23.196111551227375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cf26c39c4c3283%3A0x1ed5ff5b209f8e15!2sGallo%20Sound!5e0!3m2!1spt-BR!2sbr!4v1588518758047!5m2!1spt-BR!2sbr"  frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" title="endereco"></iframe>
     </section>
 </main>
 <footer>
@@ -266,4 +273,6 @@
 </html>
 <script src="assets/js/jquery.js"></script>
 <script src="assets/js/script.js"></script>
+<!--
 <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css" />
+-->
