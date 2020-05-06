@@ -11,14 +11,15 @@
 	  gtag('config', 'UA-27874578-1');
 	</script>
 
-    <title>GALLO SOUND - Som Automotivo Jundiaí, GPS, Alto-falantes, Central Multimidia, Atualização GPS Jundiaí</title>
+    <title>GALLO SOUND | Som Automotivo | Central Multimidia | Insulfilm jundiai | Atualização GPS Jundiaí</title>
 
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta http-equiv="content-language" content="pt-br" />
     <meta name="author" content="Alex Gallo">
     <meta name="description" content="Gallo Sound, tradição e qualidade em som automotivo em Jundiaí e região. Trabalhamos com insulfilm, Som, Alarme, Trava Elétrica, vidro elétrico, modulo de conforto, Atualização de GPS e muito mais. Venha nos conhecer">
+    <link rel="canonical" href="https://gallosound.websiteseguro.com" />
     <meta name="keywords" content="som automotivo, central multimidia, insulfilm jundiai, alarme, vidro eletrico, modulo de conforto, trava eletrica, modulo de potencia, pelicula de proteção solar">
-    <meta name="robots" content="Follow" />
+    <meta name = "robots" content = "index, follow">
     <meta name="googlebot" content="Follow" />
     <meta name="rating" content="general" />
     <meta name="DC.Identifier" content="https://gallosound.websiteseguro.com">
@@ -26,7 +27,7 @@
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1, user-scalable=no" />
     <link href="assets/font/fonts.css" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
-    <link rel="shortcut icon" href="assets/images/favicon.ico">
+    <link rel="icon" href="assets/images/favicon.ico">
 </head>
 <body id="toBody">
 <header>
