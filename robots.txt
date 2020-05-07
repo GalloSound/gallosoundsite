@@ -2,9 +2,9 @@ User-agent: *
 Disallow: /loja-02
 Disallow: /loja-01
 Disallow: /new_site_black
-Disallow: /assets
 Disallow: /action_email.php
 Disallow: /.htaccess
+Allow: /assets
 Allow: /index.php
 Allow: /action_pages
 Allow: /media

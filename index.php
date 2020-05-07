@@ -96,7 +96,7 @@
                 <div class="section-service">
                     <img src="assets/images/insulfilm.png"  alt="insulfilm" />
                     <h4>Insul-Film</h4>
-                    <p>Aplicação de películas de controle solar para automóvel, residência e indústria</p>
+                    <p>Aplicação de películas de controle solar para automóvel, residência e indústria.</p>
                 </div>
                 <div class="section-service">
                     <img src="assets/images/multimidia.png"  alt="central multimidia" />

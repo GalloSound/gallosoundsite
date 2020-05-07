@@ -296,6 +296,11 @@ CSS DE ÁREAS ESPECÍFICAS
     font-size:13px;
     color:#999;
 }
+.section-service a {
+    color:#999;
+    text-decoration:none;
+    font-weight: bold;
+}
 
 
 .section-projects {
