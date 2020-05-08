@@ -25,18 +25,18 @@
     <meta name="DC.Identifier" content="https://gallosound.websiteseguro.com">
     <meta name="url" content="https://gallosound.websiteseguro.com" />
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1, user-scalable=no" />
-    <link href="assets/font/fonts.css" rel="stylesheet" />
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
-    <link rel="icon" href="assets/images/favicon.ico">
+    <link href="https://gallosound.websiteseguro.com/assets/font/fonts.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="https://gallosound.websiteseguro.com/assets/css/style.css" />
+    <link rel="icon" href="https://gallosound.websiteseguro.com/assets/images/favicon.ico">
 </head>
 <body id="toBody">
 <header>
     <div class="header">
         <div class="logo">
-            <div class="logoimg"><img src="assets/images/gallosound.png" alt="gallosound logo"></div>
+            <div class="logoimg"><img src="https://gallosound.websiteseguro.com/assets/images/gallosound.png" alt="gallosound logo"></div>
         </div>
         <div class="menu">
-            <img class="menu-opener" src="assets/images/menu.png" alt="menu-opener" />
+            <img class="menu-opener" src="https://gallosound.websiteseguro.com/assets/images/menu.png" alt="menu-opener" />
             <nav class="navHide">
                 <ul>
                     <li data-action="home" class="scroll"><a>Home</a></li>
@@ -89,34 +89,39 @@
         <div class="section-body">
             <div class="section-services">
                 <div class="section-service">
-                    <img src="assets/images/alto-falante.png"  alt="alto-falante" />
+                    <img src="https://gallosound.websiteseguro.com/assets/images/alto-falante.png"  alt="alto-falante" />
                     <h4>Som automotivo</h4>
                     <p>Venda e instalação de alto-falantes, caixas acústicas, módulos de potência, processadores digitais, fontes automotivas e outros</p>
                 </div>
                 <div class="section-service">
-                    <img src="assets/images/insulfilm.png"  alt="insulfilm" />
+                    <img src="https://gallosound.websiteseguro.com/assets/images/insulfilm.png"  alt="insulfilm" />
                     <h4>Insul-Film</h4>
                     <p>Aplicação de películas de controle solar para automóvel, residência e indústria.</p>
                 </div>
                 <div class="section-service">
-                    <img src="assets/images/multimidia.png"  alt="central multimidia" />
+                    <img src="https://gallosound.websiteseguro.com/assets/images/multimidia.png"  alt="central multimidia" />
                     <h4>Central Multimídia</h4>
                     <p>Instalação e Venda das melhores Centrais Multimídias do mercado, com diversas funcionalidades como, <strong>Espelhamento IOS e ANDROID, câmera de ré, Waze, Google Maps, GPS off-line, YOUTUBE, NETFLIX </strong> e muito mais!!!</p>
                 </div>
                 <div class="section-service">
-                    <img src="assets/images/alarme.png"  alt="alarme" />
+                    <img src="https://gallosound.websiteseguro.com/assets/images/alarme.png"  alt="alarme" />
                     <h4>Alarme</h4>
                     <p>Mantenha seu veículo protegido com os melhores alarmes do mercado.</p>
                 </div>
                 <div class="section-service">
-                    <img src="assets/images/vidro.png"  alt="vidro eletrico" />
+                    <img src="https://gallosound.websiteseguro.com/assets/images/vidro.png"  alt="vidro eletrico" />
                     <h4>Vidro Elétrico</h4>
                     <p>Nunca mais esqueça o vidro do seu carro aberto!<br/> <strong>Automação</strong> ou <strong>Instalação</strong> de <strong>Vidros Elétricos</strong>, muito mais conforto para você.</p>
                 </div>
                 <div class="section-service">
-                    <img src="assets/images/trava_eletrica.png"  alt="trava eletrica" />
+                    <img src="https://gallosound.websiteseguro.com/assets/images/trava_eletrica.png"  alt="trava eletrica" />
                     <h4>Trava Elétrica</h4>
                     <p>Está cansado de trancar a porta do seu veiculo?<br/> Esqueceu a porta do passageiro aberta? <br/>Instalamos trava elétrica para você.</p>
+                </div>
+                <div class="section-service">
+                    <img src="https://gallosound.websiteseguro.com/assets/images/sensor.png"  alt="sensor de estacionamento" />
+                    <h4>Sensor de Estacionamento</h4>
+                    <p>Evite arranhões no parachoque, estacione com facilidade e segurança, instale um sensor de estacionamento.</p>
                 </div>
             </div>
         </div>
@@ -185,21 +190,21 @@
                         <div class="slidearea">
                             <div class="section-testimonials--name">Luan Henrique Donato</div>
                             <div class="section-testimonials--role"></div>
-                            <img class="section-testimonials--quoteimg" src="assets/images/quote.png" alt="quote image"/>
+                            <img class="section-testimonials--quoteimg" src="https://gallosound.websiteseguro.com/assets/images/quote.png" alt="quote image"/>
                             <div class="section-testimonials--quote">A Gallo sound é super especialista.. Conheço e super indico a amigos e familiares .. Atendimento top, feedback ao cliente, confiança no serviço executado . Quero deixa meu comentário todos funcionários estão de parabéns ,meu contato direto sempre foi com Allan ,Alex e Vitor .. que além de profissionais ,sabem do que estão falando e expõe o que desejamos de melhor ,tanto na parte de som , Insulfilm ,leds enfim . Sou um cliente fiel Gallo Sound !.</div>
                         </div>
                     </div><div class="slide">
                         <div class="slidearea">
                             <div class="section-testimonials--name">Bruno Giovanni Brasil Gangsta</div>
                             <div class="section-testimonials--role"></div>
-                            <img class="section-testimonials--quoteimg" src="assets/images/quote.png" alt="quote image"/>
+                            <img class="section-testimonials--quoteimg" src="https://gallosound.websiteseguro.com/assets/images/quote.png" alt="quote image"/>
                             <div class="section-testimonials--quote">Ótimo atendimento, ótimo trabalho e um ambiente bem legal , nota 10.</div>
                         </div>
                     </div><div id="startNumber" class="slide">
                         <div class="slidearea">
                             <div class="section-testimonials--name">Edegar Ferreira</div>
                             <div class="section-testimonials--role"></div>
-                            <img class="section-testimonials--quoteimg" src="assets/images/quote.png" alt="quote image"/>
+                            <img class="section-testimonials--quoteimg" src="https://gallosound.websiteseguro.com/assets/images/quote.png" alt="quote image"/>
                             <div class="section-testimonials--quote">Muito bem atendido. Serviços executados com cuidados e técnicas.</div>
                         </div>
                     </div>
@@ -236,20 +241,20 @@
                 <div class="section-map--info-desc"></div>
                 <div class="section-map--info-item">
                     <div class="section-map--info-item-img">
-                        <img src="assets/images/localizacao.png" alt="localizacao" />
+                        <img src="https://gallosound.websiteseguro.com/assets/images/localizacao.png" alt="localizacao" />
                     </div>
                     Rua Barão do Rio Branco, 357, Vila Arens, Jundiaí-SP.
                 </div>
                 <div class="section-map--info-item">
                     <div class="section-map--info-item-img">
-                        <img src="assets/images/telefone.png" alt="telefone" />
+                        <img src="https://gallosound.websiteseguro.com/assets/images/telefone.png" alt="telefone" />
                     </div>
                     (11) 3379-2892 - (11) 94757-4606
                 </div>
                 
                 <div class="section-map--info-item">
                     <div class="section-map--info-item-img">
-                        <img src="assets/images/clock.png" alt="horario" />
+                        <img src="https://gallosound.websiteseguro.com/assets/images/clock.png" alt="horario" />
                     </div>
                     Horário de Atendimento <br/> Seg - Sexta: 8:30 as 18:00 <br/> Sábado 8:30 as 12:30 
                 </div>
@@ -278,12 +283,12 @@
         </div>
     </div>
 </footer>
-<a class="desk" href="https://api.whatsapp.com/send?phone=5511947370975"><img class="sticky" src="assets/images/whatsapp.png" alt="Fale Conosco pelo WhatsApp"></a>
+<a class="desk" href="https://api.whatsapp.com/send?phone=5511947370975"><img class="sticky" src="https://gallosound.websiteseguro.com/assets/images/whatsapp.png" alt="Fale Conosco pelo WhatsApp"></a>
 <button id="btnScrollTop" data-action="toBody" class="button sticky btnScrollTopHide scroll">TOP</button>
 </body>
 </html>
-<script src="assets/js/jquery.js"></script>
-<script src="assets/js/script.js"></script>
+<script src="https://gallosound.websiteseguro.com/assets/js/jquery.js"></script>
+<script src="https://gallosound.websiteseguro.com/assets/js/script.js"></script>
 <!--
 <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css" />
 -->
