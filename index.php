@@ -9,6 +9,25 @@
 	  gtag('js', new Date());
 
 	  gtag('config', 'UA-27874578-1');
+      // tag convesão de cliques
+      gtag('config', 'AW-1011588590');
+
+      // event snippet for Clique de Saída conversion page
+      function gtag_report_conversion(url) {
+        console.log(url);
+        var callback = function () {
+          if (typeof(url) != 'undefined') {
+            //window.location = url;
+          }
+        };
+        gtag('event', 'conversion', {
+            'send_to': 'AW-1011588590/UO15CKaAktABEO67ruID',
+            'event_callback': callback
+        });
+        return false;
+      }
+      </script>
+
 	</script>
 
     <title>GALLO SOUND | Som Automotivo | Central Multimidia | Insulfilm jundiai | Atualização GPS Jundiaí</title>
@@ -266,7 +285,7 @@
                         </div>
                         <input id="assunto" type="text" name="assunto" placeholder="ASSUNTO" />
                         <textarea id="msg" name="mensagem" placeholder="MENSAGEM"></textarea>
-                        <input id="mensagem" type="submit" value="Enviar" class="button" />
+                        <input onclick="gtag_report_conversion('Email_Site')" id="mensagem" type="submit" value="Enviar" class="button" />
                     </form>
                 </div>
             </div>        
@@ -283,7 +302,7 @@
         </div>
     </div>
 </footer>
-<a class="desk" href="https://api.whatsapp.com/send?phone=5511947370975"><img class="sticky" src="https://gallosound.websiteseguro.com/assets/images/whatsapp.png" alt="Fale Conosco pelo WhatsApp"></a>
+<a class="desk" href="https://api.whatsapp.com/send?phone=5511947370975" onclick="gtag_report_conversion('https://api.whatsapp.com/send?phone=5511947370975')"><img class="sticky" src="https://gallosound.websiteseguro.com/assets/images/whatsapp.png" alt="Fale Conosco pelo WhatsApp"></a>
 <button id="btnScrollTop" data-action="toBody" class="button sticky btnScrollTopHide scroll">TOP</button>
 </body>
 </html>
