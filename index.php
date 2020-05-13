@@ -285,7 +285,7 @@
                         </div>
                         <input id="assunto" type="text" name="assunto" placeholder="ASSUNTO" />
                         <textarea id="msg" name="mensagem" placeholder="MENSAGEM"></textarea>
-                        <input onclick="gtag_report_conversion('Email_Site')" id="mensagem" type="submit" value="Enviar" class="button" />
+                        <input id="mensagem" type="submit" value="Enviar" class="button" />
                     </form>
                 </div>
             </div>        
