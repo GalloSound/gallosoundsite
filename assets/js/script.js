@@ -75,20 +75,20 @@ document.querySelectorAll("nav a").forEach((item)=>{
 let serv = 0;
 let btnScrollTop = document.querySelector('#btnScrollTop');
 function scrollFunction() {
-  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-    
-    clearInterval(slide); // parando o slide
-    slide=false;
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
 
-    btnScrollTop.classList.remove('btnScrollTopHide');
-    btnScrollTop.classList.add('btnScrollTopShow');
-  } else {
-    btnScrollTop.classList.remove('btnScrollTopShow');
-    btnScrollTop.classList.add('btnScrollTopHide');
-    if(slide == false) {
-        slide = setInterval(slideAction, 5000);
+        clearInterval(slide); // parando o slide
+        slide=false;
+
+        btnScrollTop.classList.remove('btnScrollTopHide');
+        btnScrollTop.classList.add('btnScrollTopShow');
+    } else {
+        btnScrollTop.classList.remove('btnScrollTopShow');
+        btnScrollTop.classList.add('btnScrollTopHide');
+        if(slide == false) {
+            slide = setInterval(slideAction, 5000);
+        }
     }
-  }
     let numberServ = document.querySelector('#startNumber').offsetTop;
     if( numberServ < document.body.scrollTop ||  numberServ < document.documentElement.scrollTop && serv == 0) {
         document.querySelectorAll('.number').forEach((item)=>{
@@ -105,7 +105,7 @@ function scrollFunction() {
 window.onscroll = function() {scrollFunction()};
 
 
-// function soma rapida
+// function soma rapida quantidade de serviços e clientes
 function numberSoma(item, valor, n) {
     let int = setInterval(frame, 1);
     function frame() {
@@ -119,6 +119,7 @@ function numberSoma(item, valor, n) {
     
 }
 
+// formulário envio email
 document.querySelector("#mensagem").addEventListener('click', function(e){
     e.preventDefault();
     let n = document.querySelector('#nome').value;
@@ -185,6 +186,14 @@ document.querySelector("#mensagem").addEventListener('click', function(e){
         });
 
 });
+
+// verificando smartphone / tablet / desk
+if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+    document.querySelector('#btnWhatsApp').href = 'https://api.whatsapp.com/send?phone=5511947370975';
+} else {
+    document.querySelector('#btnWhatsApp').href = 'https://web.whatsapp.com/send?phone=5511947370975';
+    document.querySelector('#btnWhatsApp').target = 'blank';
+}
 
 /*
 function slider() {

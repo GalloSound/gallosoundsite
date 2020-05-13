@@ -30,19 +30,19 @@
 
 	</script>
 
-    <title>GALLO SOUND | Som Automotivo | Central Multimidia | Insulfilm jundiai | Atualização GPS Jundiaí</title>
+    <title>GALLO SOUND | Sensor de Estacionamento | Câmera de Ré</title>
 
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta http-equiv="content-language" content="pt-br" />
     <meta name="author" content="Alex Gallo">
     <meta name="description" content="Gallo Sound, tradição e qualidade em som automotivo em Jundiaí e região. Trabalhamos com insulfilm, Som, Alarme, Trava Elétrica, vidro elétrico, modulo de conforto, Atualização de GPS e muito mais. Venha nos conhecer">
     <link rel="canonical" href="https://gallosound.websiteseguro.com" />
-    <meta name="keywords" content="som automotivo, central multimidia, insulfilm jundiai, alarme, vidro eletrico, modulo de conforto, trava eletrica, modulo de potencia, pelicula de proteção solar">
+    <meta name="keywords" content="sensor de estacionameno, camera de re">
     <meta name = "robots" content = "index, follow">
     <meta name="googlebot" content="Follow" />
     <meta name="rating" content="general" />
     <meta name="DC.Identifier" content="https://gallosound.websiteseguro.com">
-    <meta name="url" content="https://gallosound.websiteseguro.com" />
+    <meta name="url" content="https://gallosound.websiteseguro.com/sensor_de_estacionamento.php" />
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1, user-scalable=no" />
     <link href="https://gallosound.websiteseguro.com/assets/font/fonts.css" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="https://gallosound.websiteseguro.com/assets/css/style.css" />
@@ -58,7 +58,7 @@
             <img class="menu-opener" src="https://gallosound.websiteseguro.com/assets/images/menu.png" alt="menu-opener" />
             <nav class="navHide">
                 <ul>
-                    <li data-action="home" class="scroll"><a>Home</a></li>
+                    <li data-action="home"><a href="https://gallosound.websiteseguro.com">Home</a></li>
                     <li data-action="servicos" class="scroll"><a>Serviços</a></li>
                     <li data-action="trabalhos" class="scroll"><a>Trabalhos</a></li>
                     <li data-action="contato" class="scroll" ><a>Contato</a></li>
@@ -72,33 +72,49 @@
     <section id="banner" class="banner">
         <div class="sliders" style="margin-left:0;">
             <div class="slide">
-                <div id="slidearea0" class="slidearea slideAction">
-                    <h1>Mais de 50 Anos<br/><span>com Você</span></h1>
-                    <h2>Central Multimídia | Insul-Film | Sonorização | Vidro e Trava Elétrica | Sensor Estacionamento | Alarme</h2>
+                <div class="slidearea">
+                    <h1>Sensor de<br/><span>Estacionamento</span></h1>
+                    <h2>Evite arranhões no parachoque, estacione com facilidade e segurança</h2>
                     <a data-action="contato"  class="scroll button">Entre em Contato</a>
-                </div>
-                <div id="slidearea1" class="slidearea slideAction">
-                        <h1>Película<br/><span>controle Solar</span></h1>
-                        <h2>Bloqueio de 99% dos raios UV, Mais proteção e conforto - automóvel, residência e indústria</h2>
-                        <a data-action="contato"  class="scroll button">Entre em Contato</a>
-                </div>
-                <div id="slidearea2" class="slidearea slideAction">
-                        <h1>Central<br/><span>Multimídia</span></h1>
-                        <h2>Espelhamento IOS e ANDROID, câmera de ré, Waze, Google Maps, GPS off-line, YOUTUBE, NETFLIX, e muito mais!</h2>
-                        <a href="" class="button">Entre em Contato</a>
-                </div>
-                <div id="slidearea3" class="slidearea slideAction">
-                        <h1>Som<br/><span>Automotivo</span></h1>
-                        <h2>Do original ao hi-end, sempre os melhores para o que você deseja</h2>
-                        <a href="" class="button">Entre em Contato</a>
                 </div>
             </div>
         </div>
-        <div class="sliders-pointers">
-            <div id="pointerBanner0" class="pointer active"></div>
-            <div id="pointerBanner1" class="pointer"></div>
-            <div id="pointerBanner2" class="pointer"></div>
-            <div id="pointerBanner3" class="pointer"></div>
+    </section>
+    <section id="trabalhos" class="default">
+        <div class="section-title">Trabalhos</div>
+        <div class="section-desc">O que nós fazemos</div>
+        <div class="section-body">
+            <div class="section-projects">
+                <div class="section-projects--photos">
+                    <div class="section-projects--photo">
+                        <div class="section-projects--photoarea">
+                            <div class="section-projects--photoinfo">
+                                <h5>Kit Ultra Led</h5>
+                                <p>Melhora a visibilidade e segurança</p>
+                            </div>
+                            <img src="media/leds.jpg" alt="Kit Leds Farol" />
+                        </div>
+                    </div>
+                    <div class="section-projects--photo">
+                        <div class="section-projects--photoarea">
+                            <div class="section-projects--photoinfo">
+                                <h5>Sensor de Estacionamento</h5>
+                                <p>Estacione com facilidade e segurança</p>
+                            </div>
+                            <img src="media/sensor_estacionamento.jpg" alt="sensor estacionamento" />
+                        </div>
+                    </div>
+                    <div class="section-projects--photo">
+                        <div class="section-projects--photoarea">
+                            <div class="section-projects--photoinfo">
+                                <h5>Película controle Solar</h5>
+                                <p>Mais proteção e conforto</p>
+                            </div>
+                            <img src="media/film.jpg" alt="image" />
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -141,44 +157,6 @@
                     <img src="https://gallosound.websiteseguro.com/assets/images/sensor.png"  alt="sensor de estacionamento" />
                     <h4>Sensor de Estacionamento</h4>
                     <p>Evite arranhões no parachoque, estacione com facilidade e segurança, instale um sensor de estacionamento.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="trabalhos" class="default">
-        <div class="section-title">Trabalhos</div>
-        <div class="section-desc">O que nós fazemos</div>
-        <div class="section-body">
-            <div class="section-projects">
-                <div class="section-projects--photos">
-                    <div class="section-projects--photo">
-                        <div class="section-projects--photoarea">
-                            <div class="section-projects--photoinfo">
-                                <h5>Kit Ultra Led</h5>
-                                <p>Melhora a visibilidade e segurança</p>
-                            </div>
-                            <img src="media/leds.jpg" alt="Kit Leds Farol" />
-                        </div>
-                    </div>
-                    <div class="section-projects--photo">
-                        <div class="section-projects--photoarea">
-                            <div class="section-projects--photoinfo">
-                                <h5>Sensor de Estacionamento</h5>
-                                <p>Estacione com facilidade e segurança</p>
-                            </div>
-                            <img src="media/sensor_estacionamento.jpg" alt="sensor estacionamento" />
-                        </div>
-                    </div>
-                    <div class="section-projects--photo">
-                        <div class="section-projects--photoarea">
-                            <div class="section-projects--photoinfo">
-                                <h5>Película controle Solar</h5>
-                                <p>Mais proteção e conforto</p>
-                            </div>
-                            <img src="media/film.jpg" alt="image" />
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
