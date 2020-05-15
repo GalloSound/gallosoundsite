@@ -1,5 +1,5 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http:www.w3.org/1999/xhtml" lang="pt-br">
+<!DOCTYPE html>
+<html lang="pt-br">
 <head>
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-27874578-1"></script>
@@ -36,7 +36,6 @@
     <meta http-equiv="content-language" content="pt-br" />
     <meta name="author" content="Alex Gallo">
     <meta name="description" content="Gallo Sound, tradição e qualidade em som automotivo em Jundiaí e região. Trabalhamos com insulfilm, Som, Alarme, Trava Elétrica, vidro elétrico, modulo de conforto, Atualização de GPS e muito mais. Venha nos conhecer">
-    <link rel="canonical" href="https://gallosound.websiteseguro.com" />
     <meta name="keywords" content="som automotivo, central multimidia, insulfilm jundiai, alarme, vidro eletrico, modulo de conforto, trava eletrica, modulo de potencia, pelicula de proteção solar">
     <meta name = "robots" content = "index, follow">
     <meta name="googlebot" content="Follow" />
@@ -176,7 +175,16 @@
                                 <h5>Película controle Solar</h5>
                                 <p>Mais proteção e conforto</p>
                             </div>
-                            <img src="media/film.jpg" alt="image" />
+                            <img src="media/film.jpg" alt="film" />
+                        </div>
+                    </div>
+                    <div class="section-projects--photo">
+                        <div class="section-projects--photoarea">
+                            <div class="section-projects--photoinfo">
+                                <h5>Central Multimídia</h5>
+                                <p>Você mais conectado com seu carro</p>
+                            </div>
+                            <img src="media/multimidia.jpg" alt="multimidia" />
                         </div>
                     </div>
                 </div>

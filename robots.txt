@@ -6,5 +6,5 @@ Disallow: /action_email.php
 Disallow: /.htaccess
 Allow: /assets
 Allow: /index.php
-Allow: /action_pages
+Allow: /produtos
 Allow: /media
