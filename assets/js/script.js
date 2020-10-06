@@ -128,31 +128,27 @@ document.querySelector("#mensagem").addEventListener('click', function(e){
     let m = document.querySelector('#msg').value;
 
     if(n.length < 3) {
-        alert('preencha campo NOME corretamente');
         document.querySelector("#nome").style.background = '#ffcccc';
         document.querySelector("#nome").focus();
         return;
     }
     if(em.length < 3) {
-        alert('preencha campo EMAIL corretamente');
         document.querySelector("#email").style.background = '#ffcccc';
         document.querySelector("#email").focus();
         return;
     }
     if(a.length < 3) {
-        alert('preencha campo ASSUNTO corretamente');
         document.querySelector("#assunto").style.background = '#ffcccc';
         document.querySelector("#assunto").focus();
         return;
     }
     if(m.length < 3) {
-        alert('preencha campo MENSAGEM');
         document.querySelector("#msg").style.background = '#ffcccc';
         document.querySelector("#msg").focus();
         return;
     }
 
-    const url = 'https://gallosound.websiteseguro.com/new_site_black/action_email.php';
+    const url = 'https://gallosound.com.br/action_email.php';
     const params = {
         method:'POST',
         body:JSON.stringify({
@@ -165,15 +161,12 @@ document.querySelector("#mensagem").addEventListener('click', function(e){
     fetch(url, params)
         .then((r)=>r.json())
         .then((json)=>{
-            console.log(json);
             if(json.email == false) {
-                alert('erro no campo email');
                 document.querySelector("#email").style.background = '#ffcccc';
                 document.querySelector("#email").focus();
                 return;
             }
             if(json.envio ==  true) {
-                alert('EMAIL ENVIADO COM SUCESSO!')
                 document.querySelector('#nome').value = "";
                 document.querySelector('#email').value = "";
                 document.querySelector('#assunto').value = "";
@@ -182,6 +175,15 @@ document.querySelector("#mensagem").addEventListener('click', function(e){
                 document.querySelector("#email").style.background = '';
                 document.querySelector("#assunto").style.background = '';
                 document.querySelector("#msg").style.background = '';
+                document.querySelector("#mensagem").style.background = '#33cc33';
+                document.querySelector("#mensagem").style.color = '#000';
+                document.querySelector("#mensagem").value = 'Enviado com Sucesso';
+                setTimeout(function() {
+                    document.querySelector("#mensagem").style.background = '#B28756';
+                    document.querySelector("#mensagem").style.color = '#FFF';
+                    document.querySelector("#mensagem").value = 'ENVIAR';
+                }, 2000);
+
             }
         });
 
@@ -189,10 +191,19 @@ document.querySelector("#mensagem").addEventListener('click', function(e){
 
 // verificando smartphone / tablet / desk
 if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-    document.querySelector('#btnWhatsApp').href = 'https://api.whatsapp.com/send?phone=5511947370975';
+    document.querySelector('#btnWhatsApp').href = 'https://api.whatsapp.com/send?phone=5511947574606';
 } else {
-    document.querySelector('#btnWhatsApp').href = 'https://web.whatsapp.com/send?phone=5511947370975';
+    document.querySelector('#btnWhatsApp').href = 'https://web.whatsapp.com/send?phone=5511947574606';
     document.querySelector('#btnWhatsApp').target = 'blank';
+}
+
+
+setInterval(function() {
+    shakeButton();
+}, 1500);
+
+function shakeButton() {
+    $(".shaked").toggleClass('shake');
 }
 
 /*
