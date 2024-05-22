@@ -3,9 +3,7 @@
 
 <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-27874578-1"></script>
-
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
@@ -34,474 +32,245 @@
         function gtag_report_conversionForm(url) {
             var callback = function () { if (typeof (url) != 'undefined') { window.location = url; } }; gtag('event', 'conversion', { 'send_to': 'AW-1011588590/tj_kCN_byrQDEO67ruID', 'event_callback': callback }); return false;
         }
-
     </script>
-
-    <title>GALLO SOUND | Som Automotivo | Central Multimidia | Insulfilm jundiai | Atualização GPS Jundiaí</title>
-
+    <title>GALLO SOUND | Central Multimidia | Insulfilm jundiai | Sensor Estacionamento</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-
     <meta http-equiv="content-language" content="pt-br" />
-
     <meta name="author" content="Alex Gallo">
-
     <meta
         content="Gallo Sound, tradição e qualidade em som automotivo em Jundiaí e região. Trabalhamos com insulfilm, Som, Alarme, Trava Elétrica, vidro elétrico, modulo de conforto, Atualização de GPS e muito mais. Venha nos conhecer"
         name="description">
-
     <meta name="keywords"
-        content="som automotivo, central multimidia, insulfilm jundiai, alarme, vidro eletrico, modulo de conforto, trava eletrica, modulo de potencia, pelicula de proteção solar">
-
+        content="central multimidia, insulfilm jundiai, modulo de conforto, pelicula de proteção solar, sensor de re">
     <meta name="robots" content="index, follow">
-
     <meta name="googlebot" content="Follow" />
-
     <meta name="rating" content="general" />
-
     <meta name="DC.Identifier" content="https://gallosound.com.br">
-
     <meta name="url" content="https://gallosound.com.br" />
-
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1" />
-
     <meta property="og:url" content="https://gallosound.com.br">
     <meta property="og:title" content="Gallo Sound">
     <meta property="og:type" content="website">
     <meta property="og:description"
-        content="Gallo Sound, tradição e qualidade em som automotivo em Jundiaí e região. Trabalhamos com insulfilm, Som, Alarme, Trava Elétrica, vidro elétrico, modulo de conforto, Atualização de GPS e muito mais. Venha nos conhecer">
+        content="Gallo Sound, tradição e qualidade em som automotivo em Jundiaí e região. Trabalhamos com central multimidia, insulfilm, modulo de conforto e muito mais. Venha nos conhecer">
     <meta property="og:image" content="https://gallosound.com.br/media/gallosound.jpg">
-
     <link href="https://gallosound.com.br/assets/font/fonts.css" rel="stylesheet" />
-
     <link rel="stylesheet" type="text/css" href="https://gallosound.com.br/assets/css/style.css" />
-
     <link rel="icon" href="https://gallosound.com.br/assets/images/favicon.ico" />
-
 </head>
 
 <body id="toBody">
-
     <header>
-
         <div class="header">
-
             <div class="logo">
-
                 <div class="logoimg"><img src="https://gallosound.com.br/assets/images/gallosound.png"
                         alt="gallosound logo"></div>
-
             </div>
-
             <div class="menu">
-
                 <img class="menu-opener" src="https://gallosound.com.br/assets/images/menu.png" alt="menu-opener" />
-
                 <nav class="navHide">
-
                     <ul>
-
                         <li data-action="home" class="scroll"><a>Home</a></li>
-
                         <li data-action="servicos" class="scroll"><a>Serviços</a></li>
-
                         <li data-action="trabalhos" class="scroll"><a>Trabalhos</a></li>
-
                         <li data-action="contato" class="scroll"><a>Contato</a></li>
-
                         <li data-action="sobre" class="scroll"><a>Sobre</a></li>
-
                         <li data-action="trabalheconosco" class="scroll"><a style="color:red;"># temos vagas</a></li>
-
                     </ul>
-
                 </nav>
-
             </div>
-
         </div>
-
     </header>
     <main>
         <section id="banner" class="banner">
-
             <div class="sliders" style="margin-left:0;">
-
                 <div class="slide">
-
                     <div id="slidearea0" class="slidearea slideAction">
-
                         <h1>Mais de 50 Anos<br /><span>com Você</span></h1>
-
-                        <h2>Central Multimídia | Insul-Film | Sonorização | Vidro e Trava Elétrica | Sensor
-                            Estacionamento | Alarme</h2>
-
+                        <h2>Central Multimídia | Insul-Film | Sensor de Estacionamento</h2>
                         <a href="#" data-action="contato" class="scroll button">Entre em Contato</a>
-
                     </div>
-
                     <div id="slidearea1" class="slidearea slideAction">
                         <h1>Central<br /><span>Multimídia</span></h1>
-                        <h2>Espelhamento IOS e ANDROID, câmera de ré, Waze, Google Maps, GPS off-line, YOUTUBE, NETFLIX,
+                        <h2>carPlay e Android Auto, câmera de ré, Waze, Google Maps, GPS off-line, YOUTUBE, NETFLIX,
                             e muito mais!</h2>
                         <a href="#" data-action="contato" class="scroll button" class="button">Entre em Contato</a>
                     </div>
-
                     <div id="slidearea2" class="slidearea slideAction">
                         <h1>Película<br /><span>controle Solar</span></h1>
                         <h2>Bloqueio de 99% dos raios UV, Mais proteção e conforto - automóvel, residência e indústria
                         </h2>
                         <a href="#" data-action="contato" class="scroll button">Entre em Contato</a>
                     </div>
-
                     <div id="slidearea3" class="slidearea slideAction">
-
                         <h1>Som<br /><span>Automotivo</span></h1>
-
                         <h2>Do original ao hi-end, sempre os melhores para o que você deseja</h2>
-
                         <a href="#" data-action="contato" class="scroll button" class="button">Entre em Contato</a>
-
                     </div>
-
                 </div>
-
             </div>
-
             <div class="sliders-pointers">
-
                 <div id="pointerBanner0" class="pointer active"></div>
-
                 <div id="pointerBanner1" class="pointer"></div>
-
                 <div id="pointerBanner2" class="pointer"></div>
-
                 <div id="pointerBanner3" class="pointer"></div>
-
             </div>
-
         </section>
         <section id="servicos" class="default light">
-
             <div class="section-title">Serviços</div>
-
             <div class="section-desc">O que podemos fazer por você</div>
-
             <div class="section-body">
-
                 <div class="section-services">
-
                     <div class="section-service">
-
-                        <img src="https://gallosound.com.br/assets/images/alto-falante.png" alt="alto-falante" />
-
-                        <h4>Som automotivo</h4>
-
-                        <p>Venda e instalação de alto-falantes, caixas acústicas, módulos de potência, processadores
-                            digitais, fontes automotivas e outros</p>
-
-                    </div>
-
-                    <div class="section-service">
-
-                        <img src="https://gallosound.com.br/assets/images/insulfilm.png" alt="insulfilm" />
-
-                        <h4>Insul-Film</h4>
-
-                        <p>Aplicação de películas de controle solar para automóvel, residência e indústria.</p>
-
-                    </div>
-
-                    <div class="section-service">
-
                         <img src="https://gallosound.com.br/assets/images/multimidia.png" alt="central multimidia" />
-
                         <h4>Central Multimídia</h4>
-
                         <p>Instalação e Venda das melhores Centrais Multimídias do mercado, com diversas funcionalidades
-                            como, <strong>Espelhamento IOS e ANDROID, câmera de ré, Waze, Google Maps, GPS off-line,
+                            como, <strong>carPlay, Android Auto, câmera de ré, Waze, Google Maps, GPS off-line,
                                 YOUTUBE, NETFLIX </strong> e muito mais!!!</p>
-
                     </div>
-
                     <div class="section-service">
-
-                        <img src="https://gallosound.com.br/assets/images/alarme.png" alt="alarme" />
-
-                        <h4>Alarme</h4>
-
-                        <p>Mantenha seu veículo protegido com os melhores alarmes do mercado.</p>
-
+                        <img src="https://gallosound.com.br/assets/images/insulfilm.png" alt="insulfilm" />
+                        <h4>Insul-Film</h4>
+                        <p>Aplicação de películas de controle solar para automóvel, residência e indústria.</p>
                     </div>
-
                     <div class="section-service">
-
-                        <img src="https://gallosound.com.br/assets/images/vidro.png" alt="vidro eletrico" />
-
-                        <h4>Vidro Elétrico</h4>
-
-                        <p>Nunca mais esqueça o vidro do seu carro aberto!<br /> <strong>Automação</strong> ou
-                            <strong>Instalação</strong> de <strong>Vidros Elétricos</strong>, muito mais conforto para
-                            você.</p>
-
-                    </div>
-
-                    <div class="section-service">
-
-                        <img src="https://gallosound.com.br/assets/images/trava_eletrica.png" alt="trava eletrica" />
-
-                        <h4>Trava Elétrica</h4>
-
-                        <p>Está cansado de trancar a porta do seu veiculo?<br /> Esqueceu a porta do passageiro aberta?
-                            <br />Instalamos trava elétrica para você.</p>
-
-                    </div>
-
-                    <div class="section-service">
-
                         <img src="https://gallosound.com.br/assets/images/sensor.png" alt="sensor de estacionamento" />
-
                         <h4>Sensor de Estacionamento</h4>
-
                         <p>Evite arranhões no parachoque, estacione com facilidade e segurança, instale um sensor de
                             estacionamento.</p>
-
                     </div>
-
+                    <div class="section-service">
+                        <img src="https://gallosound.com.br/assets/images/alto-falante.png" alt="alto-falante" />
+                        <h4>Som automotivo</h4>
+                        <p>Venda e instalação de alto-falantes, caixas acústicas, módulos de potência, processadores
+                            digitais, fontes automotivas e outros</p>
+                    </div>
                 </div>
-
             </div>
-
         </section>
         <section id="trabalhos" class="default">
-
             <div class="section-title">Trabalhos</div>
-
             <div class="section-desc">O que nós fazemos</div>
-
             <div class="section-body">
-
                 <div class="section-projects">
-
                     <div class="section-projects--photos">
-
                         <div class="section-projects--photo">
-
                             <div class="section-projects--photoarea">
-
                                 <div class="section-projects--photoinfo">
-
-                                    <h5>Kit Ultra Led</h5>
-
-                                    <p>Melhora a visibilidade e segurança</p>
-
+                                    <h5>Multimídia Yaris</h5>
+                                    <p>Você mais conectado com seu carro</p>
                                 </div>
-
-                                <img src="media/leds.jpg" alt="Kit Leds Farol" />
-
+                                <img src="media/multimidia_Yaris.jpg" alt="multimidia Toyota Yaris" />
                             </div>
-
                         </div>
-
                         <div class="section-projects--photo">
-
                             <div class="section-projects--photoarea">
-
                                 <div class="section-projects--photoinfo">
-
+                                    <h5>Multimídia Corolla</h5>
+                                    <p>Você mais conectado com seu carro</p>
+                                </div>
+                                <img src="media/multimidia_Corolla.jpg" alt="multimidia Renegade" />
+                            </div>
+                        </div>
+                        <div class="section-projects--photo">
+                            <div class="section-projects--photoarea">
+                                <div class="section-projects--photoinfo">
+                                    <h5>Central Multimídia Civic</h5>
+                                    <p>Você mais conectado com seu carro</p>
+                                </div>
+                                <img src="media/multimidia_civic.jpg" alt="multimidia new civic" />
+                            </div>
+                        </div>
+                        <div class="section-projects--photo">
+                            <div class="section-projects--photoarea">
+                                <div class="section-projects--photoinfo">
                                     <h5>Sensor de Estacionamento</h5>
-
                                     <p>Estacione com facilidade e segurança</p>
-
                                 </div>
-
                                 <img src="media/sensor_estacionamento.jpg" alt="sensor estacionamento" />
-
                             </div>
-
                         </div>
-
                         <div class="section-projects--photo">
-
                             <div class="section-projects--photoarea">
-
                                 <div class="section-projects--photoinfo">
-
+                                    <h5>Kit Ultra Led</h5>
+                                    <p>Melhora a visibilidade e segurança</p>
+                                </div>
+                                <img src="media/leds.jpg" alt="Kit Leds Farol" />
+                            </div>
+                        </div>
+                        <div class="section-projects--photo">
+                            <div class="section-projects--photoarea">
+                                <div class="section-projects--photoinfo">
                                     <h5>Película controle Solar</h5>
-
                                     <p>Mais proteção e conforto</p>
-
                                 </div>
-
                                 <img src="media/film.jpg" alt="film" />
-
                             </div>
-
                         </div>
-
-                        <div class="section-projects--photo">
-
-                            <div class="section-projects--photoarea">
-
-                                <div class="section-projects--photoinfo">
-
-                                    <h5>Multimídia Creta</h5>
-
-                                    <p>Você mais conectado com seu carro</p>
-
-                                </div>
-
-                                <img src="media/multimidia_Creta.jpg" alt="multimidia Creta" />
-
-                            </div>
-
-                        </div>
-
-                        <div class="section-projects--photo">
-
-                            <div class="section-projects--photoarea">
-
-                                <div class="section-projects--photoinfo">
-
-                                    <h5>Multimídia Renegade</h5>
-
-                                    <p>Você mais conectado com seu carro</p>
-
-                                </div>
-
-                                <img src="media/multimidia_Renegade.jpg" alt="multimidia Renegade" />
-
-                            </div>
-
-                        </div>
-
-                        <div class="section-projects--photo">
-
-                            <div class="section-projects--photoarea">
-
-                                <div class="section-projects--photoinfo">
-
-                                    <h5>Central Multimídia</h5>
-
-                                    <p>Você mais conectado com seu carro</p>
-
-                                </div>
-
-                                <img src="media/multimidia_Compass.jpg" alt="multimidia" />
-
-                            </div>
-
-                        </div>
-
                     </div>
-
                 </div>
-
             </div>
-
         </section>
         <section id="sobre" class="default light">
-
             <div class="section-title">Sobre Nós</div>
-
             <div class="section-desc">Gallo Sound</div>
-
             <div class="section-body">
-
                 <div class="section-aboutus">
-
                     <div class="section-aboutus--left">
-
                         <p>Iniciou suas atividades em 1.957, atuando há mais de 60 anos neste segmento, caracteriza-se
                             por uma empresa familiar, situada em uma cidade com aproximadamente 370.126 habitantes no
                             interior do estado de São Paulo. Permanece na mesma localização desde sua fundação</p>
-
                     </div>
-
                     <div class="section-aboutus--right">
-
                         <img src="media/Pirua Gallo.jpg" alt="image" />
-
                     </div>
-
                 </div>
-
             </div>
-
         </section>
         <section id="depoimentos" class="default testimonials">
-
             <div class="section-title">Depoimentos</div>
-
             <div class="section-desc">avaliações publicas no google</div>
-
             <div class="section-body">
-
                 <div class="section-testimonials">
-
                     <div class="sliders" style="margin-left:0;">
-
                         <div class="slide">
-
                             <div class="slidearea">
-
                                 <div class="section-testimonials--name">Luan Henrique Donato</div>
-
                                 <div class="section-testimonials--role"></div>
-
                                 <img class="section-testimonials--quoteimg"
                                     src="https://gallosound.com.br/assets/images/quote.png" alt="quote image" />
-
                                 <div class="section-testimonials--quote">A Gallo sound é super especialista.. Conheço e
                                     super indico a amigos e familiares .. Atendimento top, feedback ao cliente,
                                     confiança no serviço executado . Quero deixa meu comentário todos funcionários estão
                                     de parabéns ,meu contato direto sempre foi com Allan ,Alex e Vitor .. que além de
                                     profissionais ,sabem do que estão falando e expõe o que desejamos de melhor ,tanto
                                     na parte de som , Insulfilm ,leds enfim . Sou um cliente fiel Gallo Sound !.</div>
-
                             </div>
-
                         </div>
                         <div class="slide">
-
                             <div class="slidearea">
-
                                 <div class="section-testimonials--name">Bruno Giovanni Brasil Gangsta</div>
-
                                 <div class="section-testimonials--role"></div>
-
                                 <img class="section-testimonials--quoteimg"
                                     src="https://gallosound.com.br/assets/images/quote.png" alt="quote image" />
-
                                 <div class="section-testimonials--quote">Ótimo atendimento, ótimo trabalho e um ambiente
                                     bem legal , nota 10.</div>
-
                             </div>
-
                         </div>
                         <div id="startNumber" class="slide">
-
                             <div class="slidearea">
-
                                 <div class="section-testimonials--name">Edegar Ferreira</div>
-
                                 <div class="section-testimonials--role"></div>
-
                                 <img class="section-testimonials--quoteimg"
                                     src="https://gallosound.com.br/assets/images/quote.png" alt="quote image" />
-
                                 <div class="section-testimonials--quote">Muito bem atendido. Serviços executados com
                                     cuidados e técnicas.</div>
-
                             </div>
-
                         </div>
-
                     </div>
-
                 </div>
-
             </div>
-
         </section>
 
 
