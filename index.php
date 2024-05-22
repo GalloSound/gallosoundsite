@@ -223,7 +223,7 @@
                             interior do estado de São Paulo. Permanece na mesma localização desde sua fundação</p>
                     </div>
                     <div class="section-aboutus--right">
-                        <img src="media/Pirua Gallo.jpg" alt="image" />
+                        <img src="media/pirua_gallo.jpg" alt="image" />
                     </div>
                 </div>
             </div>
