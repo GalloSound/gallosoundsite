@@ -196,7 +196,7 @@
                                     <h5>Kit Ultra Led</h5>
                                     <p>Melhora a visibilidade e segurança</p>
                                 </div>
-                                <img src="media/leds.jpg" alt="Kit Leds Farol" />
+                                <img src="media/leds_.jpg" alt="Kit Leds Farol" />
                             </div>
                         </div>
                         <div class="section-projects--photo">
