@@ -73,6 +73,8 @@ header {
     font-weight:600;
     text-decoration: none;
     padding:10px 30px;
+    margin-bottom: 40px;
+    margin-top: -68px;
 }
 .button:hover {
     cursor: pointer;
@@ -117,9 +119,12 @@ header {
     margin-right: 17px;
 }
 
+.banner h1, h2{
+    z-index: 1;
+}
+
 
 .banner .slidearea img {
-    margin-bottom: 20px;
     width:480px;
     box-shadow:0px 5px 10px #333;
 }
@@ -136,7 +141,6 @@ header {
 .banner h2 {
     margin-left:20px;
     margin-top:20px;
-    margin-bottom: 20px;
     font-weight:normal;
 }
 .banner .sliders-pointers {
@@ -1052,10 +1056,17 @@ iframe{
         color:#FFF;
         margin-right: 17px;
     }
+    .banner .slidearea .imgslide{
+        width: 108%;
+        height: 160px;
+        background-size:107%;
+        margin-right: -7%;
+        margin-top: 20px;
+    }
 
-    .banner .slidearea img {
-        text-align: center;
-        width:100%;
+    .button {
+        margin-bottom: 40px;
+        margin-top: 20px;
     }
 
     .section-aboutus {
@@ -1223,6 +1234,17 @@ iframe{
     }
 }
 
+@media (max-width:348px) {
+    .banner .slidearea .imgslide{
+        height: 120px;
+    }
+}
+
+@media (max-width:296px) {
+    .banner .slidearea .imgslide{
+        height: 100px;
+    }
+}
 
 .sticky {
   position: fixed;
