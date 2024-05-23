@@ -1,4 +1,4 @@
-<?php require 'config.php'; ?>
+<?php require 'Config.php'; ?>
 <!DOCTYPE html>
 <html lang="pt-br">
 
