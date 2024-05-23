@@ -88,6 +88,7 @@
                     <div id="slidearea0" class="slidearea slideAction">
                         <h1>Mais de 50 Anos<br /><span>com Você</span></h1>
                         <h2>Central Multimídia | Insul-Film | Sensor de Estacionamento</h2>
+                        <img src="media/multimidia_home.png" alt="" width="100%">
                         <a href="#" data-action="contato" class="scroll button">Entre em Contato</a>
                     </div>
                     <div id="slidearea1" class="slidearea slideAction">
