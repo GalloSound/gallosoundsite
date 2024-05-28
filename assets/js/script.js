@@ -56,15 +56,11 @@ document.querySelectorAll(".banner .pointer").forEach((item, index) => {
     });
 });
 
+/*
 // adicionando imagens
 let imgYaris = document.getElementById("imgYaris");
 let imgCorolla = document.getElementById("imgCorolla");
 function addIMG() {
-
-        
-
-
-
 
     if (document.documentElement.scrollTop != 0) {
         if(document.getElementById('haveImgYaris') == null) {
@@ -118,6 +114,7 @@ function addIMG() {
         
     }
 }
+*/
 
 document.querySelector("nav").style.transition = "all 0.3s linear";
 document.querySelector(".menu-opener").addEventListener("click", function () {
@@ -140,6 +137,8 @@ document.querySelectorAll("nav a").forEach((item) => {
     });
 });
 
+
+// scroll 
 let serv = 0;
 let btnScrollTop = document.querySelector("#btnScrollTop");
 function scrollFunction() {
@@ -177,7 +176,7 @@ function scrollFunction() {
 
 window.onscroll = function () {
     scrollFunction();
-    addIMG();
+    //addIMG();
 };
 
 // function soma rapida quantidade de serviços e clientes
