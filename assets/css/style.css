@@ -716,9 +716,22 @@ iframe{
     }
 
 }
-@media (max-height: 641px) {
+@media (min-height: 451px) and (max-height: 641px) {
     .banner h1 {
         margin-top:-90px;
+    }
+}
+@media (max-height: 450px) {
+    .banner h1 {
+        font-size: 35px;
+    }
+    .banner .slidearea img {
+        margin-bottom: 20px;
+        width:310px;
+        box-shadow:0px 5px 10px #333;
+    }
+    .banner .pointer {
+        margin-top: 23px;
     }
 }
 @media (min-width:450px) and (max-width:800px) {
@@ -905,7 +918,8 @@ iframe{
         font-size:35px;
     }
     .banner h2 {
-        font-size:13px;
+        margin-top:10px;
+        font-size:15px;
     }
 
     .banner .slidearea {

@@ -56,7 +56,7 @@
         content="Gallo Sound, tradição e qualidade em som automotivo em Jundiaí e região. Trabalhamos com central multimidia, insulfilm, modulo de conforto e muito mais. Venha nos conhecer">
     <meta property="og:image" content="<?= BASE_URL;?>/media/gallosound.jpg">
     <link href="<?= BASE_URL;?>/assets/font/fonts.css" rel="stylesheet" />
-    <link rel="stylesheet" type="text/css" href="<?= BASE_URL;?>/assets/css/style_min.css" />
+    <link rel="stylesheet" type="text/css" href="<?= BASE_URL;?>/assets/css/style.css" />
     <link rel="icon" href="<?= BASE_URL;?>/assets/images/favicon.ico" />
 </head>
 
@@ -91,24 +91,24 @@
                         <h2>Central Multimídia | Insul-Film | Sensor de Estacionamento</h2>
                         <img src="assets/images/multimidia_home_2.jpg" alt="" width="50%"  >
                         <div class="imgslide" ></div>
-                        <a href="#" data-action="contato" class="scroll button">Entre em Contato</a>
+                        <a href="#" data-action="contato" class="button desk btnWhatsApp">Solicite um Orçamento</a>
                     </div>
                     <div id="slidearea1" class="slidearea slideAction">
                         <h1>Central<br /><span>Multimídia</span></h1>
                         <h2>carPlay e Android Auto, câmera de ré, Waze, Google Maps, GPS off-line, YOUTUBE, NETFLIX,
                             e muito mais!</h2>
-                        <a href="#" data-action="contato" class="scroll button" class="button">Entre em Contato</a>
+                        <a href="#" data-action="contato" class="button desk btnWhatsApp" class="button">Solicite um Orçamento</a>
                     </div>
                     <div id="slidearea2" class="slidearea slideAction">
                         <h1>Película<br /><span>controle Solar</span></h1>
                         <h2>Bloqueio de 99% dos raios UV, Mais proteção e conforto - automóvel, residência e indústria
                         </h2>
-                        <a href="#" data-action="contato" class="scroll button">Entre em Contato</a>
+                        <a href="#" data-action="contato" class="button desk btnWhatsApp">Solicite um Orçamento</a>
                     </div>
                     <div id="slidearea3" class="slidearea slideAction">
                         <h1>Som<br /><span>Automotivo</span></h1>
                         <h2>Do original ao hi-end, sempre os melhores para o que você deseja</h2>
-                        <a href="#" data-action="contato" class="scroll button" class="button">Entre em Contato</a>
+                        <a href="#" data-action="contato" class="scroll button" class="button">Solicite um Orçamento</a>
                     </div>
                 </div>
             </div>
@@ -211,6 +211,7 @@
                                 <img src="media/film.jpg" alt="film" />
                             </div>
                         </div>
+                        <a href="#" data-action="contato" class="scroll button">Solicite um Orçamento</a>
                     </div>
                 </div>
             </div>
@@ -321,7 +322,7 @@
 
         <section id="trabalheconosco" class="default light">
             <div class="section-title">Gostaria de fazer parte da nossa equipe?</div>
-            <div class="section-desc">Estamos Contratando, Vagas para Instaladores Som/Film! <br /> Entre em contato com
+            <div class="section-desc">Estamos Contratando, Vagas para Instaladores Som/Film! <br /> Solicite um Orçamento com
                 nosso WhatsApp, Clique e preencha nosso Formulário Digital Abaixo.<br /><br /><br /> <a
                     style="color:red;" href="<?= BASE_URL;?>/gsfacilsite/cadastro/gallosound57671471000149"
                     target="_blank">Formulário</a></div>

@@ -191,10 +191,14 @@ document.querySelector("#mensagem").addEventListener('click', function(e){
 
 // verificando smartphone / tablet / desk
 if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-    document.querySelector('#btnWhatsApp').href = 'https://api.whatsapp.com/send?phone=5511947574606';
+    document.querySelectorAll('.btnWhatsApp').forEach((item)=>{
+        item.href = 'https://api.whatsapp.com/send?phone=5511947574606';
+    });
 } else {
-    document.querySelector('#btnWhatsApp').href = 'https://web.whatsapp.com/send?phone=5511947574606';
-    document.querySelector('#btnWhatsApp').target = 'blank';
+    document.querySelectorAll('.btnWhatsApp').forEach((item)=>{
+        item.href = 'https://web.whatsapp.com/send?phone=5511947574606';
+        item.target = 'blank';
+    });
 }
 
 
