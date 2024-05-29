@@ -145,20 +145,19 @@
                     <div class="section-service">
                         <img src="<?= BASE_URL;?>/assets/images/alto-falante.png" alt="alto-falante" />
                         <h4>Som automotivo</h4>
-                        <p>Venda e instalação de alto-falantes, caixas acústicas, módulos de potência, processadores
-                            digitais, fontes automotivas e outros</p>
+                        <p>Venda e instalação de alto-falantes, caixas amplificadas e outros, para deixar seu som ainda melhor!</p>
                     </div>
                 </div>
             </div>
         </section>
-        <section id="trabalhos" class="default">
+        <section id="trabalhos" class="default trabalhos_desk">
             <div class="section-title">Trabalhos</div>
             <div class="section-desc">O que nós fazemos</div>
             <div class="section-body">
                 <div class="section-projects">
                     <div class="section-projects--photos">
                         <div class="section-projects--photo">
-                            <div class="section-projects--photoarea" id="imgYaris">
+                            <div class="section-projects--photoarea">
                                 <div class="section-projects--photoinfo">
                                     <h5>Multimídia Yaris</h5>
                                     <p>Você mais conectado com seu carro</p>
@@ -167,7 +166,7 @@
                             </div>
                         </div>
                         <div class="section-projects--photo">
-                            <div class="section-projects--photoarea"id="imgCorolla" >
+                            <div class="section-projects--photoarea" >
                                 <div class="section-projects--photoinfo">
                                     <h5>Multimídia Corolla</h5>
                                     <p>Você mais conectado com seu carro</p>
@@ -209,6 +208,65 @@
                                     <p>Mais proteção e conforto</p>
                                 </div>
                                 <img src="media/film.jpg" alt="insulfilm pelicula controle solar">
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" data-action="contato" class="button desk btnWhatsApp">Solicite um Orçamento</a>
+                </div>
+            </div>
+        </section>
+        <section id="trabalhos" class="default trabalhos_mobile">
+            <div class="section-title">Trabalhos</div>
+            <div class="section-desc">O que nós fazemos</div>
+            <div class="section-body">
+                <div class="section-projects">
+                    <div class="section-projects--photos" style="margin-bottom:20px">
+                        <div class="section-projects--photo">
+                            <div class="section-projects--photoarea" id="imgYaris">
+                                <div class="section-projects--photoinfo">
+                                    <h5>Multimídia Yaris</h5>
+                                    <p>Você mais conectado com seu carro</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section-projects--photo">
+                            <div class="section-projects--photoarea" id="imgCorolla" >
+                                <div class="section-projects--photoinfo">
+                                    <h5>Multimídia Corolla</h5>
+                                    <p>Você mais conectado com seu carro</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section-projects--photo">
+                            <div class="section-projects--photoarea" id="imgCivic" >
+                                <div class="section-projects--photoinfo">
+                                    <h5>Central Multimídia Civic</h5>
+                                    <p>Você mais conectado com seu carro</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section-projects--photo">
+                            <div class="section-projects--photoarea" id="imgSensor" >
+                                <div class="section-projects--photoinfo">
+                                    <h5>Sensor de Estacionamento</h5>
+                                    <p>Estacione com facilidade e segurança</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section-projects--photo">
+                            <div class="section-projects--photoarea" id="imgLed" >
+                                <div class="section-projects--photoinfo">
+                                    <h5>Kit Ultra Led</h5>
+                                    <p>Melhora a visibilidade e segurança</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section-projects--photo">
+                            <div class="section-projects--photoarea" id="imgFilm" >
+                                <div class="section-projects--photoinfo">
+                                    <h5>Película controle Solar</h5>
+                                    <p>Mais proteção e conforto</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -276,59 +334,34 @@
                 </div>
             </div>
         </section>
-
-
-
         <section id="servicos_clientes" class="default dark">
-
             <div class="section-title">Serviços e Clientes</div>
-
             <div class="section-desc">deste 1957 trabalhando com profissionalismo e qualidade</div>
-
             <div class="section-body">
-
                 <div class="section-facts">
-
                     <div class="section-fact">
-
                         <h3 max="1356561" class="number">0</h3>
-
                         <div class="section-fact-line"></div>
-
                         <h4>Serviços Realizados</h4>
-
                         <p>com o avanço rápido da tecnologia já realizamos diversos tipos de serviços, contamos com uma
                             vasta experiência adquiridas ao longo do tempo</p>
-
                     </div>
-
                     <div class="section-fact">
-
                         <h3 max="400000" class="number">0</h3>
-
                         <div class="section-fact-line"></div>
-
                         <h4>Clientes Atendidos</h4>
-
                         <p>pessoas e empresas atendidas durante nossa jornada</p>
-
                     </div>
-
                 </div>
-
             </div>
-
         </section>
-
         <section id="trabalheconosco" class="default light">
             <div class="section-title">Gostaria de fazer parte da nossa equipe?</div>
-            <div class="section-desc">Estamos Contratando, Vagas para Instaladores Som/Film! <br /> Solicite um Orçamento com
+            <div class="section-desc">Estamos Contratando, Vagas para Instaladores Som/Film! <br /> Entre em contato em
                 nosso WhatsApp, Clique e preencha nosso Formulário Digital Abaixo.<br /><br /><br /> <a
                     style="color:red;" href="<?= BASE_URL;?>/gsfacilsite/cadastro/gallosound57671471000149"
                     target="_blank">Formulário</a></div>
         </section>
-
-
         <section id="contato" class="section-map">
 
             <div class="section-map--area">

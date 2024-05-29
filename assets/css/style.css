@@ -163,6 +163,9 @@ header {
     transition:all 1s linear;
 }
 
+.trabalhos_mobile {
+    display: none;
+}
 
 .default {
     padding-top:50px;
@@ -624,8 +627,6 @@ iframe{
         border:0;
         color:#FFF;
     }
-
-
     .section-aboutus {
         flex-direction:column;
     }
@@ -660,8 +661,6 @@ iframe{
     .section-fact {
         min-width:50%;
     }
-
-
     .section-map {
         padding-left:30px;
         padding-right:30px;
@@ -767,6 +766,12 @@ iframe{
     .banner .slidearea img {
         text-align: center;
         width:100%;
+    }
+    .trabalhos_mobile {
+        display: block;
+    }
+    .trabalhos_desk {
+        display:none;
     }
 
     .section-aboutus {
