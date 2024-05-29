@@ -87,6 +87,7 @@ header {
 
 .banner {
     min-height: 500px;
+    max-height: calc(100vh - 100px);;
     height:calc(100vh - 100px);
     background-color:#333;
     background-size:cover;
@@ -571,6 +572,9 @@ iframe{
     }
 }
 @media (min-height: 451px) and (max-height: 641px) {
+    .banner {
+        max-height: 641px;
+    }
     .banner h1 {
         margin-top:-90px;
     }
@@ -578,6 +582,9 @@ iframe{
 @media (max-height: 450px) {
     .banner h1 {
         font-size: 35px;
+    }
+    .banner {
+        max-height: 450px;
     }
     .banner .slidearea img {
         margin-bottom: 20px;
