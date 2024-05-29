@@ -280,7 +280,11 @@ CSS DE ÁREAS ESPECÍFICAS
 .section-service h4 {
     margin-top:20px;
     text-transform: uppercase;
-    font-size:18px;
+    font-size:20px;
+}
+.section-service h3 {
+    margin-top:10px;
+    font-size:15px;
 }
 .section-service p {
     margin-top:10px;
@@ -491,6 +495,7 @@ CSS DE ÁREAS ESPECÍFICAS
 .section-contact--split input:first-child {
     margin-right:20px;
 }
+
 .section-map {
     background-size:cover;
     background-position:center;
@@ -839,6 +844,10 @@ iframe{
     }
     .section-contact--split {
         flex-direction: column;
+    }
+
+    .section-contact .button {
+        margin-top: 30px;
     }
 
     .section-map {

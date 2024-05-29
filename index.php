@@ -46,29 +46,29 @@
     <meta name="robots" content="index, follow">
     <meta name="googlebot" content="Follow" />
     <meta name="rating" content="general" />
-    <meta name="DC.Identifier" content="<?= BASE_URL;?>">
-    <meta name="url" content="<?= BASE_URL;?>" />
+    <meta name="DC.Identifier" content="<?= BASE_URL; ?>">
+    <meta name="url" content="<?= BASE_URL; ?>" />
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1" />
-    <meta property="og:url" content="<?= BASE_URL;?>">
+    <meta property="og:url" content="<?= BASE_URL; ?>">
     <meta property="og:title" content="Gallo Sound">
     <meta property="og:type" content="website">
     <meta property="og:description"
         content="Gallo Sound, tradição e qualidade em som automotivo em Jundiaí e região. Trabalhamos com central multimidia, insulfilm, modulo de conforto e muito mais. Venha nos conhecer">
-    <meta property="og:image" content="<?= BASE_URL;?>/media/gallosound.jpg">
-    <link href="<?= BASE_URL;?>/assets/font/fonts.css" rel="stylesheet" />
-    <link rel="stylesheet" type="text/css" href="<?= BASE_URL;?>/assets/css/style_min.css" />
-    <link rel="icon" href="<?= BASE_URL;?>/assets/images/favicon.ico" />
+    <meta property="og:image" content="<?= BASE_URL; ?>/media/gallosound.jpg">
+    <link href="<?= BASE_URL; ?>/assets/font/fonts.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="<?= BASE_URL; ?>/assets/css/style.css" />
+    <link rel="icon" href="<?= BASE_URL; ?>/assets/images/favicon.ico" />
 </head>
 
 <body id="toBody">
     <header>
         <div class="header">
             <div class="logo">
-                <div class="logoimg"><img src="<?= BASE_URL;?>/assets/images/gallosound.png"
-                        alt="gallosound logo"></div>
+                <div class="logoimg"><img src="<?= BASE_URL; ?>/assets/images/gallosound.png" alt="gallosound logo">
+                </div>
             </div>
             <div class="menu">
-                <img class="menu-opener" src="<?= BASE_URL;?>/assets/images/menu.png" alt="menu-opener" />
+                <img class="menu-opener" src="<?= BASE_URL; ?>/assets/images/menu.png" alt="menu-opener" />
                 <nav class="navHide">
                     <ul>
                         <li data-action="home" class="scroll"><a>Home</a></li>
@@ -89,15 +89,16 @@
                     <div id="slidearea0" class="slidearea slideAction">
                         <h1>Mais de 50 Anos<br /><span>com Você</span></h1>
                         <h2>Central Multimídia | Insul-Film | Sensor de Estacionamento</h2>
-                        <img src="assets/images/multimidia_home_2.jpg" alt="" width="50%"  >
-                        <div class="imgslide" ></div>
+                        <img src="assets/images/multimidia_home_2.jpg" alt="" width="50%">
+                        <div class="imgslide"></div>
                         <a href="#" data-action="contato" class="button desk btnWhatsApp">Solicite um Orçamento</a>
                     </div>
                     <div id="slidearea1" class="slidearea slideAction">
                         <h1>Central<br /><span>Multimídia</span></h1>
                         <h2>carPlay e Android Auto, câmera de ré, Waze, Google Maps, GPS off-line, YOUTUBE, NETFLIX,
                             e muito mais!</h2>
-                        <a href="#" data-action="contato" class="button desk btnWhatsApp" class="button">Solicite um Orçamento</a>
+                        <a href="#" data-action="contato" class="button desk btnWhatsApp" class="button">Solicite um
+                            Orçamento</a>
                     </div>
                     <div id="slidearea2" class="slidearea slideAction">
                         <h1>Película<br /><span>controle Solar</span></h1>
@@ -125,27 +126,31 @@
             <div class="section-body">
                 <div class="section-services">
                     <div class="section-service">
-                        <img src="<?= BASE_URL;?>/assets/images/multimidia.png" alt="central multimidia" />
+                        <img src="<?= BASE_URL; ?>/assets/images/multimidia.png" alt="central multimidia" />
                         <h4>Central Multimídia</h4>
-                        <p>Instalação e Venda das melhores Centrais Multimídias do mercado, com diversas funcionalidades
-                            como, <strong>carPlay, Android Auto, câmera de ré, Waze, Google Maps, GPS off-line,
+                        <h3>Instale sem perder <strong style="color:red;">GARANTIA de FÁBRICA</strong> com integração
+                            original mantendo avisos e funções originais na tela da sua multimídia.<br />Parcelamentos
+                            em <strong style="color:red;">10X SEM JUROS</strong></h3>
+                        <p>Você mais conectado com seu carro, <strong>carPlay, Android Auto, câmera de ré, Waze, Google
+                                Maps, GPS off-line,
                                 YOUTUBE, NETFLIX </strong> e muito mais!!!</p>
                     </div>
                     <div class="section-service">
-                        <img src="<?= BASE_URL;?>/assets/images/insulfilm.png" alt="insulfilm" />
+                        <img src="<?= BASE_URL; ?>/assets/images/insulfilm.png" alt="insulfilm" />
                         <h4>Insul-Film</h4>
                         <p>Aplicação de películas de controle solar para automóvel, residência e indústria.</p>
                     </div>
                     <div class="section-service">
-                        <img src="<?= BASE_URL;?>/assets/images/sensor.png" alt="sensor de estacionamento" />
+                        <img src="<?= BASE_URL; ?>/assets/images/sensor.png" alt="sensor de estacionamento" />
                         <h4>Sensor de Estacionamento</h4>
                         <p>Evite arranhões no parachoque, estacione com facilidade e segurança, instale um sensor de
                             estacionamento.</p>
                     </div>
                     <div class="section-service">
-                        <img src="<?= BASE_URL;?>/assets/images/alto-falante.png" alt="alto-falante" />
+                        <img src="<?= BASE_URL; ?>/assets/images/alto-falante.png" alt="alto-falante" />
                         <h4>Som automotivo</h4>
-                        <p>Venda e instalação de alto-falantes, caixas amplificadas e outros, para deixar seu som ainda melhor!</p>
+                        <p>Venda e instalação de alto-falantes, caixas amplificadas e outros, para deixar seu som ainda
+                            melhor!</p>
                     </div>
                 </div>
             </div>
@@ -166,7 +171,7 @@
                             </div>
                         </div>
                         <div class="section-projects--photo">
-                            <div class="section-projects--photoarea" >
+                            <div class="section-projects--photoarea">
                                 <div class="section-projects--photoinfo">
                                     <h5>Multimídia Corolla</h5>
                                     <p>Você mais conectado com seu carro</p>
@@ -230,7 +235,7 @@
                             </div>
                         </div>
                         <div class="section-projects--photo">
-                            <div class="section-projects--photoarea" id="imgCorolla" >
+                            <div class="section-projects--photoarea" id="imgCorolla">
                                 <div class="section-projects--photoinfo">
                                     <h5>Multimídia Corolla</h5>
                                     <p>Você mais conectado com seu carro</p>
@@ -238,7 +243,7 @@
                             </div>
                         </div>
                         <div class="section-projects--photo">
-                            <div class="section-projects--photoarea" id="imgCivic" >
+                            <div class="section-projects--photoarea" id="imgCivic">
                                 <div class="section-projects--photoinfo">
                                     <h5>Central Multimídia Civic</h5>
                                     <p>Você mais conectado com seu carro</p>
@@ -246,7 +251,7 @@
                             </div>
                         </div>
                         <div class="section-projects--photo">
-                            <div class="section-projects--photoarea" id="imgSensor" >
+                            <div class="section-projects--photoarea" id="imgSensor">
                                 <div class="section-projects--photoinfo">
                                     <h5>Sensor de Estacionamento</h5>
                                     <p>Estacione com facilidade e segurança</p>
@@ -254,7 +259,7 @@
                             </div>
                         </div>
                         <div class="section-projects--photo">
-                            <div class="section-projects--photoarea" id="imgLed" >
+                            <div class="section-projects--photoarea" id="imgLed">
                                 <div class="section-projects--photoinfo">
                                     <h5>Kit Ultra Led</h5>
                                     <p>Melhora a visibilidade e segurança</p>
@@ -262,7 +267,7 @@
                             </div>
                         </div>
                         <div class="section-projects--photo">
-                            <div class="section-projects--photoarea" id="imgFilm" >
+                            <div class="section-projects--photoarea" id="imgFilm">
                                 <div class="section-projects--photoinfo">
                                     <h5>Película controle Solar</h5>
                                     <p>Mais proteção e conforto</p>
@@ -281,7 +286,7 @@
                 <div class="section-aboutus">
                     <div class="section-aboutus--left">
                         <p>Iniciou suas atividades em 1.957, atuando há mais de 60 anos neste segmento, caracteriza-se
-                            por uma empresa familiar, situada em uma cidade com aproximadamente 370.126 habitantes no
+                            por uma empresa familiar, situada em uma cidade com aproximadamente 420.000 habitantes no
                             interior do estado de São Paulo. Permanece na mesma localização desde sua fundação</p>
                     </div>
                     <div class="section-aboutus--right">
@@ -301,7 +306,7 @@
                                 <div class="section-testimonials--name">Luan Henrique Donato</div>
                                 <div class="section-testimonials--role"></div>
                                 <img class="section-testimonials--quoteimg"
-                                    src="<?= BASE_URL;?>/assets/images/quote.png" alt="quote image" />
+                                    src="<?= BASE_URL; ?>/assets/images/quote.png" alt="quote image" />
                                 <div class="section-testimonials--quote">A Gallo sound é super especialista.. Conheço e
                                     super indico a amigos e familiares .. Atendimento top, feedback ao cliente,
                                     confiança no serviço executado . Quero deixa meu comentário todos funcionários estão
@@ -315,7 +320,7 @@
                                 <div class="section-testimonials--name">Bruno Giovanni Brasil Gangsta</div>
                                 <div class="section-testimonials--role"></div>
                                 <img class="section-testimonials--quoteimg"
-                                    src="<?= BASE_URL;?>/assets/images/quote.png" alt="quote image" />
+                                    src="<?= BASE_URL; ?>/assets/images/quote.png" alt="quote image" />
                                 <div class="section-testimonials--quote">Ótimo atendimento, ótimo trabalho e um ambiente
                                     bem legal , nota 10.</div>
                             </div>
@@ -325,7 +330,7 @@
                                 <div class="section-testimonials--name">Edegar Ferreira</div>
                                 <div class="section-testimonials--role"></div>
                                 <img class="section-testimonials--quoteimg"
-                                    src="<?= BASE_URL;?>/assets/images/quote.png" alt="quote image" />
+                                    src="<?= BASE_URL; ?>/assets/images/quote.png" alt="quote image" />
                                 <div class="section-testimonials--quote">Muito bem atendido. Serviços executados com
                                     cuidados e técnicas.</div>
                             </div>
@@ -359,55 +364,39 @@
             <div class="section-title">Gostaria de fazer parte da nossa equipe?</div>
             <div class="section-desc">Estamos Contratando, Vagas para Instaladores Som/Film! <br /> Entre em contato em
                 nosso WhatsApp, Clique e preencha nosso Formulário Digital Abaixo.<br /><br /><br /> <a
-                    style="color:red;" href="<?= BASE_URL;?>/gsfacilsite/cadastro/gallosound57671471000149"
+                    style="color:red;" href="<?= BASE_URL; ?>/gsfacilsite/cadastro/gallosound57671471000149"
                     target="_blank">Formulário</a></div>
         </section>
         <section id="contato" class="section-map">
 
             <div class="section-map--area">
-
                 <div class="section-map--info">
                     <address>
                         <div class="section-map--info-title">Contato</div>
-
                         <div class="section-map--info-desc"></div>
-
                         <div class="section-map--info-item">
-
                             <div class="section-map--info-item-img">
-
-                                <img src="<?= BASE_URL;?>/assets/images/localizacao.png" alt="localizacao" />
-
+                                <img src="<?= BASE_URL; ?>/assets/images/localizacao.png" alt="localizacao" />
                             </div>
-
                             Rua Barão do Rio Branco, 357, Vila Arens, Jundiaí-SP.
-
                         </div>
-
                         <div class="section-map--info-item">
-
                             <div class="section-map--info-item-img">
-
-                                <img src="<?= BASE_URL;?>/assets/images/telefone.png" alt="telefone" />
-
+                                <img src="<?= BASE_URL; ?>/assets/images/localizacao.png" alt="localizacao" />
                             </div>
-
+                            WAZE
+                        </div>
+                        <div class="section-map--info-item">
+                            <div class="section-map--info-item-img">
+                                <img src="<?= BASE_URL; ?>/assets/images/telefone.png" alt="telefone" />
+                            </div>
                             (11) 3379-2892 - (11) 94757-4606
-
                         </div>
-
-
-
                         <div class="section-map--info-item">
-
                             <div class="section-map--info-item-img">
-
-                                <img src="<?= BASE_URL;?>/assets/images/clock.png" alt="horario" />
-
+                                <img src="<?= BASE_URL; ?>/assets/images/clock.png" alt="horario" />
                             </div>
-
                             Horário de Atendimento <br /> Seg - Sexta: 8:30 as 18:00 <br /> Sábado 8:30 as 12:30
-
                         </div>
                     </address>
                     <div id="formContact" class="section-contact">
@@ -465,8 +454,7 @@
     </footer>
 
     <a href="#" id="btnWhatsApp" class="desk btnWhatsApp">
-        <img class="sticky shaked" src="<?= BASE_URL;?>/assets/images/whatsapp.png"
-            alt="Fale Conosco pelo WhatsApp">
+        <img class="sticky shaked" src="<?= BASE_URL; ?>/assets/images/whatsapp.png" alt="Fale Conosco pelo WhatsApp">
     </a>
     <button id="btnScrollTop" data-action="toBody" class="button sticky btnScrollTopHide scroll">TOP</button>
 
@@ -474,6 +462,6 @@
 
 </html>
 
-<script src="<?= BASE_URL;?>/assets/js/jquery.js"></script>
+<script src="<?= BASE_URL; ?>/assets/js/jquery.js"></script>
 
-<script src="<?= BASE_URL;?>/assets/js/script_min.js"></script>
+<script src="<?= BASE_URL; ?>/assets/js/script_min.js"></script>
