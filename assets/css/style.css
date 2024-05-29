@@ -89,7 +89,6 @@ header {
     min-height: 500px;
     height:calc(100vh - 100px);
     background-color:#333;
-    background-image:url('../images/bg.jpg');
     background-size:cover;
     background-position:bottom;
     overflow:hidden;
@@ -566,6 +565,11 @@ iframe{
     }
 
 }
+@media (min-width: 451px ) {
+    .banner {
+        background-image:url('../images/bg_desk.jpg');
+    }
+}
 @media (min-height: 451px) and (max-height: 641px) {
     .banner h1 {
         margin-top:-90px;
@@ -746,6 +750,10 @@ iframe{
     .menu li.active a {
         border:0;
         color:#FFF;
+    }
+
+    .banner {
+        background-image:url('../images/bg_mobile.jpg');
     }
 
     .banner h1 {

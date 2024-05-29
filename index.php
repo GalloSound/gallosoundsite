@@ -56,7 +56,7 @@
         content="Gallo Sound, tradição e qualidade em som automotivo em Jundiaí e região. Trabalhamos com central multimidia, insulfilm, modulo de conforto e muito mais. Venha nos conhecer">
     <meta property="og:image" content="<?= BASE_URL; ?>/media/gallosound.jpg">
     <link href="<?= BASE_URL; ?>/assets/font/fonts.css" rel="stylesheet" />
-    <link rel="stylesheet" type="text/css" href="<?= BASE_URL; ?>/assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="<?= BASE_URL; ?>/assets/css/style_min.css" />
     <link rel="icon" href="<?= BASE_URL; ?>/assets/images/favicon.ico" />
 </head>
 
