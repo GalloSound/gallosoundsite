@@ -37,27 +37,27 @@
     <title>GALLO SOUND | Central Multimidia | Insulfilm jundiai | Sensor Estacionamento</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta http-equiv="content-language" content="pt-br" />
-    <meta name="author" content="Alex Gallo">
+    <meta name="author" content="Alex Gallo" />
     <meta
-        content="Gallo Sound, tradição e qualidade em som automotivo em Jundiaí e região. Trabalhamos com insulfilm, Som, Alarme, Trava Elétrica, vidro elétrico, modulo de conforto, Atualização de GPS e muito mais. Venha nos conhecer"
-        name="description">
+        content="Gallo Sound, mais de 50 anos com você. Trabalhamos com Central Multimidia, insulfilm, sensor de estacionamento, modulo de conforto e muito mais. Venha nos conhecer"
+        name="description" />
     <meta name="keywords"
-        content="central multimidia, insulfilm jundiai, modulo de conforto, pelicula de proteção solar, sensor de re">
-    <meta name="robots" content="index, follow">
+        content="central multimidia, carPlay, Android Auto, insulfilm jundiai, modulo de conforto, pelicula de proteção solar, sensor de re" />
+    <meta name="robots" content="index, follow" />
     <meta name="googlebot" content="Follow" />
     <meta name="rating" content="general" />
-    <meta name="DC.Identifier" content="<?= BASE_URL; ?>">
+    <meta name="DC.Identifier" content="<?= BASE_URL; ?>" />
     <meta name="url" content="<?= BASE_URL; ?>" />
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1" />
-    <meta property="og:url" content="<?= BASE_URL; ?>">
-    <meta property="og:title" content="Gallo Sound">
-    <meta property="og:type" content="website">
+    <meta property="og:url" content="<?= BASE_URL; ?>" />
+    <meta property="og:title" content="Gallo Sound" />
+    <meta property="og:type" content="website" />
     <meta property="og:description"
-        content="Gallo Sound, tradição e qualidade em som automotivo em Jundiaí e região. Trabalhamos com central multimidia, insulfilm, modulo de conforto e muito mais. Venha nos conhecer">
-    <meta property="og:image" content="<?= BASE_URL; ?>/media/gallosound.jpg">
+        content="Gallo Sound, tradição e qualidade em som automotivo em Jundiaí e região. Trabalhamos com central multimidia, insulfilm, modulo de conforto e muito mais. Venha nos conhecer" />
+    <meta property="og:image" content="<?= BASE_URL; ?>/media/gallosound.jpg" />
     <link href="<?= BASE_URL; ?>/assets/font/fonts.css" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="<?= BASE_URL; ?>/assets/css/style_min.css" />
-    <link rel="icon" href="<?= BASE_URL; ?>/assets/images/favicon.ico" />
+    <link rel="icon" href="<?= BASE_URL; ?>/assets/images/favicon.ico" rel="shortcut icon"/>
 </head>
 
 <body id="toBody">
@@ -368,7 +368,6 @@
                     target="_blank">Formulário</a></div>
         </section>
         <section id="contato" class="section-map">
-
             <div class="section-map--area">
                 <div class="section-map--info">
                     <address>
