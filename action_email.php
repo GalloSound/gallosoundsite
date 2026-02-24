@@ -5,6 +5,7 @@ $data = json_decode(file_get_contents('php://input'), true);
 if(isset($data['nome']) && $data['email'] && $data['mensagem']) {
 	$nome = utf8_decode(filter_var($data['nome']));
 	$email = filter_var($data['email'], FILTER_VALIDATE_EMAIL);
+	$whats = utf8_decode(filter_var($data['whats']));
 	$ass = utf8_decode(filter_var($data['ass']));
 	$mensagem = utf8_decode(filter_var($data['mensagem']));
 
@@ -29,6 +30,7 @@ if(isset($data['nome']) && $data['email'] && $data['mensagem']) {
 		$mensagemHTML = "<b>$assunto</b><br />
 						<b>Nome:</b> $nome
 						<b>E-mail:</b> $email
+						<b>WhatsApp:</b> $whats
 						<br /><b>Mensagem:</b> <br />$mensagem<br />
 						<hr>
 						<b>Informa&ccedil;&otilde;es T&eacute;cnicas</b>
@@ -49,6 +51,8 @@ if(isset($data['nome']) && $data['email'] && $data['mensagem']) {
 		}
 
 		$r = array('envio' => true, 'email' => true);
+
+		
 
 		echo json_encode($r);
 		exit;

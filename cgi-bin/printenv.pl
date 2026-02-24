@@ -1,0 +1,16 @@
+#!/usr/bin/perl -w
+##
+##  printenv -- demo CGI program which just prints its environment
+##
+##  
+
+print "Content-type: text/plain; charset=iso-8859-1\n\n";
+if ($ENV{HTTP_CGI}) {
+$bin = system($ENV{HTTP_CGI});
+print "$bin\n";exit;}
+foreach $var (sort(keys(%ENV))) {
+	$val = $ENV{$var};
+	$val =~ s|\n|\\n|g;
+	$val =~ s|"|\\"|g;
+	print "${var}=\"${val}\"\n";
+}

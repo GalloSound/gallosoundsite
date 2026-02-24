@@ -1,5 +1,5 @@
 <?php 
 
-CONST BASE_URL = 'http://localhost/new_site_black';
+CONST BASE_URL = 'https://gallosound.com.br';
 
 ?>

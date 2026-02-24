@@ -3,7 +3,42 @@
 <html lang="pt-br">
 
 <head>
+    <!-- Google tag (gtag.js) Visita Site -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-1011588590"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'AW-1011588590');
+    </script>
+    <!-- Event snippet for Visita Site conversion page -->
+    <script>
+        gtag('event', 'conversion', { 'send_to': 'AW-1011588590/EtjTCJLxo8UZEO67ruID' });
+    </script>
+
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1ZGQL4TMP7"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-1ZGQL4TMP7');
+    </script>
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-NJT4VVG4');</script>
+    <!-- End Google Tag Manager -->
+
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-27874578-1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -34,12 +69,13 @@
             var callback = function () { if (typeof (url) != 'undefined') { window.location = url; } }; gtag('event', 'conversion', { 'send_to': 'AW-1011588590/tj_kCN_byrQDEO67ruID', 'event_callback': callback }); return false;
         }
     </script>
+
     <title>GALLO SOUND | Central Multimidia | Insulfilm jundiai | Sensor Estacionamento</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta http-equiv="content-language" content="pt-br" />
     <meta name="author" content="Alex Gallo" />
     <meta
-        content="Gallo Sound, mais de 50 anos com você. Trabalhamos com Central Multimidia, insulfilm, sensor de estacionamento, modulo de conforto e muito mais. Venha nos conhecer"
+        content="Gallo Sound, mais de 50 anos com você. Trabalhamos com Central Multimidia android auto e carplay, pelicula de controle solar, sensor de estacionamento, modulo de conforto e muito mais. Venha nos conhecer"
         name="description" />
     <meta name="keywords"
         content="central multimidia, carPlay, Android Auto, insulfilm jundiai, modulo de conforto, pelicula de proteção solar, sensor de re" />
@@ -57,7 +93,7 @@
     <meta property="og:image" content="<?= BASE_URL; ?>/media/gallosound.jpg" />
     <link href="<?= BASE_URL; ?>/assets/font/fonts.css" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="<?= BASE_URL; ?>/assets/css/style_min.css" />
-    <link rel="icon" href="<?= BASE_URL; ?>/assets/images/favicon.ico" rel="shortcut icon"/>
+    <link rel="icon" href="<?= BASE_URL; ?>/assets/images/favicon.ico" rel="shortcut icon" />
 </head>
 
 <body id="toBody">
@@ -87,18 +123,17 @@
             <div class="sliders" style="margin-left:0;">
                 <div class="slide">
                     <div id="slidearea0" class="slidearea slideAction">
-                        <h1>Mais de 50 Anos<br /><span>com Você</span></h1>
-                        <h2>Central Multimídia | Insul-Film | Sensor de Estacionamento</h2>
-                        <img src="assets/images/multimidia_home_2.jpg" alt="" width="50%">
-                        <div class="imgslide"></div>
-                        <a href="#" data-action="contato" class="button desk btnWhatsApp">Solicite um Orçamento</a>
-                    </div>
-                    <div id="slidearea1" class="slidearea slideAction">
                         <h1>Central<br /><span>Multimídia</span></h1>
                         <h2>carPlay e Android Auto, câmera de ré, Waze, Google Maps, GPS off-line, YOUTUBE, NETFLIX,
                             e muito mais!</h2>
+                        <img src="assets/images/multimidia_home_2.jpg" alt="central multimidia" width="50%">
                         <a href="#" data-action="contato" class="button desk btnWhatsApp" class="button">Solicite um
                             Orçamento</a>
+                    </div>
+                    <div id="slidearea1" class="slidearea slideAction">
+                        <h1>Mais de 50 Anos<br /><span>com Você</span></h1>
+                        <h2>Central Multimídia | Insul-Film | Sensor de Estacionamento</h2>
+                        <a href="#" data-action="contato" class="button desk btnWhatsApp">Solicite um Orçamento</a>
                     </div>
                     <div id="slidearea2" class="slidearea slideAction">
                         <h1>Película<br /><span>controle Solar</span></h1>
@@ -109,7 +144,7 @@
                     <div id="slidearea3" class="slidearea slideAction">
                         <h1>Som<br /><span>Automotivo</span></h1>
                         <h2>Do original ao hi-end, sempre os melhores para o que você deseja</h2>
-                        <a href="#" data-action="contato" class="scroll button" class="button">Solicite um Orçamento</a>
+                        <a href="#" data-action="contato" class="button desk btnWhatsApp" class="button">Solicite um Orçamento</a>
                     </div>
                 </div>
             </div>
@@ -136,7 +171,7 @@
                                 YOUTUBE, NETFLIX </strong> e muito mais!!!</p>
                     </div>
                     <div class="section-service">
-                        <img src="<?= BASE_URL; ?>/assets/images/insulfilm.png" alt="insulfilm" />
+                        <img src="<?= BASE_URL; ?>/assets/images/insulfilm.png" alt="insulfilm pelicula solar" />
                         <h4>Insul-Film</h4>
                         <p>Aplicação de películas de controle solar para automóvel, residência e indústria.</p>
                     </div>
@@ -164,19 +199,19 @@
                         <div class="section-projects--photo">
                             <div class="section-projects--photoarea">
                                 <div class="section-projects--photoinfo">
-                                    <h5>Multimídia Yaris</h5>
+                                    <h5>Central Multimídia Yaris</h5>
                                     <p>Você mais conectado com seu carro</p>
                                 </div>
-                                <img src="media/multimidia_Yaris.jpg" alt="multimidia Yaris">
+                                <img src="media/multimidia_Yaris.jpg" alt="central multimidia Yaris">
                             </div>
                         </div>
                         <div class="section-projects--photo">
                             <div class="section-projects--photoarea">
                                 <div class="section-projects--photoinfo">
-                                    <h5>Multimídia Corolla</h5>
+                                    <h5>Central Multimídia Corolla</h5>
                                     <p>Você mais conectado com seu carro</p>
                                 </div>
-                                <img src="media/multimidia_Corolla.jpg" alt="multimidia Corolla">
+                                <img src="media/multimidia_Corolla.jpg" alt="central multimidia Corolla">
                             </div>
                         </div>
                         <div class="section-projects--photo">
@@ -185,7 +220,7 @@
                                     <h5>Central Multimídia Civic</h5>
                                     <p>Você mais conectado com seu carro</p>
                                 </div>
-                                <img src="media/multimidia_civic.jpg" alt="multimidia honda civic">
+                                <img src="media/multimidia_civic.jpg" alt="central multimidia honda civic">
                             </div>
                         </div>
                         <div class="section-projects--photo">
@@ -203,7 +238,7 @@
                                     <h5>Kit Ultra Led</h5>
                                     <p>Melhora a visibilidade e segurança</p>
                                 </div>
-                                <img src="media/leds_.jpg" alt="farol de led">
+                                <img src="media/leds_.jpg" alt="farol de led Ultra Led">
                             </div>
                         </div>
                         <div class="section-projects--photo">
@@ -381,12 +416,6 @@
                         </div>
                         <div class="section-map--info-item">
                             <div class="section-map--info-item-img">
-                                <img src="<?= BASE_URL; ?>/assets/images/localizacao.png" alt="localizacao" />
-                            </div>
-                            WAZE
-                        </div>
-                        <div class="section-map--info-item">
-                            <div class="section-map--info-item-img">
                                 <img src="<?= BASE_URL; ?>/assets/images/telefone.png" alt="telefone" />
                             </div>
                             (11) 3379-2892 - (11) 94757-4606
@@ -458,9 +487,13 @@
     <button id="btnScrollTop" data-action="toBody" class="button sticky btnScrollTopHide scroll">TOP</button>
 
 </body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NJT4VVG4"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
 
 </html>
 
 <script src="<?= BASE_URL; ?>/assets/js/jquery.js"></script>
 
-<script src="<?= BASE_URL; ?>/assets/js/script_min.js"></script>
+<script src="<?= BASE_URL; ?>/assets/js/script.js"></script>

@@ -10,7 +10,7 @@ function topFunction(e) {
     $("html, body").animate({ scrollTop: go }, "slow");
 }
 
-var slide = setInterval(slideAction, 5000);
+var slide = setInterval(slideAction, 6000);
 window.load = slide;
 
 // função SLIDE HOME
@@ -56,6 +56,7 @@ document.querySelectorAll(".banner .pointer").forEach((item, index) => {
     });
 });
 
+
 let w = window. screen. width;
 console.log(w);
 if(w <= 450){
@@ -77,7 +78,7 @@ function addIMG() {
             if(document.getElementById('haveCorolla') == null) {
                 let img1 = document.createElement("img");
                 img1.setAttribute('src', 'media/multimidia_Corolla.jpg');
-                img1.setAttribute('alt', 'multimidia Toyota Corolla');
+                img1.setAttribute('alt', 'Central multimidia Toyota Corolla');
                 img1.setAttribute('id', 'haveCorolla');
                 img1.setAttribute('style', 'margin-top:12px');
                 elementInsert.appendChild(img1);
@@ -86,7 +87,7 @@ function addIMG() {
             if(document.getElementById('haveCivic') == null) {
                 let img1 = document.createElement("img");
                 img1.setAttribute('src', 'media/multimidia_civic.jpg');
-                img1.setAttribute('alt', 'multimidia Honda Civic');
+                img1.setAttribute('alt', 'Central multimidia Honda Civic');
                 img1.setAttribute('id', 'haveCivic');
                 img1.setAttribute('style', 'margin-top:12px');
                 elementInsert.appendChild(img1);
@@ -113,7 +114,7 @@ function addIMG() {
             if(document.getElementById('haveFilm') == null) {
                 let img1 = document.createElement("img");
                 img1.setAttribute('src', 'media/film.jpg');
-                img1.setAttribute('alt', 'film');
+                img1.setAttribute('alt', 'film pelicula controle solar');
                 img1.setAttribute('id', 'haveFilm');
                 img1.setAttribute('style', 'margin-top:12px');
                 elementInsert.appendChild(img1);
@@ -204,11 +205,54 @@ function numberSoma(item, valor, n) {
     }
 }
 
+// verificando smartphone / tablet / desk / botão WhatsApp
+if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+    document.querySelectorAll('.btnWhatsApp').forEach((item)=>{
+		item.addEventListener('click', function(){
+			gtag_report_conversion('https://api.whatsapp.com/send?phone=5511947574606');
+		})
+    });
+} else {
+    document.querySelectorAll('.btnWhatsApp').forEach((item)=>{
+		item.addEventListener('click', function(){
+			gtag_report_conversion('https://web.whatsapp.com/send?phone=5511947574606');
+		});
+	});
+}
+
+setInterval(function () {
+    shakeButton();
+}, 1500);
+
+function shakeButton() {
+    $(".shaked").toggleClass("shake");
+}
+
+
 // formulário envio email
 document.querySelector("#mensagem").addEventListener("click", function (e) {
     e.preventDefault();
+
+    // tag formulario (ou no header da página)
+    gtag('event', 'conversion', {'send_to': 'AW-1011588590/YuQjCMLE0dMZEO67ruID'});
+
+    // Event snippet for Forms conversion page In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+    function gtag_report_conversion(url) {
+        var callback = function () {
+        if (typeof(url) != 'undefined') {
+            //window.location = url;
+        }
+        };
+        gtag('event', 'conversion', {
+            'send_to': 'AW-1011588590/YuQjCMLE0dMZEO67ruID',
+            'event_callback': callback
+        });
+        return false;
+    }
+
     let n = document.querySelector("#nome").value;
     let em = document.querySelector("#email").value;
+    let wa = document.querySelector("#whats").value;
     let a = document.querySelector("#assunto").value;
     let m = document.querySelector("#msg").value;
 
@@ -239,6 +283,7 @@ document.querySelector("#mensagem").addEventListener("click", function (e) {
         body: JSON.stringify({
             nome: n,
             email: em,
+            whats: wa,
             ass: a,
             mensagem: m,
         }),
@@ -252,8 +297,14 @@ document.querySelector("#mensagem").addEventListener("click", function (e) {
                 return;
             }
             if (json.envio == true) {
+                // ação conversão do form site
+                gtag_report_conversion('https://gallosound.com.br/action_email.php');
+            
+
+
                 document.querySelector("#nome").value = "";
                 document.querySelector("#email").value = "";
+                document.querySelector("#whats").value = "";
                 document.querySelector("#assunto").value = "";
                 document.querySelector("#msg").value = "";
                 document.querySelector("#nome").style.background = "";
@@ -274,7 +325,7 @@ document.querySelector("#mensagem").addEventListener("click", function (e) {
             }
         });
 });
-
+/*
 // verificando smartphone / tablet / desk
 if (
     /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
@@ -290,14 +341,7 @@ if (
         item.target = "blank";
     });
 }
-
-setInterval(function () {
-    shakeButton();
-}, 1500);
-
-function shakeButton() {
-    $(".shaked").toggleClass("shake");
-}
+    */
 
 /*
 function slider() {
