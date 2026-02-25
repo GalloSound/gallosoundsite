@@ -5,8 +5,20 @@ document.querySelectorAll(".scroll").forEach((item) => {
 // When the user clicks on the button, scroll to the top of the document
 function topFunction(e) {
     e.preventDefault();
-    let id = "#" + this.getAttribute("data-action");
-    let go = $(id).position().top;
+    let action = this.getAttribute("data-action");
+
+    if (action === "trabalhos" && window.matchMedia("(max-width: 768px)").matches) {
+        action = "trabalhos-mobile";
+    }
+
+    let id = "#" + action;
+    let target = $(id);
+
+    if (!target.length) {
+        return;
+    }
+
+    let go = target.position().top;
     $("html, body").animate({ scrollTop: go }, "slow");
 }
 
