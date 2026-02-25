@@ -64,7 +64,7 @@
             return false;
         }
 
-        <!-- Event snippet for Enviar formulário de lead conversion page In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+        // Event snippet for Enviar formulario de lead conversion page.
         function gtag_report_conversionForm(url) {
             var callback = function () { if (typeof (url) != 'undefined') { window.location = url; } }; gtag('event', 'conversion', { 'send_to': 'AW-1011588590/tj_kCN_byrQDEO67ruID', 'event_callback': callback }); return false;
         }
@@ -127,7 +127,7 @@
                         <h2>carPlay e Android Auto, câmera de ré, Waze, Google Maps, GPS off-line, YOUTUBE, NETFLIX,
                             e muito mais!</h2>
                         <img src="assets/images/multimidia_home_2.jpg" alt="central multimidia" width="50%">
-                        <a href="#" data-action="contato" class="button desk btnWhatsApp" class="button">Solicite um
+                        <a href="#" data-action="contato" class="button desk btnWhatsApp">Solicite um
                             Orçamento</a>
                     </div>
                     <div id="slidearea1" class="slidearea slideAction">
@@ -144,7 +144,7 @@
                     <div id="slidearea3" class="slidearea slideAction">
                         <h1>Som<br /><span>Automotivo</span></h1>
                         <h2>Do original ao hi-end, sempre os melhores para o que você deseja</h2>
-                        <a href="#" data-action="contato" class="button desk btnWhatsApp" class="button">Solicite um Orçamento</a>
+                        <a href="#" data-action="contato" class="button desk btnWhatsApp">Solicite um Orçamento</a>
                     </div>
                 </div>
             </div>
@@ -255,7 +255,7 @@
                 </div>
             </div>
         </section>
-        <section id="trabalhos" class="default trabalhos_mobile">
+        <section id="trabalhos-mobile" class="default trabalhos_mobile">
             <div class="section-title">Trabalhos</div>
             <div class="section-desc">O que nós fazemos</div>
             <div class="section-body">
