@@ -39,4 +39,4 @@ build/
 coverage/
 
 .htaccess
-
+Config.php
