@@ -38,5 +38,4 @@ dist/
 build/
 coverage/
 
-.htaccess
 Config.php
