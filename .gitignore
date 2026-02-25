@@ -1,0 +1,42 @@
+# Dependências e build
+vendor/
+node_modules/
+composer.lock
+package-lock.json
+pnpm-lock.yaml
+yarn.lock
+
+# Arquivos de ambiente / segredos
+.env
+.env.*
+*.local.php
+
+# Cache e logs
+cache/
+tmp/
+temp/
+logs/
+*.log
+
+# Arquivos de IDE / editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+*.tmp
+
+# Arquivos de sistema
+.DS_Store
+Thumbs.db
+
+# Cursor / configuração local
+.cursor/
+
+# Saídas diversas
+dist/
+build/
+coverage/
+
+.htaccess
+

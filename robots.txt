@@ -4,7 +4,5 @@ Disallow: /loja-01
 Disallow: /new_site_black
 Disallow: /action_email.php
 Disallow: /.htaccess
-Allow: /assets
-Allow: /index.php
-Allow: /produtos
-Allow: /media
+
+Sitemap: https://gallosound.com.br/sitemap.xml
