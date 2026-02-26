@@ -112,7 +112,6 @@
                         <li data-action="trabalhos" class="scroll"><a>Trabalhos</a></li>
                         <li data-action="contato" class="scroll"><a>Contato</a></li>
                         <li data-action="sobre" class="scroll"><a>Sobre</a></li>
-                        <li data-action="trabalheconosco" class="scroll"><a style="color:red;"># temos vagas</a></li>
                     </ul>
                 </nav>
             </div>
@@ -395,13 +394,6 @@
                 </div>
             </div>
         </section>
-        <section id="trabalheconosco" class="default light">
-            <div class="section-title">Gostaria de fazer parte da nossa equipe?</div>
-            <div class="section-desc">Estamos Contratando, Vagas para Instaladores Som/Film! <br /> Entre em contato em
-                nosso WhatsApp, Clique e preencha nosso Formulário Digital Abaixo.<br /><br /><br /> <a
-                    style="color:red;" href="<?= BASE_URL; ?>/gsfacilsite/cadastro/gallosound57671471000149"
-                    target="_blank">Formulário</a></div>
-        </section>
         <section id="contato" class="section-map">
             <div class="section-map--area">
                 <div class="section-map--info">
@@ -430,32 +422,18 @@
                     <div id="formContact" class="section-contact">
 
                         <form method="POST">
-
                             <div class="section-contact--split">
-
                                 <input id="nome" type="text" name="nome" placeholder="NOME" />
-
                                 <input id="email" type="text" name="email" placeholder="EMAIL" />
-
                             </div>
                             <input id="whats" type="text" name="whats" placeholder="WhatsApp" />
-
-                            <input id="assunto" type="text" name="assunto" placeholder="ASSUNTO" />
-
                             <textarea id="msg" name="mensagem" placeholder="MENSAGEM"></textarea>
-
                             <input id="mensagem" type="submit" value="Enviar" class="button" />
-
                         </form>
-
                     </div>
-
                 </div>
-
             </div>
-
         </section>
-
         <section>
             <address>
                 <iframe
@@ -464,36 +442,23 @@
                     title="endereco"></iframe>
             </address>
         </section>
-
     </main>
-
     <footer>
-
         <div class="footer--area">
-
             <div class="footer--item area2">
-
                 Todos os direitos reservados. Gallo Sound.
-
             </div>
-
         </div>
-
     </footer>
-
     <a href="#" id="btnWhatsApp" class="desk btnWhatsApp">
         <img class="sticky shaked" src="<?= BASE_URL; ?>/assets/images/whatsapp.png" alt="Fale Conosco pelo WhatsApp">
     </a>
     <button id="btnScrollTop" data-action="toBody" class="button sticky btnScrollTopHide scroll">TOP</button>
-
 </body>
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NJT4VVG4"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
-
 </html>
-
 <script src="<?= BASE_URL; ?>/assets/js/jquery.js"></script>
-
 <script src="<?= BASE_URL; ?>/assets/js/script.js"></script>
