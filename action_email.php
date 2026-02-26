@@ -48,7 +48,7 @@ if ($nome === '' || $mensagem === '' || $email === false) {
 }
 
 $emailSender = 'webmaster@gallosound.com.br';
-$emailDestinatario = 'contato@gallosound.com.br';
+$emailDestinatario = 'contato@gallosound.com.br, axrgallo@gmail.com';
 $assunto = 'Formulario de Contato - Site Gallo Sound';
 
 $quebraLinha = (PATH_SEPARATOR === ';') ? "\r\n" : "\n";

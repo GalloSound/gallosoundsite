@@ -2,3 +2,4 @@
 [action_email.php] -> Ajuste do `From` para remetente fixo do dominio e `Reply-To` com e-mail validado, reduzindo risco de injecao em cabecalhos -> [Seguranca]
 [index.php] -> Remocao de atributos `class` duplicados em CTAs, eliminacao de `id` duplicado na secao mobile (`trabalhos-mobile`) e troca de comentario HTML dentro de `<script>` por comentario JS -> [Compatibilidade]
 [assets/js/script.js] -> Ajuste do scroll da navegacao para mapear `trabalhos` para `trabalhos-mobile` em telas mobile, preservando IDs unicos no DOM -> [Compatibilidade]
+[action_email.php] -> Inclusao de novo destinatario no campo To do `mail()` (`axrgallo@gmail.com`) junto ao e-mail de contato principal -> [Compatibilidade]
