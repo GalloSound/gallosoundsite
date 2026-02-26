@@ -3,3 +3,7 @@
 [index.php] -> Remocao de atributos `class` duplicados em CTAs, eliminacao de `id` duplicado na secao mobile (`trabalhos-mobile`) e troca de comentario HTML dentro de `<script>` por comentario JS -> [Compatibilidade]
 [assets/js/script.js] -> Ajuste do scroll da navegacao para mapear `trabalhos` para `trabalhos-mobile` em telas mobile, preservando IDs unicos no DOM -> [Compatibilidade]
 [action_email.php] -> Inclusao de novo destinatario no campo To do `mail()` (`axrgallo@gmail.com`) junto ao e-mail de contato principal -> [Compatibilidade]
+[assets/js/script.js] -> Inclusao de validacoes para elementos inexistentes, troca de `onscroll` por `addEventListener`, melhoria do carregamento de imagens com `loading="lazy"`/`decoding="async"` e tratamento de erro no `fetch` do formulario sem alterar eventos `gtag` -> [Compatibilidade/Performance]
+[index.php] -> Remocao da funcao antiga `gtag_report_conversionForm` com label de conversao legado (`AW-1011588590/tj_kCN_byrQDEO67ruID`), mantendo apenas o fluxo atual de conversao do formulario -> [Compatibilidade/Organizacao]
+[index.php] -> Consolidacao do carregamento `gtag.js` em bloco unico com `config` para Ads (`AW-1011588590`), GA4 (`G-1ZGQL4TMP7`) e UA (`UA-27874578-1`), mantendo GTM e eventos de conversao -> [Compatibilidade/Organizacao]
+[assets/js/script.js] -> Remocao de disparo duplicado de conversao no clique do formulario, mantendo conversao apenas apos envio bem-sucedido e removendo referencias a campo/variavel inexistentes (`assunto`/`a`) -> [Compatibilidade/Conversao]

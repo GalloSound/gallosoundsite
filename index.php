@@ -3,30 +3,19 @@
 <html lang="pt-br">
 
 <head>
-    <!-- Google tag (gtag.js) Visita Site -->
+    <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=AW-1011588590"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
-
         gtag('config', 'AW-1011588590');
+        gtag('config', 'G-1ZGQL4TMP7');
+        gtag('config', 'UA-27874578-1');
     </script>
     <!-- Event snippet for Visita Site conversion page -->
     <script>
         gtag('event', 'conversion', { 'send_to': 'AW-1011588590/EtjTCJLxo8UZEO67ruID' });
-    </script>
-
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1ZGQL4TMP7"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'G-1ZGQL4TMP7');
     </script>
     <!-- Google Tag Manager -->
     <script>(function (w, d, s, l, i) {
@@ -39,16 +28,8 @@
         })(window, document, 'script', 'dataLayer', 'GTM-NJT4VVG4');</script>
     <!-- End Google Tag Manager -->
 
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-27874578-1"></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-        gtag('config', 'UA-27874578-1');
-
-        // tag convesão de cliques
-        gtag('config', 'AW-1011588590');
-
+        // tag conversão de cliques WhatsApp
         function gtag_report_conversion(url) {
             var callback = function () {
                 if (typeof (url) != 'undefined') {
@@ -64,10 +45,6 @@
             return false;
         }
 
-        // Event snippet for Enviar formulario de lead conversion page.
-        function gtag_report_conversionForm(url) {
-            var callback = function () { if (typeof (url) != 'undefined') { window.location = url; } }; gtag('event', 'conversion', { 'send_to': 'AW-1011588590/tj_kCN_byrQDEO67ruID', 'event_callback': callback }); return false;
-        }
     </script>
 
     <title>GALLO SOUND | Central Multimidia | Insulfilm jundiai | Sensor Estacionamento</title>

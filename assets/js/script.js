@@ -23,7 +23,6 @@ function topFunction(e) {
 }
 
 var slide = setInterval(slideAction, 6000);
-window.load = slide;
 
 // função SLIDE HOME
 function slideAction() {
@@ -67,71 +66,33 @@ document.querySelectorAll(".banner .pointer").forEach((item, index) => {
         }, 5000);
     });
 });
-
-
-let w = window. screen. width;
-console.log(w);
-if(w <= 450){
+let w = window.screen.width;
+if (w <= 450) {
     // adicionando imagens
-let elementInsert = document.getElementById("imgYaris");
+    function appendServiceImage(containerId, imageId, src, altText) {
+        var elementInsert = document.getElementById(containerId);
+        if (!elementInsert || document.getElementById(imageId)) {
+            return;
+        }
 
-function addIMG() {
+        let img1 = document.createElement("img");
+        img1.setAttribute("src", src);
+        img1.setAttribute("alt", altText);
+        img1.setAttribute("id", imageId);
+        img1.setAttribute("style", "margin-top:12px");
+        img1.setAttribute("loading", "lazy");
+        img1.setAttribute("decoding", "async");
+        elementInsert.appendChild(img1);
+    }
 
-        if (document.documentElement.scrollTop != 0) {
-            if(document.getElementById('haveImgYaris') == null) {
-                let img1 = document.createElement("img");
-                img1.setAttribute('src', 'media/multimidia_Yaris.jpg');
-                img1.setAttribute('alt', 'multimidia Toyota Yaris');
-                img1.setAttribute('id', 'haveImgYaris');
-                img1.setAttribute('style', 'margin-top:12px');
-                elementInsert.appendChild(img1);
-            }
-            elementInsert = document.getElementById("imgCorolla");
-            if(document.getElementById('haveCorolla') == null) {
-                let img1 = document.createElement("img");
-                img1.setAttribute('src', 'media/multimidia_Corolla.jpg');
-                img1.setAttribute('alt', 'Central multimidia Toyota Corolla');
-                img1.setAttribute('id', 'haveCorolla');
-                img1.setAttribute('style', 'margin-top:12px');
-                elementInsert.appendChild(img1);
-            }
-            elementInsert = document.getElementById("imgCivic");
-            if(document.getElementById('haveCivic') == null) {
-                let img1 = document.createElement("img");
-                img1.setAttribute('src', 'media/multimidia_civic.jpg');
-                img1.setAttribute('alt', 'Central multimidia Honda Civic');
-                img1.setAttribute('id', 'haveCivic');
-                img1.setAttribute('style', 'margin-top:12px');
-                elementInsert.appendChild(img1);
-            }
-            elementInsert = document.getElementById("imgSensor");
-            if(document.getElementById('haveSensor') == null) {
-                let img1 = document.createElement("img");
-                img1.setAttribute('src', 'media/sensor_estacionamento.jpg');
-                img1.setAttribute('alt', 'sensor de estacionamento');
-                img1.setAttribute('id', 'haveSensor');
-                img1.setAttribute('style', 'margin-top:12px');
-                elementInsert.appendChild(img1);
-            }
-            elementInsert = document.getElementById("imgLed");
-            if(document.getElementById('haveLeds') == null) {
-                let img1 = document.createElement("img");
-                img1.setAttribute('src', 'media/leds_.jpg');
-                img1.setAttribute('alt', 'Kit Farol Leds');
-                img1.setAttribute('id', 'haveLeds');
-                img1.setAttribute('style', 'margin-top:12px');
-                elementInsert.appendChild(img1);
-            }
-            elementInsert = document.getElementById("imgFilm");
-            if(document.getElementById('haveFilm') == null) {
-                let img1 = document.createElement("img");
-                img1.setAttribute('src', 'media/film.jpg');
-                img1.setAttribute('alt', 'film pelicula controle solar');
-                img1.setAttribute('id', 'haveFilm');
-                img1.setAttribute('style', 'margin-top:12px');
-                elementInsert.appendChild(img1);
-            }
-            
+    function addIMG() {
+        if (document.documentElement.scrollTop !== 0 || document.body.scrollTop !== 0) {
+            appendServiceImage("imgYaris", "haveImgYaris", "media/multimidia_Yaris.jpg", "multimidia Toyota Yaris");
+            appendServiceImage("imgCorolla", "haveCorolla", "media/multimidia_Corolla.jpg", "Central multimidia Toyota Corolla");
+            appendServiceImage("imgCivic", "haveCivic", "media/multimidia_civic.jpg", "Central multimidia Honda Civic");
+            appendServiceImage("imgSensor", "haveSensor", "media/sensor_estacionamento.jpg", "sensor de estacionamento");
+            appendServiceImage("imgLed", "haveLeds", "media/leds_.jpg", "Kit Farol Leds");
+            appendServiceImage("imgFilm", "haveFilm", "media/film.jpg", "film pelicula controle solar");
         }
     }
 } else {
@@ -141,24 +102,36 @@ function addIMG() {
 }
 
 
-document.querySelector("nav").style.transition = "all 0.3s linear";
-document.querySelector(".menu-opener").addEventListener("click", function () {
-    if (document.querySelector("nav").classList == "navHide") {
-        document.querySelector("nav").classList.remove("navHide");
-        document.querySelector("nav").classList.add("navShow");
-    } else {
-        document.querySelector("nav").classList.remove("navShow");
-        document.querySelector("nav").classList.add("navHide");
-    }
-});
-document.querySelector("main").addEventListener("click", function () {
-    document.querySelector("nav").classList.add("navHide");
-    document.querySelector("nav").classList.remove("navShow");
-});
+const navElement = document.querySelector("nav");
+const menuOpener = document.querySelector(".menu-opener");
+const mainElement = document.querySelector("main");
+if (navElement) {
+    navElement.style.transition = "all 0.3s linear";
+}
+if (menuOpener && navElement) {
+    menuOpener.addEventListener("click", function () {
+        if (navElement.classList.contains("navHide")) {
+            navElement.classList.remove("navHide");
+            navElement.classList.add("navShow");
+        } else {
+            navElement.classList.remove("navShow");
+            navElement.classList.add("navHide");
+        }
+    });
+}
+if (mainElement && navElement) {
+    mainElement.addEventListener("click", function () {
+        navElement.classList.add("navHide");
+        navElement.classList.remove("navShow");
+    });
+}
 document.querySelectorAll("nav a").forEach((item) => {
     item.addEventListener("click", function () {
-        document.querySelector("nav").classList.add("navHide");
-        document.querySelector("nav").classList.remove("navShow");
+        if (!navElement) {
+            return;
+        }
+        navElement.classList.add("navHide");
+        navElement.classList.remove("navShow");
     });
 });
 
@@ -174,16 +147,24 @@ function scrollFunction() {
         clearInterval(slide); // parando o slide
         slide = false;
 
-        btnScrollTop.classList.remove("btnScrollTopHide");
-        btnScrollTop.classList.add("btnScrollTopShow");
+        if (btnScrollTop) {
+            btnScrollTop.classList.remove("btnScrollTopHide");
+            btnScrollTop.classList.add("btnScrollTopShow");
+        }
     } else {
-        btnScrollTop.classList.remove("btnScrollTopShow");
-        btnScrollTop.classList.add("btnScrollTopHide");
+        if (btnScrollTop) {
+            btnScrollTop.classList.remove("btnScrollTopShow");
+            btnScrollTop.classList.add("btnScrollTopHide");
+        }
         if (slide == false) {
             slide = setInterval(slideAction, 5000);
         }
     }
-    let numberServ = document.querySelector("#startNumber").offsetTop;
+    let numberStartElement = document.querySelector("#startNumber");
+    if (!numberStartElement) {
+        return;
+    }
+    let numberServ = numberStartElement.offsetTop;
     if (
         numberServ < document.body.scrollTop ||
         (numberServ < document.documentElement.scrollTop && serv == 0)
@@ -199,20 +180,21 @@ function scrollFunction() {
     }
 }
 
-window.onscroll = function () {
+window.addEventListener("scroll", function () {
     scrollFunction();
     addIMG();
-};
+});
 
 // function soma rapida quantidade de serviços e clientes
 function numberSoma(item, valor, n) {
     let int = setInterval(frame, 1);
+    let targetValue = parseFloat(valor);
     function frame() {
-        if (n >= valor) {
+        if (n >= targetValue) {
             clearInterval(int);
         } else {
             n = parseFloat(n + 2656);
-            item.innerHTML = n.toLocaleString("pt-BR");
+            item.textContent = n.toLocaleString("pt-BR");
         }
     }
 }
@@ -242,101 +224,95 @@ function shakeButton() {
 
 
 // formulário envio email
-document.querySelector("#mensagem").addEventListener("click", function (e) {
-    e.preventDefault();
+const mensagemBtn = document.querySelector("#mensagem");
+if (mensagemBtn) {
+    mensagemBtn.addEventListener("click", function (e) {
+        e.preventDefault();
 
-    // tag formulario (ou no header da página)
-    gtag('event', 'conversion', {'send_to': 'AW-1011588590/YuQjCMLE0dMZEO67ruID'});
-
-    // Event snippet for Forms conversion page In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
-    function gtag_report_conversion(url) {
-        var callback = function () {
-        if (typeof(url) != 'undefined') {
-            //window.location = url;
+        function gtag_report_conversion_form() {
+            if (typeof gtag !== "function") {
+                return;
+            }
+            gtag("event", "conversion", {
+                send_to: "AW-1011588590/YuQjCMLE0dMZEO67ruID",
+            });
         }
-        };
-        gtag('event', 'conversion', {
-            'send_to': 'AW-1011588590/YuQjCMLE0dMZEO67ruID',
-            'event_callback': callback
-        });
-        return false;
-    }
 
     let n = document.querySelector("#nome").value;
     let em = document.querySelector("#email").value;
     let wa = document.querySelector("#whats").value;
-    let a = document.querySelector("#assunto").value;
     let m = document.querySelector("#msg").value;
 
-    if (n.length < 3) {
-        document.querySelector("#nome").style.background = "#ffcccc";
-        document.querySelector("#nome").focus();
-        return;
-    }
-    if (em.length < 3) {
-        document.querySelector("#email").style.background = "#ffcccc";
-        document.querySelector("#email").focus();
-        return;
-    }
-    if (a.length < 3) {
-        document.querySelector("#assunto").style.background = "#ffcccc";
-        document.querySelector("#assunto").focus();
-        return;
-    }
-    if (m.length < 3) {
-        document.querySelector("#msg").style.background = "#ffcccc";
-        document.querySelector("#msg").focus();
-        return;
-    }
+        if (n.length < 3) {
+            document.querySelector("#nome").style.background = "#ffcccc";
+            document.querySelector("#nome").focus();
+            return;
+        }
+        if (em.length < 3) {
+            document.querySelector("#email").style.background = "#ffcccc";
+            document.querySelector("#email").focus();
+            return;
+        }
+        if (m.length < 3) {
+            document.querySelector("#msg").style.background = "#ffcccc";
+            document.querySelector("#msg").focus();
+            return;
+        }
 
-    const url = "https://gallosound.com.br/action_email.php";
-    const params = {
-        method: "POST",
-        body: JSON.stringify({
-            nome: n,
-            email: em,
-            whats: wa,
-            ass: a,
-            mensagem: m,
-        }),
-    };
-    fetch(url, params)
-        .then((r) => r.json())
-        .then((json) => {
-            if (json.email == false) {
-                document.querySelector("#email").style.background = "#ffcccc";
-                document.querySelector("#email").focus();
-                return;
-            }
-            if (json.envio == true) {
-                // ação conversão do form site
-                gtag_report_conversion('https://gallosound.com.br/action_email.php');
-            
+        const url = "https://gallosound.com.br/action_email.php";
+        const params = {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+                nome: n,
+                email: em,
+                whats: wa,
+                mensagem: m,
+            }),
+        };
+        fetch(url, params)
+            .then((r) => r.json())
+            .then((json) => {
+                if (json.email === false) {
+                    document.querySelector("#email").style.background = "#ffcccc";
+                    document.querySelector("#email").focus();
+                    return;
+                }
+                if (json.envio === true) {
+                    // ação conversão do form site
+                    gtag_report_conversion_form();
 
-
-                document.querySelector("#nome").value = "";
-                document.querySelector("#email").value = "";
-                document.querySelector("#whats").value = "";
-                document.querySelector("#assunto").value = "";
-                document.querySelector("#msg").value = "";
-                document.querySelector("#nome").style.background = "";
-                document.querySelector("#email").style.background = "";
-                document.querySelector("#assunto").style.background = "";
-                document.querySelector("#msg").style.background = "";
-                document.querySelector("#mensagem").style.background =
-                    "#33cc33";
-                document.querySelector("#mensagem").style.color = "#000";
-                document.querySelector("#mensagem").value =
-                    "Enviado com Sucesso";
+                    document.querySelector("#nome").value = "";
+                    document.querySelector("#email").value = "";
+                    document.querySelector("#whats").value = "";
+                    document.querySelector("#msg").value = "";
+                    document.querySelector("#nome").style.background = "";
+                    document.querySelector("#email").style.background = "";
+                    document.querySelector("#msg").style.background = "";
+                    mensagemBtn.style.background = "#33cc33";
+                    mensagemBtn.style.color = "#000";
+                    mensagemBtn.value = "Enviado com Sucesso";
+                    setTimeout(function () {
+                        mensagemBtn.style.background = "#B28756";
+                        mensagemBtn.style.color = "#FFF";
+                        mensagemBtn.value = "ENVIAR";
+                    }, 2000);
+                }
+            })
+            .catch(function () {
+                mensagemBtn.style.background = "#ffcccc";
+                mensagemBtn.style.color = "#000";
+                mensagemBtn.value = "Erro ao enviar";
                 setTimeout(function () {
-                    document.querySelector("#mensagem").style.background =
-                        "#B28756";
-                    document.querySelector("#mensagem").style.color = "#FFF";
-                    document.querySelector("#mensagem").value = "ENVIAR";
+                    mensagemBtn.style.background = "#B28756";
+                    mensagemBtn.style.color = "#FFF";
+                    mensagemBtn.value = "ENVIAR";
                 }, 2000);
-            }
-        });
-});
+            });
+    });
+}
 /*
 // verificando smartphone / tablet / desk
 if (
