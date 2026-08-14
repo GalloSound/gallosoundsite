@@ -199,19 +199,111 @@ function numberSoma(item, valor, n) {
     }
 }
 
+function normalizeEmail(value) {
+    if (!value || typeof value !== "string") {
+        return "";
+    }
+    return value.trim().toLowerCase();
+}
+
+function normalizePhone(value) {
+    if (!value || typeof value !== "string") {
+        return "";
+    }
+
+    var digits = value.replace(/\D/g, "");
+    if (!digits) {
+        return "";
+    }
+
+    if (digits.indexOf("55") !== 0) {
+        digits = "55" + digits;
+    }
+
+    return "+" + digits;
+}
+
+function normalizeName(value) {
+    if (!value || typeof value !== "string") {
+        return "";
+    }
+    return value.trim().toLowerCase();
+}
+
+function buildEnhancedUserData() {
+    var payload = {};
+    var emailInput = document.querySelector("#email");
+    var whatsInput = document.querySelector("#whats");
+    var nomeInput = document.querySelector("#nome");
+
+    var email = normalizeEmail(emailInput ? emailInput.value : "");
+    var phone = normalizePhone(whatsInput ? whatsInput.value : "");
+    var fullName = normalizeName(nomeInput ? nomeInput.value : "");
+
+    if (email) {
+        payload.email = email;
+    }
+    if (phone) {
+        payload.phone_number = phone;
+    }
+
+    if (fullName) {
+        var names = fullName.split(/\s+/);
+        if (names.length > 1) {
+            payload.address = {
+                first_name: names[0],
+                last_name: names.slice(1).join(" "),
+                country: "BR",
+            };
+        }
+    }
+
+    return payload;
+}
+
+function setEnhancedUserDataInPage() {
+    if (typeof gtag !== "function") {
+        return;
+    }
+
+    var userData = buildEnhancedUserData();
+    if (!Object.keys(userData).length) {
+        return;
+    }
+
+    gtag("set", "user_data", userData);
+}
+
+var lastWhatsAppClickAt = 0;
+
+function trackWhatsAppClick(url) {
+    var now = Date.now();
+    if (now - lastWhatsAppClickAt < 1200) {
+        return;
+    }
+    lastWhatsAppClickAt = now;
+
+    setEnhancedUserDataInPage();
+    gtag_report_conversion(url);
+}
+
 // verificando smartphone / tablet / desk / botão WhatsApp
-if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-    document.querySelectorAll('.btnWhatsApp').forEach((item)=>{
-		item.addEventListener('click', function(){
-			gtag_report_conversion('https://api.whatsapp.com/send?phone=5511947574606');
-		})
+if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+    document.querySelectorAll(".btnWhatsApp").forEach((item) => {
+        item.addEventListener("click", function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            trackWhatsAppClick("https://api.whatsapp.com/send?phone=5511947574606");
+        });
     });
 } else {
-    document.querySelectorAll('.btnWhatsApp').forEach((item)=>{
-		item.addEventListener('click', function(){
-			gtag_report_conversion('https://web.whatsapp.com/send?phone=5511947574606');
-		});
-	});
+    document.querySelectorAll(".btnWhatsApp").forEach((item) => {
+        item.addEventListener("click", function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            trackWhatsAppClick("https://web.whatsapp.com/send?phone=5511947574606");
+        });
+    });
 }
 
 setInterval(function () {
@@ -233,6 +325,7 @@ if (mensagemBtn) {
             if (typeof gtag !== "function") {
                 return;
             }
+            setEnhancedUserDataInPage();
             gtag("event", "conversion", {
                 send_to: "AW-1011588590/YuQjCMLE0dMZEO67ruID",
             });
