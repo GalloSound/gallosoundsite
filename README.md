@@ -1,12 +1,15 @@
-New Site Black Gallo Sound
+# Gallo Sound Site
 
-usar para testes e verificações de tag
-https://tagassistant.google.com/
+O site roda no runtime PHP compartilhado de `php/compose.yaml`. O mesmo código
+é usado no Mac e na VPS.
 
-comandos git
-commando
-git update-index --assume-unchanged src/Config.php
+Configure a URL pública por meio de `APP_BASE_URL_GALLOSOUNDSITE`. O valor
+local padrão é:
 
-git update-index --assume-unchanged Config.php
+`http://localhost:8082/gallosoundsite/`
 
-git update-index --assume-unchanged pasta/arquivo.php
+O `Config.php` é versionado e lê a variável diretamente do ambiente do
+container.
+
+Para testes e verificações de tags:
+<https://tagassistant.google.com/>

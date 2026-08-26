@@ -1,4 +1,4 @@
-<?php require 'Config.php'; ?>
+<?php require __DIR__ . '/Config.php'; ?>
 <!DOCTYPE html>
 <html lang="pt-br">
 

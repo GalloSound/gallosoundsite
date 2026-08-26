@@ -38,5 +38,4 @@ dist/
 build/
 coverage/
 
-Config.php
 sftp-config.json
