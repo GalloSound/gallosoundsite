@@ -8,7 +8,10 @@ local padrão é:
 
 `http://localhost:8082/gallosoundsite/`
 
-O `Config.php` é versionado e lê a variável diretamente do ambiente do
+Hosts listados em `GALLOSOUND_PUBLIC_HOSTS` usam a própria origem na raiz
+(`/`). No Mac isso continua em `http://localhost:8082/gallosoundsite/`.
+
+O `Config.php` é versionado e lê essas variáveis diretamente do ambiente do
 container.
 
 Para testes e verificações de tags:
