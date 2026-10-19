@@ -8,3 +8,4 @@
 [index.php] -> Remocao da funcao antiga `gtag_report_conversionForm` com label de conversao legado (`AW-1011588590/tj_kCN_byrQDEO67ruID`), mantendo apenas o fluxo atual de conversao do formulario -> [Compatibilidade/Organizacao]
 [index.php] -> Consolidacao do carregamento `gtag.js` em bloco unico com `config` para Ads (`AW-1011588590`), GA4 (`G-1ZGQL4TMP7`) e UA (`UA-27874578-1`), mantendo GTM e eventos de conversao -> [Compatibilidade/Organizacao]
 [assets/js/script.js] -> Remocao de disparo duplicado de conversao no clique do formulario, mantendo conversao apenas apos envio bem-sucedido e removendo referencias a campo/variavel inexistentes (`assunto`/`a`) -> [Compatibilidade/Conversao]
+[action_email.php] -> envio via SMTP autenticado no Google Workspace em vez de mail() -> [Compatibilidade]
