@@ -31,9 +31,35 @@
     <script>
         // tag conversão de cliques WhatsApp
         function gtag_report_conversion(url) {
+            var ua = navigator.userAgent || '';
+            var iOS = /iPad|iPhone|iPod/.test(ua) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+            var iosSafari = iOS && !/CriOS|FxiOS|EdgiOS|OPiOS/.test(ua);
+
+            // Safari cancela window.open fora do toque. No iPhone a navegação
+            // precisa ser na mesma aba, via wa.me, para o app abrir.
+            if (iosSafari) {
+                var phone = String(url || '').match(/[?&]phone=(\d+)/);
+                var target = phone ? ('https://wa.me/' + phone[1]) : url;
+                var opened = false;
+                var openChat = function () {
+                    if (opened || !target) {
+                        return;
+                    }
+                    opened = true;
+                    window.location.href = target;
+                };
+
+                gtag('event', 'conversion', {
+                    'send_to': 'AW-1011588590/GsJwCO-50uEBEO67ruID',
+                    'event_callback': openChat,
+                    'event_timeout': 400
+                });
+                setTimeout(openChat, 500);
+                return false;
+            }
+
             var callback = function () {
                 if (typeof (url) != 'undefined') {
-                    //window.location = url;
                     window.open(url, '_blank');
                 }
             };

@@ -1,3 +1,4 @@
+[index.php, produtos/insulfilm.html, produtos/sensor_estacionamento.html] -> No Safari do iPhone o clique do WhatsApp passa a abrir `wa.me` na mesma aba (`window.location`); Chrome e desktop seguem com `window.open`. A conversao `AW-1011588590/GsJwCO-50uEBEO67ruID` permanece -> Motivo (Compatibilidade)
 [assets/js/script.js] -> Implementado envio manual in-page de `user_data` (email/telefone/nome) para conversoes otimizadas e adicionado controle anti-duplo clique no botao WhatsApp -> Motivo (Compatibilidade/Medicao)
 [action_email.php] -> Reescrita do fluxo de envio para validar JSON/POST, sanitizar campos, remover `utf8_decode`, corrigir headers e verificar retorno real do `mail()` -> [Compatibilidade]
 [action_email.php] -> Ajuste do `From` para remetente fixo do dominio e `Reply-To` com e-mail validado, reduzindo risco de injecao em cabecalhos -> [Seguranca]
