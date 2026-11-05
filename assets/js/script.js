@@ -136,9 +136,42 @@ document.querySelectorAll("nav a").forEach((item) => {
 });
 
 
-// scroll 
+// scroll
 let serv = 0;
 let btnScrollTop = document.querySelector("#btnScrollTop");
+
+function iniciarContadores() {
+    if (serv !== 0) {
+        return;
+    }
+
+    const numeros = document.querySelectorAll(".number");
+    if (!numeros.length) {
+        return;
+    }
+
+    serv = 1;
+    numeros.forEach((item) => {
+        item.classList.add("numberShow");
+        item.classList.remove("number");
+        const max = item.getAttribute("max");
+        if (!max) {
+            return;
+        }
+        numberSoma(item, max, 0);
+    });
+}
+
+function contadoresVisiveis() {
+    const secao = document.getElementById("servicos_clientes");
+    if (!secao) {
+        return false;
+    }
+
+    const rect = secao.getBoundingClientRect();
+    return rect.top < window.innerHeight && rect.bottom > 0;
+}
+
 function scrollFunction() {
     if (
         document.body.scrollTop > 200 ||
@@ -160,24 +193,23 @@ function scrollFunction() {
             slide = setInterval(slideAction, 5000);
         }
     }
-    let numberStartElement = document.querySelector("#startNumber");
-    if (!numberStartElement) {
-        return;
+
+    if (contadoresVisiveis()) {
+        iniciarContadores();
     }
-    let numberServ = numberStartElement.offsetTop;
-    if (
-        numberServ < document.body.scrollTop ||
-        (numberServ < document.documentElement.scrollTop && serv == 0)
-    ) {
-        document.querySelectorAll(".number").forEach((item) => {
-            item.classList.add("numberShow");
-            item.classList.remove("number");
-            let max = item.attributes.getNamedItem("max").value;
-            let n = 0;
-            numberSoma(item, max, n);
+}
+
+const secaoContadores = document.getElementById("servicos_clientes");
+if (secaoContadores && "IntersectionObserver" in window) {
+    const observerContadores = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                iniciarContadores();
+                observerContadores.disconnect();
+            }
         });
-        serv++;
-    }
+    }, { threshold: 0 });
+    observerContadores.observe(secaoContadores);
 }
 
 window.addEventListener("scroll", function () {
@@ -187,15 +219,22 @@ window.addEventListener("scroll", function () {
 
 // function soma rapida quantidade de serviços e clientes
 function numberSoma(item, valor, n) {
-    let int = setInterval(frame, 1);
-    let targetValue = parseFloat(valor);
+    const int = setInterval(frame, 1);
+    const targetValue = parseFloat(valor);
     function frame() {
-        if (n >= targetValue) {
+        if (!Number.isFinite(targetValue) || n >= targetValue) {
+            item.textContent = Number.isFinite(targetValue)
+                ? Math.round(targetValue).toLocaleString("pt-BR")
+                : "0";
             clearInterval(int);
-        } else {
-            n = parseFloat(n + 2656);
-            item.textContent = n.toLocaleString("pt-BR");
+            return;
         }
+
+        n += 2656;
+        if (n > targetValue) {
+            n = targetValue;
+        }
+        item.textContent = Math.round(n).toLocaleString("pt-BR");
     }
 }
 
