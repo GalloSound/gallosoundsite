@@ -809,6 +809,15 @@ p {
     body.campanha.sem-barra #btnScrollTop.btnScrollTopShow {
         bottom: 96px;
     }
+
+    body.campanha.com-botao #btnWhatsApp {
+        display: grid;
+        bottom: calc(84px + env(safe-area-inset-bottom));
+    }
+
+    body.campanha.com-botao #btnScrollTop.btnScrollTopShow {
+        bottom: calc(160px + env(safe-area-inset-bottom));
+    }
 }
 
 @media (min-width: 720px) {

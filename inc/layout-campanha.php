@@ -96,6 +96,14 @@ if ($canonicalSlug === '') {
 $canonicalUrl = campanha_e(BASE_URL . '/' . rawurlencode($canonicalSlug) . '/');
 $robots = $indexar ? 'index, follow' : 'noindex, follow';
 $barraVisita = ($pagina['barra_visita'] ?? true) !== false;
+$botaoFlutuante = ($pagina['botao_flutuante'] ?? false) === true;
+$classeCorpo = 'campanha';
+if (!$barraVisita) {
+    $classeCorpo .= ' sem-barra';
+}
+if ($botaoFlutuante) {
+    $classeCorpo .= ' com-botao';
+}
 $base = campanha_e(BASE_URL);
 $og = campanha_lista($pagina['og'] ?? null);
 $hero = campanha_lista($pagina['hero'] ?? null);
@@ -255,7 +263,7 @@ $schemaJson = json_encode(
     <link rel="icon" href="<?= $base ?>/assets/images/favicon.ico" />
 </head>
 
-<body id="toBody" class="campanha<?= $barraVisita ? '' : ' sem-barra' ?>">
+<body id="toBody" class="<?= campanha_e($classeCorpo) ?>">
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NJT4VVG4"
     height="0" width="0" style="display:none;visibility:hidden" title="Google Tag Manager"></iframe></noscript>
