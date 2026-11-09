@@ -797,6 +797,18 @@ p {
     #btnScrollTop.btnScrollTopShow {
         bottom: calc(86px + env(safe-area-inset-bottom));
     }
+
+    body.campanha.sem-barra {
+        padding-bottom: 0;
+    }
+
+    body.campanha.sem-barra #btnWhatsApp {
+        display: grid;
+    }
+
+    body.campanha.sem-barra #btnScrollTop.btnScrollTopShow {
+        bottom: 96px;
+    }
 }
 
 @media (min-width: 720px) {

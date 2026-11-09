@@ -95,6 +95,7 @@ if ($canonicalSlug === '') {
 }
 $canonicalUrl = campanha_e(BASE_URL . '/' . rawurlencode($canonicalSlug) . '/');
 $robots = $indexar ? 'index, follow' : 'noindex, follow';
+$barraVisita = ($pagina['barra_visita'] ?? true) !== false;
 $base = campanha_e(BASE_URL);
 $og = campanha_lista($pagina['og'] ?? null);
 $hero = campanha_lista($pagina['hero'] ?? null);
@@ -254,7 +255,7 @@ $schemaJson = json_encode(
     <link rel="icon" href="<?= $base ?>/assets/images/favicon.ico" />
 </head>
 
-<body id="toBody" class="campanha">
+<body id="toBody" class="campanha<?= $barraVisita ? '' : ' sem-barra' ?>">
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NJT4VVG4"
     height="0" width="0" style="display:none;visibility:hidden" title="Google Tag Manager"></iframe></noscript>
@@ -625,9 +626,11 @@ $schemaJson = json_encode(
     <a href="#" id="btnWhatsApp" class="btnWhatsApp" aria-label="<?= campanha_e($textoFlutuante) ?>">
         <img class="shaked" src="<?= $base ?>/assets/images/whatsapp.png" alt="" width="64" height="64" />
     </a>
+    <?php if ($barraVisita) : ?>
     <div class="barra-visita">
         <?php campanha_whatsapp($textoBarra); ?>
     </div>
+    <?php endif; ?>
     <button id="btnScrollTop" data-action="toBody" class="btnScrollTopHide scroll" type="button"><?= campanha_e($textoTopo) ?></button>
     <script src="<?= $base ?>/assets/js/jquery.js"></script>
     <script src="<?= $base ?>/assets/js/script.js"></script>
