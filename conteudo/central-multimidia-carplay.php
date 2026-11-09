@@ -36,7 +36,7 @@ return [
         '10x sem juros',
     ],
     'diferenca' => [
-        'kicker' => 'Por que a descrição não fecha a compra',
+        'kicker' => 'Por que não se pode confiar somente na descrição',
         'titulo' => 'O que realmente faz a diferença?',
         'intro' => 'CarPlay, Android Auto, Waze, YouTube: a lista se repete em todo anúncio. O que muda a viagem é a fluidez, a estabilidade, a imagem e o áudio. Isso não cabe numa descrição. Aparece quando a tela está ligada na sua frente.',
         'blocos' => [
@@ -46,28 +46,28 @@ return [
             ],
             [
                 'titulo' => 'Desempenho e inovação',
-                'texto' => 'Com componentes de alta qualidade, escolhidos para velocidade, fluidez e integração com o sistema original. A tela responde mais rápido, a imagem fica nítida e o áudio envolve. Quem define isso é o hardware e o software, não o texto do anúncio.',
+                'texto' => 'Com componentes de alta qualidade, escolhidos para velocidade, fluidez e integração com o sistema original. A tela responde mais rápido, a imagem fica nítida e o áudio envolve. Quem define isso é qualidade do hardware e o software, e não a descrição tecnica da multimidia.',
             ],
             [
                 'titulo' => 'Exclusividade é mais do que aparência',
                 'texto' => 'A central é alinhada ao uso real: interface intuitiva, conectividade estável, navegação segura e entretenimento sem complicação. Sofisticação, neste caso, é a viagem funcionar.',
             ],
         ],
-        'chamada' => 'Se a descrição bastasse, a dúvida já teria acabado. Ela acaba quando você compara a tela, na bancada e nos carros da loja.',
+        'chamada' => 'Se a descrição bastasse, a dúvida já teria acabado. Ela acaba quando você compara a multimídia, na bancada de testes.',
         'cta' => 'Quero tirar essa dúvida ao vivo',
     ],
     'comparar' => [
         'kicker' => 'A dúvida que traz o cliente até aqui',
-        'titulo' => 'O anúncio lista. A visita revela.',
+        'titulo' => 'O anúncio lista recursos. A visita revela a qualidade.',
         'intro' => 'Dois aparelhos podem citar os mesmos recursos e entregar outra experiência. A visita serve para julgar o que a descrição esconde.',
-        'colunas' => ['No anúncio', 'Na loja'],
+        'colunas' => ['Nos anúncios', 'Em testes na loja'],
         'linhas' => [
             [
-                'anuncio' => 'CarPlay e Android Auto',
+                'anuncios' => 'CarPlay e Android Auto',
                 'loja' => 'Se a tela responde na hora ou pensa antes de obedecer.',
             ],
             [
-                'anuncio' => 'Waze, Google Maps e GPS off-line',
+                'anuncios' => 'Waze, Google Maps e GPS off-line',
                 'loja' => 'Se o mapa segue fluido, com ou sem a internet do celular.',
             ],
             [
@@ -75,7 +75,7 @@ return [
                 'loja' => 'Se a imagem fica nítida e estável, ou se o aplicativo só existe no nome.',
             ],
             [
-                'anuncio' => 'Câmera de ré e integração original',
+                'anuncios' => 'Câmera de ré e integração original',
                 'loja' => 'Se os avisos e as funções originais continuam na tela, sem perder a garantia de fábrica.',
             ],
         ],
@@ -115,14 +115,14 @@ return [
             ],
             [
                 'titulo' => 'Netflix',
-                'texto' => 'Entretenimento a bordo. A nitidez se vê ao vivo, não no anúncio.',
+                'texto' => 'Entretenimento a bordo. A nitidez e qualidade do áudio se vê ao vivo, não em anúncios.',
             ],
         ],
     ],
     'videos' => [
         'kicker' => 'Canal da Gallo Sound',
-        'titulo' => 'Não acredite na descrição. Assista ao teste.',
-        'intro' => 'Estes testes comparativos mostram uma coisa só: a qualidade do hardware e do software é o que determina fluidez, estabilidade, imagem e áudio. O texto do produto não decide a experiência.',
+        'titulo' => 'Não acredite na descrição. Assista aos testes comparativos.',
+        'intro' => 'Estes testes comparativos mostram uma coisa só: a qualidade do hardware e do software é o que determina fluidez, estabilidade, imagem e áudio. A Descrição da multimídia não define a experiência.',
         'testes' => [
             [
                 'id' => 'Lv7BYFcbYMg',
@@ -147,7 +147,7 @@ return [
         ],
         'bancada' => [
             'titulo' => 'A bancada que você encontra na loja',
-            'texto' => 'Neste vídeo apresentamos as multimídias. É o mesmo tipo de contato da visita: ver a tela de perto, antes de decidir.',
+            'texto' => 'Neste vídeo apresentamos as multimídias. É o mesmo tipo de contato da visita: ver as multimídias de perto, antes de decidir.',
             'id' => 'lJ3v-c4lNns',
             'video_titulo' => 'Apresentação das multimídias na bancada',
         ],
@@ -191,16 +191,16 @@ return [
         'titulo' => 'A dúvida que vale a visita',
         'itens' => [
             [
-                'pergunta' => 'Por que ver pessoalmente se o anúncio já lista CarPlay e Android Auto?',
-                'resposta' => 'Porque a lista não mede hardware nem software. Fluidez, estabilidade, imagem e áudio mudam de uma central para outra. A visita existe para você perceber essa diferença com a tela ligada.',
+                'pergunta' => 'Por que ver pessoalmente se o anúncio já lista recursos e descrição técnica das multimídias?',
+                'resposta' => 'Porque a descrição não mede hardware nem software. Fluidez, estabilidade, imagem e áudio mudam de uma central para outra. A visita existe para você perceber essa diferença com a tela ligada.',
             ],
             [
                 'pergunta' => 'A instalação mexe na garantia de fábrica?',
-                'resposta' => 'Não. A instalação é feita sem perder a garantia de fábrica, com integração original, mantendo avisos e funções originais na tela.',
+                'resposta' => 'Não. Em nossa loja a instalação é feita sem perder a garantia de fábrica, com integração original, mantendo avisos e funções originais na tela da multimídia.',
             ],
             [
                 'pergunta' => 'Dá para parcelar?',
-                'resposta' => 'Sim, em 10x sem juros. O valor você confirma na loja, depois de ver a central.',
+                'resposta' => 'Sim, em 10x sem juros. O valor você confirma na loja, depois de ver a central multimídia ligada.',
             ],
             [
                 'pergunta' => 'O que eu consigo usar na central?',
