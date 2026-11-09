@@ -88,6 +88,13 @@ if (!function_exists('campanha_orcamento')) {
 
 $slug = trim((string) ($pagina['slug'] ?? ''), '/');
 $paginaUrl = campanha_e(BASE_URL . '/' . rawurlencode($slug) . '/');
+$indexar = (bool) ($pagina['indexar'] ?? true);
+$canonicalSlug = trim((string) ($pagina['canonical_slug'] ?? $slug), '/');
+if ($canonicalSlug === '') {
+    $canonicalSlug = $slug;
+}
+$canonicalUrl = campanha_e(BASE_URL . '/' . rawurlencode($canonicalSlug) . '/');
+$robots = $indexar ? 'index, follow' : 'noindex, follow';
 $base = campanha_e(BASE_URL);
 $og = campanha_lista($pagina['og'] ?? null);
 $hero = campanha_lista($pagina['hero'] ?? null);
@@ -158,9 +165,9 @@ $schemaJson = json_encode(
     <title><?= campanha_e($pagina['title'] ?? '') ?></title>
     <meta name="description" content="<?= campanha_e($pagina['description'] ?? '') ?>" />
     <meta name="author" content="Alex Gallo" />
-    <meta name="robots" content="index, follow" />
+    <meta name="robots" content="<?= campanha_e($robots) ?>" />
     <meta name="theme-color" content="#fffcf8" />
-    <link rel="canonical" href="<?= $paginaUrl ?>" />
+    <link rel="canonical" href="<?= $canonicalUrl ?>" />
     <meta property="og:url" content="<?= $paginaUrl ?>" />
     <meta property="og:title" content="<?= campanha_e($og['title'] ?? '') ?>" />
     <meta property="og:type" content="<?= campanha_e($og['type'] ?? 'website') ?>" />

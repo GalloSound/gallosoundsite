@@ -2,6 +2,8 @@
 
 return [
     'slug' => 'central-multimidia-carplay',
+    'indexar' => false,
+    'canonical_slug' => 'central-multimidia',
     'title' => 'Central Multimídia com CarPlay e Android Auto em Jundiaí | Gallo Sound',
     'description' => 'Veja ao vivo a central multimídia com CarPlay e Android Auto em Jundiaí. Integração original, sem perder a garantia de fábrica, em 10x sem juros. Gallo Sound.',
     'og' => [
@@ -20,7 +22,7 @@ return [
     ],
     'hero' => [
         'kicker' => 'Gallo Sound · Jundiaí · desde 1957',
-        'lead' => 'CarPlay, Android Auto, Waze, YouTube: a lista se repete em todo anúncio. O que muda a viagem é a fluidez, a estabilidade, a imagem e o áudio. Isso não cabe numa descrição. Aparece quando a tela está ligada na sua frente.',
+        'lead' => 'Instalação sem perder a garantia de fábrica, com integração original que mantém avisos e funções originais na tela. Parcelamento em 10x sem juros.',
         'nota' => 'Você vê, toca e compara na loja, em Jundiaí.',
         'imagem' => 'assets/images/multimidia_home_2.jpg',
         'alt' => 'Central multimídia com CarPlay no painel do carro',
@@ -36,19 +38,19 @@ return [
     'diferenca' => [
         'kicker' => 'Por que a descrição não fecha a compra',
         'titulo' => 'O que realmente faz a diferença?',
-        'intro' => 'Escolher uma central multimídia de qualidade vai além da tecnologia que todo anúncio repete. É confiança no que vai ficar no painel todos os dias: desempenho, conectividade e uma experiência que a ficha técnica não consegue provar.',
+        'intro' => 'CarPlay, Android Auto, Waze, YouTube: a lista se repete em todo anúncio. O que muda a viagem é a fluidez, a estabilidade, a imagem e o áudio. Isso não cabe numa descrição. Aparece quando a tela está ligada na sua frente.',
         'blocos' => [
             [
                 'titulo' => 'Tecnologia que nasce da expertise',
-                'texto' => 'As centrais da Gallo Sound são exclusivas, desenvolvidas em parceria com a equipe de engenharia da fábrica. Cada modelo passa por um processo rigoroso, com testes e aprimoramentos, até a qualidade, a segurança e a compatibilidade com o veículo ficarem resolvidas.',
+                'texto' => 'As centrais da Gallo Sound são exclusivas, desenvolvidas em parceria com a equipe de engenharia da fábrica de multimídias. Cada modelo passa por um processo rigoroso, com testes e aprimoramentos de qualidade, segurança e compatibilidade com o veículo.',
             ],
             [
                 'titulo' => 'Desempenho e inovação',
-                'texto' => 'Os componentes são de última geração, escolhidos para velocidade, fluidez e integração com o sistema original. A tela responde mais rápido, a imagem fica nítida e o áudio envolve. Quem define isso é o hardware e o software, não o texto do anúncio.',
+                'texto' => 'Com componentes de alta qualidade, escolhidos para velocidade, fluidez e integração com o sistema original. A tela responde mais rápido, a imagem fica nítida e o áudio envolve. Quem define isso é o hardware e o software, não o texto do anúncio.',
             ],
             [
                 'titulo' => 'Exclusividade é mais do que aparência',
-                'texto' => 'Aqui não entra produto genérico. A central é alinhada ao uso real: interface intuitiva, conectividade estável, navegação segura e entretenimento sem complicação. Sofisticação, neste caso, é a viagem funcionar.',
+                'texto' => 'A central é alinhada ao uso real: interface intuitiva, conectividade estável, navegação segura e entretenimento sem complicação. Sofisticação, neste caso, é a viagem funcionar.',
             ],
         ],
         'chamada' => 'Se a descrição bastasse, a dúvida já teria acabado. Ela acaba quando você compara a tela, na bancada e nos carros da loja.',
@@ -261,7 +263,7 @@ return [
     'botoes' => [
         'whatsapp' => 'Quero ver ao vivo',
         'whatsapp_header' => 'Agendar visita',
-        'whatsapp_barra' => 'Ver ao vivo no WhatsApp',
+        'whatsapp_barra' => 'Agendar visita no WhatsApp',
         'orcamento' => 'Solicite um Orçamento',
         'enviar' => 'Enviar',
         'topo' => 'Topo',
