@@ -81,8 +81,8 @@ if (!function_exists('campanha_orcamento')) {
             return;
         }
 
-        $classes = trim('btn btn-ghost scroll ' . $classe);
-        echo '<a href="#contato" class="' . campanha_e($classes) . '" data-action="contato">' . campanha_e($texto) . '</a>';
+        $classes = trim('btn btn-ghost btnWhatsApp ' . $classe);
+        echo '<a href="#" class="' . campanha_e($classes) . '">' . campanha_e($texto) . '</a>';
     }
 }
 
