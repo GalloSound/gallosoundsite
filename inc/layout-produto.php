@@ -38,6 +38,13 @@ if (!function_exists('produto_lista')) {
 
 $slug = trim((string) ($pagina['slug'] ?? ''), '/');
 $paginaUrl = produto_e(BASE_URL . '/' . rawurlencode($slug) . '/');
+$indexar = (bool) ($pagina['indexar'] ?? true);
+$canonicalSlug = trim((string) ($pagina['canonical_slug'] ?? $slug), '/');
+if ($canonicalSlug === '') {
+    $canonicalSlug = $slug;
+}
+$canonicalUrl = produto_e(BASE_URL . '/' . rawurlencode($canonicalSlug) . '/');
+$robots = $indexar ? 'index, follow' : 'noindex, follow';
 $base = produto_e(BASE_URL);
 $og = produto_lista($pagina['og'] ?? null);
 $banner = produto_lista($pagina['banner'] ?? null);
@@ -135,7 +142,8 @@ $ultimoDepoimento = count($depoimentos) - 1;
     <meta http-equiv="content-language" content="pt-br" />
     <meta name="author" content="Alex Gallo" />
     <meta content="<?= produto_e($pagina['description'] ?? '') ?>" name="description" />
-    <meta name="robots" content="index, follow" />
+    <meta name="robots" content="<?= produto_e($robots) ?>" />
+    <link rel="canonical" href="<?= $canonicalUrl ?>" />
     <meta name="googlebot" content="Follow" />
     <meta name="rating" content="general" />
     <meta name="DC.Identifier" content="<?= $paginaUrl ?>" />

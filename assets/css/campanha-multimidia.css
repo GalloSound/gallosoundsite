@@ -859,9 +859,12 @@ p {
         gap: 40px;
     }
 
-    .cards,
-    .galeria {
+    .cards {
         grid-template-columns: repeat(3, 1fr);
+    }
+
+    .galeria {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
