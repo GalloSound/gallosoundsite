@@ -424,13 +424,16 @@
                     </address>
                     <div id="formContact" class="section-contact">
 
-                        <form method="POST">
+                        <form method="POST" style="position:relative">
+                            <?php require_once __DIR__ . '/inc/form-contato.php'; ?>
+                            <?= form_contato_html_oculto() ?>
                             <div class="section-contact--split">
-                                <input id="nome" type="text" name="nome" placeholder="NOME" />
-                                <input id="email" type="text" name="email" placeholder="EMAIL" />
+                                <input id="nome" type="text" name="nome" maxlength="80" autocomplete="name" placeholder="NOME" />
+                                <input id="email" type="text" name="email" maxlength="160" autocomplete="email" inputmode="email" autocapitalize="none" spellcheck="false" placeholder="EMAIL" />
                             </div>
-                            <input id="whats" type="text" name="whats" placeholder="WhatsApp" />
-                            <textarea id="msg" name="mensagem" placeholder="MENSAGEM"></textarea>
+                            <input id="whats" type="text" name="whats" maxlength="20" autocomplete="tel" inputmode="tel" placeholder="WhatsApp" />
+                            <textarea id="msg" name="mensagem" maxlength="2000" placeholder="MENSAGEM"></textarea>
+                            <?= form_contato_html_erro() ?>
                             <input id="mensagem" type="submit" value="Enviar" class="button" />
                         </form>
                     </div>
@@ -464,4 +467,7 @@
     <!-- End Google Tag Manager (noscript) -->
 </html>
 <script src="<?= BASE_URL; ?>/assets/js/jquery.js"></script>
-<script src="<?= BASE_URL; ?>/assets/js/script.js"></script>
+<script>
+window.GALLO_FORM_URL = <?= json_encode(BASE_URL . '/action_email.php', JSON_UNESCAPED_SLASHES | JSON_HEX_TAG | JSON_HEX_AMP | JSON_HEX_APOS | JSON_HEX_QUOT) ?>;
+</script>
+<script src="<?= BASE_URL; ?>/assets/js/script.js?v=20261111b"></script>

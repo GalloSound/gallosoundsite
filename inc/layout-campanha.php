@@ -592,11 +592,13 @@ $schemaJson = json_encode(
                     <div id="formContact" class="formulario">
                         <h3><?= campanha_e($contato['form_titulo'] ?? '') ?></h3>
                         <p class="form-intro"><?= campanha_e($contato['form_texto'] ?? '') ?></p>
-                        <form method="POST">
+                        <form method="POST" style="position:relative">
+                            <?php require_once __DIR__ . '/form-contato.php'; ?>
+                            <?= form_contato_html_oculto() ?>
                             <div class="form-linha">
                                 <label class="campo">
                                     <span>Nome</span>
-                                    <input id="nome" type="text" name="nome" autocomplete="name" maxlength="120" placeholder="Seu nome" />
+                                    <input id="nome" type="text" name="nome" autocomplete="name" maxlength="80" placeholder="Seu nome" />
                                 </label>
                                 <label class="campo">
                                     <span>E-mail</span>
@@ -611,6 +613,7 @@ $schemaJson = json_encode(
                                 <span>Mensagem</span>
                                 <textarea id="msg" name="mensagem" maxlength="2000" placeholder="Modelo do carro e o que você quer ver na visita"></textarea>
                             </label>
+                            <?= form_contato_html_erro() ?>
                             <input id="mensagem" type="submit" value="<?= campanha_e($textoEnviar) ?>" class="btn btn-ink" />
                         </form>
                     </div>
@@ -643,7 +646,10 @@ $schemaJson = json_encode(
     <?php endif; ?>
     <button id="btnScrollTop" data-action="toBody" class="btnScrollTopHide scroll" type="button"><?= campanha_e($textoTopo) ?></button>
     <script src="<?= $base ?>/assets/js/jquery.js"></script>
-    <script src="<?= $base ?>/assets/js/script.js"></script>
+    <script>
+        window.GALLO_FORM_URL = <?= json_encode(BASE_URL . '/action_email.php', JSON_UNESCAPED_SLASHES | JSON_HEX_TAG | JSON_HEX_AMP | JSON_HEX_APOS | JSON_HEX_QUOT) ?>;
+    </script>
+    <script src="<?= $base ?>/assets/js/script.js?v=20261111b"></script>
     <script>
         document.querySelectorAll("[data-video]").forEach(function (botao) {
             botao.addEventListener("click", function () {

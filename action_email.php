@@ -3,30 +3,12 @@
 header('Content-Type: application/json; charset=UTF-8');
 date_default_timezone_set('America/Sao_Paulo');
 
+require_once __DIR__ . '/inc/form-contato.php';
+
 $response = [
     'envio' => false,
     'email' => false,
 ];
-
-/**
- * @param mixed $value
- */
-function sanitizeText($value, int $maxLength): string
-{
-    if (!is_string($value) && !is_numeric($value)) {
-        return '';
-    }
-
-    $text = trim((string) $value);
-    $text = str_replace(["\r", "\n"], ' ', $text);
-    $text = strip_tags($text);
-
-    if (function_exists('mb_substr')) {
-        return mb_substr($text, 0, $maxLength, 'UTF-8');
-    }
-
-    return substr($text, 0, $maxLength);
-}
 
 /**
  * @return resource|false
@@ -190,19 +172,36 @@ function smtpSend(
     return $ok;
 }
 
-$rawInput = file_get_contents('php://input');
-$decodedInput = json_decode($rawInput, true);
-$data = is_array($decodedInput) ? $decodedInput : $_POST;
-
-$nome = sanitizeText($data['nome'] ?? '', 120);
-$email = filter_var(isset($data['email']) ? trim((string) $data['email']) : '', FILTER_VALIDATE_EMAIL);
-$whats = sanitizeText($data['whats'] ?? '', 40);
-$mensagem = sanitizeText($data['mensagem'] ?? '', 4000);
-
-if ($nome === '' || $mensagem === '' || $email === false) {
-    echo json_encode($response);
+/**
+ * @param array<string, mixed> $response
+ */
+function form_contato_falha_envio(array $response): void
+{
+    $response['envio'] = false;
+    $response['email'] = true;
+    $response['campo'] = 'bloqueio';
+    $response['aviso'] = 'Não foi possível enviar agora. Tente de novo em instantes ou chame no WhatsApp.';
+    echo json_encode($response, JSON_UNESCAPED_UNICODE);
     exit;
 }
+
+$rawInput = file_get_contents('php://input');
+$decodedInput = json_decode(is_string($rawInput) ? $rawInput : '', true);
+$data = is_array($decodedInput) ? $decodedInput : $_POST;
+
+$avaliacao = form_contato_avaliar($data);
+if ($avaliacao['ok'] !== true) {
+    $response['email'] = ($avaliacao['campo'] ?? '') !== 'email';
+    $response['campo'] = $avaliacao['campo'];
+    $response['aviso'] = $avaliacao['aviso'];
+    echo json_encode($response, JSON_UNESCAPED_UNICODE);
+    exit;
+}
+
+$nome = $avaliacao['nome'];
+$email = $avaliacao['email'];
+$whats = $avaliacao['whats'];
+$mensagem = $avaliacao['mensagem'];
 
 $response['email'] = true;
 
@@ -214,8 +213,7 @@ $smtpPort = (int) getenv('SMTP_PORT');
 
 if ($smtpHost === '' || $smtpUser === '' || $smtpPass === '') {
     error_log('SMTP env missing');
-    echo json_encode($response);
-    exit;
+    form_contato_falha_envio($response);
 }
 
 if ($smtpSecure === '') {
@@ -228,8 +226,7 @@ if ($smtpPort < 1) {
 
 if (!in_array($smtpSecure, ['tls', 'ssl'], true)) {
     error_log('SMTP secure invalid');
-    echo json_encode($response);
-    exit;
+    form_contato_falha_envio($response);
 }
 
 $fromEmail = 'contato@gallosound.com.br';
@@ -240,7 +237,7 @@ $recipients = [
 ];
 $assunto = 'Formulario de Contato - Site Gallo Sound';
 
-$ip = isset($_SERVER['REMOTE_ADDR']) ? sanitizeText($_SERVER['REMOTE_ADDR'], 45) : 'IP nao identificado';
+$ip = form_contato_ip();
 $dia = date('d-m-Y');
 $hora = date('H:i');
 
@@ -275,4 +272,9 @@ $response['envio'] = smtpSend(
     $mensagemHtml
 );
 
-echo json_encode($response);
+if ($response['envio'] !== true) {
+    $response['campo'] = 'bloqueio';
+    $response['aviso'] = 'Não foi possível enviar agora. Tente de novo em instantes ou chame no WhatsApp.';
+}
+
+echo json_encode($response, JSON_UNESCAPED_UNICODE);
