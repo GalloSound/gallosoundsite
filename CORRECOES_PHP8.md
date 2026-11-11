@@ -25,3 +25,4 @@
 [central-multimidia/index.php] -> O teste em /central-multimidia/ usa a versão sem a barra fixa no celular, com o botão flutuante #btnWhatsApp, igual a /central-multimidia-carplay-botao/ -> [Conversão]
 [conteudo/central-multimidia.php, assets/css/campanha-multimidia.css] -> A seção Feito na Gallo Sound inclui a instalação do Corolla Hybrid. A galeria passa a duas colunas no desktop para as quatro fotos -> [Conversão]
 [inc/layout-campanha.php] -> O botão Solicite um Orçamento abre o WhatsApp e dispara a conversão de clique, no mesmo fluxo dos outros botões de atendimento -> [Conversão]
+[assets/css/campanha-multimidia.css, inc/layout-campanha.php] -> Reserva o espaço das fotos da campanha e aproxima a fonte reserva da Montserrat, para reduzir o deslocamento de layout medido no Lighthouse -> [Performance]

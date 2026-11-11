@@ -22,12 +22,21 @@ html {
 
 body.campanha {
     margin: 0;
-    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    font-family: Montserrat, "Montserrat Fallback", Arial, Helvetica, sans-serif;
     font-size: 17px;
     line-height: 1.55;
     color: var(--body);
     background: var(--paper);
     -webkit-font-smoothing: antialiased;
+}
+
+@font-face {
+    font-family: "Montserrat Fallback";
+    src: local("Arial");
+    size-adjust: 113.15%;
+    ascent-override: 84.95%;
+    descent-override: 22.12%;
+    line-gap-override: 0%;
 }
 
 img {
@@ -282,6 +291,7 @@ p {
 
 .hero__foto {
     margin: 0;
+    aspect-ratio: 830 / 504;
 }
 
 .hero__foto img,
@@ -506,6 +516,10 @@ p {
     overflow: hidden;
 }
 
+.trabalho__foto {
+    aspect-ratio: 4 / 3;
+}
+
 .trabalho__foto img {
     aspect-ratio: 4 / 3;
 }
@@ -556,6 +570,7 @@ p {
 
 .sobre__foto {
     margin: 0;
+    aspect-ratio: 830 / 596;
 }
 
 .sobre__foto img {

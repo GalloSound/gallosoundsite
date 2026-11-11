@@ -188,6 +188,8 @@ $schemaJson = json_encode(
     <?php endif; ?>
     <link rel="preconnect" href="https://www.googletagmanager.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preload" as="font" type="font/woff2" href="https://fonts.gstatic.com/s/montserrat/v14/JTUSjIg1_i6t8kCHKm459WlhyyTh89Y.woff2" crossorigin />
+    <link rel="preload" as="font" type="font/woff2" href="https://fonts.gstatic.com/s/montserrat/v14/JTURjIg1_i6t8kCHKm45_dJE3gnD_vx3rCs.woff2" crossorigin />
     <?php if ($heroSrc !== '') : ?>
         <link rel="preload" as="image" href="<?= $heroSrc ?>" />
     <?php endif; ?>
