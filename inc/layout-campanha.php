@@ -649,7 +649,7 @@ $schemaJson = json_encode(
     <script>
         window.GALLO_FORM_URL = <?= json_encode(BASE_URL . '/action_email.php', JSON_UNESCAPED_SLASHES | JSON_HEX_TAG | JSON_HEX_AMP | JSON_HEX_APOS | JSON_HEX_QUOT) ?>;
     </script>
-    <script src="<?= $base ?>/assets/js/script.js?v=20261111b"></script>
+    <script src="<?= $base ?>/assets/js/script.js?v=20261111c"></script>
     <script>
         document.querySelectorAll("[data-video]").forEach(function (botao) {
             botao.addEventListener("click", function () {

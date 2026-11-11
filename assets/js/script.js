@@ -706,6 +706,11 @@ if (mensagemBtn && mensagemBtn.form) {
             ? window.GALLO_FORM_URL
             : "https://gallosound.com.br/action_email.php";
         mensagemBtn.disabled = true;
+        mensagemBtn.value = "Enviando...";
+        mensagemBtn.setAttribute("aria-busy", "true");
+        mensagemBtn.style.cursor = "wait";
+        mensagemBtn.style.opacity = "0.72";
+        formContato.setAttribute("aria-busy", "true");
         fetch(url, {
             method: "POST",
             headers: {
@@ -756,10 +761,15 @@ if (mensagemBtn && mensagemBtn.form) {
                 if (aviso) {
                     aviso.style.display = "none";
                 }
+                mensagemBtn.style.opacity = "";
+                mensagemBtn.style.cursor = "";
                 mensagemBtn.style.background = "#2f8f4e";
                 mensagemBtn.style.color = "#fff";
                 mensagemBtn.value = "Enviado com sucesso";
+                mensagemBtn.removeAttribute("aria-busy");
+                formContato.removeAttribute("aria-busy");
                 setTimeout(function () {
+                    mensagemBtn.disabled = false;
                     mensagemBtn.style.background = "";
                     mensagemBtn.style.color = "";
                     mensagemBtn.value = valorOriginalBtn;
@@ -772,7 +782,15 @@ if (mensagemBtn && mensagemBtn.form) {
                 );
             })
             .finally(function () {
+                if (mensagemBtn.value !== "Enviando...") {
+                    return;
+                }
                 mensagemBtn.disabled = false;
+                mensagemBtn.removeAttribute("aria-busy");
+                mensagemBtn.style.cursor = "";
+                mensagemBtn.style.opacity = "";
+                mensagemBtn.value = valorOriginalBtn;
+                formContato.removeAttribute("aria-busy");
             });
     });
 }
